@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Walker & Associates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    .form-field { margin-bottom: var(--space-md); }
+    .form-label { display:block;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--taupe);margin-bottom:6px; }
+    .form-input {
+      width:100%;padding:13px 16px;border:1px solid var(--color-border);border-radius:var(--radius-sm);
+      font-family:var(--font-sans);font-size:.9375rem;color:var(--text-dark);background:var(--white);
+      transition:border-color var(--ease);outline:none;
+    }
+    .form-input:focus { border-color:var(--green); }
+    .form-row { display:grid;grid-template-columns:1fr 1fr;gap:var(--space-md); }
+    select.form-input { -webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238B7D75' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center; }
+    textarea.form-input { resize:vertical;min-height:140px; }
+  </style>
+</head>
+<body>
+<div id="wa-nav"></div>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Get In Touch</span>
+    <h1>Contact Walker &amp; Associates</h1>
+    <p>Ready to discuss your legal needs? Schedule a confidential consultation below.</p>
+  </div>
+</div>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 380px;gap:var(--space-3xl);align-items:start;">
+
+        <!-- Form -->
+        <div>
+          <div class="section-header">
+            <span class="eyebrow">New Client Inquiry</span>
+            <h2>Tell Us About Your Matter</h2>
+            <p>All inquiries are confidential. We respond within one business day.</p>
+          </div>
+
+          <form id="contact-form" style="margin-top:var(--space-xl);" novalidate>
+            <div class="form-row">
+              <div class="form-field"><label class="form-label" for="first_name">First Name *</label><input class="form-input" type="text" id="first_name" name="first_name" required autocomplete="given-name"></div>
+              <div class="form-field"><label class="form-label" for="last_name">Last Name *</label><input class="form-input" type="text" id="last_name" name="last_name" required autocomplete="family-name"></div>
+            </div>
+            <div class="form-row">
+              <div class="form-field"><label class="form-label" for="email">Email Address *</label><input class="form-input" type="email" id="email" name="email" required autocomplete="email"></div>
+              <div class="form-field"><label class="form-label" for="phone">Phone Number</label><input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel"></div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="practice_area">Practice Area *</label>
+              <select class="form-input" id="practice_area" name="practice_area" required>
+                <option value="">Select a practice area...</option>
+                <option value="entertainment">Entertainment Law</option>
+                <option value="film-tv">Film &amp; Television Law</option>
+                <option value="music">Music Law</option>
+                <option value="litigation">Litigation</option>
+                <option value="corporate">Corporate Law</option>
+                <option value="real-estate">Real Estate Law</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="preferred_contact">Preferred Contact Time</label>
+              <select class="form-input" id="preferred_contact" name="preferred_contact">
+                <option value="">No preference</option>
+                <option value="morning">Morning (9am – 12pm ET)</option>
+                <option value="afternoon">Afternoon (12pm – 5pm ET)</option>
+                <option value="evening">Evening (5pm – 7pm ET)</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="message">Describe Your Matter *</label>
+              <textarea class="form-input" id="message" name="message" required placeholder="Please provide a brief description of your legal matter. All communications are confidential."></textarea>
+            </div>
+            <div class="form-field">
+              <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;">
+                <input type="checkbox" name="consent" required style="margin-top:3px;flex-shrink:0;accent-color:var(--green);">
+                <span style="font-size:.875rem;color:var(--taupe);line-height:1.55;">I consent to Walker &amp; Associates contacting me regarding my legal matter. Submitting this form does not create an attorney-client relationship.</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="font-size:14px;padding:16px 40px;">Submit Inquiry</button>
+          </form>
+
+          <!-- Success message (hidden by default) -->
+          <div id="form-success" style="display:none;margin-top:var(--space-xl);padding:var(--space-xl);background:var(--tan-pale);border-radius:var(--radius-md);border-left:4px solid var(--green);">
+            <h3 style="font-family:var(--font-serif);font-size:1.5rem;color:var(--green);margin-bottom:var(--space-sm);">Thank you for reaching out.</h3>
+            <p style="color:var(--text-mid);">We've received your inquiry and will be in touch within one business day. If your matter is urgent, please call us directly at <a href="tel:7708477363" style="color:var(--green);font-weight:600;">(770) 847-7363</a>.</p>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside style="position:sticky;top:calc(var(--header-h) + var(--topbar-h) + var(--space-lg));">
+          <div style="background:var(--tan-pale);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-lg);">
+            <h3 style="font-family:var(--font-serif);font-size:1.5rem;margin-bottom:var(--space-lg);color:var(--text-dark);">Office Information</h3>
+            <div style="display:flex;flex-direction:column;gap:var(--space-md);">
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <div><p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">Address</p><p style="font-size:.875rem;color:var(--taupe);">3421 Main Street<br>Atlanta, GA 30337</p></div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                <div><p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">Phone</p><a href="tel:7708477363" style="font-size:.875rem;color:var(--green);">(770) 847-7363</a></div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div><p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">Office Hours</p><p style="font-size:.875rem;color:var(--taupe);">Monday – Friday<br>9:00 AM – 6:00 PM ET</p></div>
+              </div>
+            </div>
+          </div>
+          <div style="background:var(--green);border-radius:var(--radius-lg);padding:var(--space-xl);color:var(--white);">
+            <h3 style="font-family:var(--font-serif);font-size:1.375rem;color:var(--white);margin-bottom:var(--space-sm);">Urgent Matter?</h3>
+            <p style="font-size:.9rem;color:rgba(255,255,255,.75);margin-bottom:var(--space-lg);line-height:1.6;">For time-sensitive matters, call us directly and indicate urgency.</p>
+            <a href="tel:7708477363" class="btn btn-outline-light" style="width:100%;justify-content:center;">(770) 847-7363</a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="wa-footer"></div>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/nav.js"></script>
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    this.style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+  });
+</script>
+</body>
+</html>
