@@ -110,7 +110,7 @@
     toggle.addEventListener('click', function() {
       const expanded = this.getAttribute('aria-expanded') === 'true';
       this.setAttribute('aria-expanded', String(!expanded));
-      navEl.style.display = expanded ? '' : 'block';
+      navEl.classList.toggle('mobile-open', !expanded);
     });
   }
 })();
