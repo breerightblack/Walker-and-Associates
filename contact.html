@@ -148,14 +148,18 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
                 <div>
                   <p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">Zelle</p>
-                  <p style="font-size:.875rem;color:var(--taupe);">Send to <span class="payment-copy-value" style="color:var(--text-dark);">jjwalker@walkerandassoc.com</span> <button type="button" class="payment-copy-btn" data-copy="jjwalker@walkerandassoc.com" style="font-size:12px;font-weight:600;color:var(--green);background:none;border:none;cursor:pointer;padding:0;margin-left:4px;text-decoration:underline;">Copy</button></p>
+                  <p style="font-size:.875rem;color:var(--taupe);margin-bottom:4px;">Send to <span style="color:var(--text-dark);">jjwalker@walkerandassoc.com</span></p>
+                  <button type="button" class="payment-copy-go-btn" data-copy="jjwalker@walkerandassoc.com" data-status="Copied! Open your banking app's Zelle feature and paste this email to send $250." style="font-size:.875rem;font-weight:600;color:var(--green);background:none;border:none;cursor:pointer;padding:0;text-decoration:underline;">Copy Email for Zelle →</button>
+                  <p class="payment-copy-status" style="font-size:.8125rem;color:var(--green);margin-top:4px;display:none;"></p>
                 </div>
               </div>
               <div style="display:flex;gap:12px;align-items:flex-start;">
                 <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
                 <div>
                   <p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">PayPal</p>
-                  <p style="font-size:.875rem;color:var(--taupe);">Send to <span class="payment-copy-value" style="color:var(--text-dark);">jjwalker@walkerandassoc.com</span> <button type="button" class="payment-copy-btn" data-copy="jjwalker@walkerandassoc.com" style="font-size:12px;font-weight:600;color:var(--green);background:none;border:none;cursor:pointer;padding:0;margin-left:4px;text-decoration:underline;">Copy</button><br>3% processing fee applies.</p>
+                  <p style="font-size:.875rem;color:var(--taupe);margin-bottom:4px;">Send to <span style="color:var(--text-dark);">jjwalker@walkerandassoc.com</span> · 3% processing fee applies.</p>
+                  <a href="https://www.paypal.com/myaccount/transfer/send" target="_blank" rel="noopener noreferrer" class="payment-copy-go-btn" data-copy="jjwalker@walkerandassoc.com" data-status="Email copied — opening PayPal. Paste it as the recipient to send $250." style="font-size:.875rem;font-weight:600;color:var(--green);text-decoration:none;">Copy Email &amp; Open PayPal →</a>
+                  <p class="payment-copy-status" style="font-size:.8125rem;color:var(--green);margin-top:4px;display:none;"></p>
                 </div>
               </div>
               <div style="display:flex;gap:12px;align-items:flex-start;">
@@ -213,13 +217,15 @@
     document.getElementById('form-success').style.display = 'block';
   });
 
-  document.querySelectorAll('.payment-copy-btn').forEach(function(btn) {
+  document.querySelectorAll('.payment-copy-go-btn').forEach(function(btn) {
     btn.addEventListener('click', function() {
-      navigator.clipboard.writeText(btn.dataset.copy).then(function() {
-        var original = btn.textContent;
-        btn.textContent = 'Copied!';
-        setTimeout(function() { btn.textContent = original; }, 1500);
-      });
+      navigator.clipboard.writeText(btn.dataset.copy);
+      var status = btn.parentElement.querySelector('.payment-copy-status');
+      if (status) {
+        status.textContent = btn.dataset.status;
+        status.style.display = 'block';
+      }
+      // Anchor tags (PayPal) continue navigating normally; buttons (Zelle) have nowhere to go.
     });
   });
 </script>
