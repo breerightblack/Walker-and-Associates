@@ -47,22 +47,22 @@ get_header();
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-md); margin-bottom:var(--space-md);">
             <div>
               <label for="first_name" style="display:block; font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--taupe); margin-bottom:6px;">First Name *</label>
-              <input type="text" id="first_name" name="first_name" required autocomplete="given-name" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--color-border)'">
+              <input type="text" id="first_name" name="first_name" required autocomplete="given-name" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--navy)'" onblur="this.style.borderColor='var(--color-border)'">
             </div>
             <div>
               <label for="last_name" style="display:block; font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--taupe); margin-bottom:6px;">Last Name *</label>
-              <input type="text" id="last_name" name="last_name" required autocomplete="family-name" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--color-border)'">
+              <input type="text" id="last_name" name="last_name" required autocomplete="family-name" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--navy)'" onblur="this.style.borderColor='var(--color-border)'">
             </div>
           </div>
 
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-md); margin-bottom:var(--space-md);">
             <div>
               <label for="email" style="display:block; font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--taupe); margin-bottom:6px;">Email Address *</label>
-              <input type="email" id="email" name="email" required autocomplete="email" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--color-border)'">
+              <input type="email" id="email" name="email" required autocomplete="email" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--navy)'" onblur="this.style.borderColor='var(--color-border)'">
             </div>
             <div>
               <label for="phone" style="display:block; font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--taupe); margin-bottom:6px;">Phone Number</label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--color-border)'">
+              <input type="tel" id="phone" name="phone" autocomplete="tel" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--navy)'" onblur="this.style.borderColor='var(--color-border)'">
             </div>
           </div>
 
@@ -92,14 +92,14 @@ get_header();
 
           <div style="margin-bottom:var(--space-lg);">
             <label for="message" style="display:block; font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--taupe); margin-bottom:6px;">Describe Your Matter *</label>
-            <textarea id="message" name="message" required rows="6" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); resize:vertical; transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--color-border)'" placeholder="Please provide a brief description of your legal matter. All communications are confidential."></textarea>
+            <textarea id="message" name="message" required rows="6" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); resize:vertical; transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--navy)'" onblur="this.style.borderColor='var(--color-border)'" placeholder="Please provide a brief description of your legal matter. All communications are confidential."></textarea>
           </div>
 
           <div style="margin-bottom:var(--space-xl);">
             <label style="display:flex; align-items:flex-start; gap:12px; cursor:pointer;">
-              <input type="checkbox" name="consent" required style="margin-top:3px; flex-shrink:0; accent-color:var(--green);">
+              <input type="checkbox" name="consent" required style="margin-top:3px; flex-shrink:0; accent-color:var(--navy);">
               <span style="font-size:.875rem; color:var(--taupe); line-height:1.55;">
-                I consent to Walker &amp; Associates contacting me regarding my legal matter. I understand that submitting this form does not create an attorney-client relationship. <a href="<?php echo home_url('/privacy-policy/'); ?>" style="color:var(--green);">Privacy Policy</a>
+                I consent to Walker &amp; Associates contacting me regarding my legal matter. I understand that submitting this form does not create an attorney-client relationship. <a href="<?php echo home_url('/privacy-policy/'); ?>" style="color:var(--navy);">Privacy Policy</a>
               </span>
             </label>
           </div>
@@ -119,35 +119,35 @@ get_header();
           <div style="display:flex; flex-direction:column; gap:var(--space-md);">
 
             <div style="display:flex; gap:12px; align-items:flex-start;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
               <div>
                 <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Cash App</p>
-                <a href="https://cash.app/$JamesWalkerEsq/250" target="_blank" rel="noopener noreferrer" style="font-size:.875rem; color:var(--green);">Pay $250 via Cash App &rarr;</a>
+                <a href="https://cash.app/$JamesWalkerEsq/250" target="_blank" rel="noopener noreferrer" style="font-size:.875rem; color:var(--navy);">Pay $250 via Cash App &rarr;</a>
               </div>
             </div>
 
             <div style="display:flex; gap:12px; align-items:flex-start;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
               <div>
                 <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Zelle</p>
                 <p style="font-size:.875rem; color:var(--taupe); margin-bottom:4px;">Send to <span style="color:var(--text-dark);">jjwalker@walkerandassoc.com</span></p>
-                <button type="button" class="payment-copy-go-btn" data-copy="jjwalker@walkerandassoc.com" data-status="Copied! Open your banking app's Zelle feature and paste this email to send $250." style="font-size:.875rem; font-weight:600; color:var(--green); background:none; border:none; cursor:pointer; padding:0; text-decoration:underline;">Copy Email for Zelle &rarr;</button>
-                <p class="payment-copy-status" style="font-size:.8125rem; color:var(--green); margin-top:4px; display:none;"></p>
+                <button type="button" class="payment-copy-go-btn" data-copy="jjwalker@walkerandassoc.com" data-status="Copied! Open your banking app's Zelle feature and paste this email to send $250." style="font-size:.875rem; font-weight:600; color:var(--navy); background:none; border:none; cursor:pointer; padding:0; text-decoration:underline;">Copy Email for Zelle &rarr;</button>
+                <p class="payment-copy-status" style="font-size:.8125rem; color:var(--navy); margin-top:4px; display:none;"></p>
               </div>
             </div>
 
             <div style="display:flex; gap:12px; align-items:flex-start;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
               <div>
                 <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">PayPal</p>
                 <p style="font-size:.875rem; color:var(--taupe); margin-bottom:4px;">Send to <span style="color:var(--text-dark);">jjwalker@walkerandassoc.com</span> &middot; 3% processing fee applies.</p>
-                <a href="https://www.paypal.com/myaccount/transfer/send" target="_blank" rel="noopener noreferrer" class="payment-copy-go-btn" data-copy="jjwalker@walkerandassoc.com" data-status="Email copied — opening PayPal. Paste it as the recipient to send $250." style="font-size:.875rem; font-weight:600; color:var(--green); text-decoration:none;">Copy Email &amp; Open PayPal &rarr;</a>
-                <p class="payment-copy-status" style="font-size:.8125rem; color:var(--green); margin-top:4px; display:none;"></p>
+                <a href="https://www.paypal.com/myaccount/transfer/send" target="_blank" rel="noopener noreferrer" class="payment-copy-go-btn" data-copy="jjwalker@walkerandassoc.com" data-status="Email copied — opening PayPal. Paste it as the recipient to send $250." style="font-size:.875rem; font-weight:600; color:var(--navy); text-decoration:none;">Copy Email &amp; Open PayPal &rarr;</a>
+                <p class="payment-copy-status" style="font-size:.8125rem; color:var(--navy); margin-top:4px; display:none;"></p>
               </div>
             </div>
 
             <div style="display:flex; gap:12px; align-items:flex-start;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
               <div>
                 <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">MyCase</p>
                 <p style="font-size:.875rem; color:var(--taupe);">We'll send a secure payment link via MyCase once your consultation is confirmed. 3.5% processing fee applies to card payments.</p>
@@ -155,7 +155,7 @@ get_header();
             </div>
 
             <div style="display:flex; gap:12px; align-items:flex-start;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
               <div>
                 <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Wire Transfer</p>
                 <p style="font-size:.875rem; color:var(--taupe);">Available for consultation fees. Call or email us and we'll send secure bank transfer instructions directly.</p>
@@ -168,25 +168,25 @@ get_header();
 
       <!-- Sidebar: Contact info + map placeholder -->
       <aside style="position:sticky; top:calc(var(--header-h) + var(--space-lg));">
-        <div style="background:var(--tan-pale); border-radius:var(--radius-lg); padding:var(--space-xl); margin-bottom:var(--space-lg);">
+        <div style="background:var(--bg-light); border-radius:var(--radius-lg); padding:var(--space-xl); margin-bottom:var(--space-lg);">
           <h3 style="font-family:var(--font-serif); font-size:1.5rem; margin-bottom:var(--space-lg); color:var(--text-dark);">Office Information</h3>
           <div style="display:flex; flex-direction:column; gap:var(--space-md);">
             <div style="display:flex; gap:12px; align-items:flex-start;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
               <div>
                 <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Address</p>
                 <p style="font-size:.875rem; color:var(--taupe);">3421 Main Street<br>Atlanta, GA 30337</p>
               </div>
             </div>
             <div style="display:flex; gap:12px; align-items:flex-start;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
               <div>
                 <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Phone</p>
-                <a href="tel:7708477363" style="font-size:.875rem; color:var(--green);">(770) 847-7363</a>
+                <a href="tel:7708477363" style="font-size:.875rem; color:var(--navy);">(770) 847-7363</a>
               </div>
             </div>
             <div style="display:flex; gap:12px; align-items:flex-start;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               <div>
                 <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Office Hours</p>
                 <p style="font-size:.875rem; color:var(--taupe);">Monday – Friday<br>9:00 AM – 6:00 PM ET</p>
@@ -195,7 +195,7 @@ get_header();
           </div>
         </div>
 
-        <div style="background:var(--green); border-radius:var(--radius-lg); padding:var(--space-xl); color:var(--white);">
+        <div style="background:var(--navy); border-radius:var(--radius-lg); padding:var(--space-xl); color:var(--white);">
           <h3 style="font-family:var(--font-serif); font-size:1.375rem; color:var(--white); margin-bottom:var(--space-sm);">Need Immediate Assistance?</h3>
           <p style="font-size:.9rem; color:rgba(255,255,255,.75); margin-bottom:var(--space-lg); line-height:1.6;">
             For time-sensitive matters, please call our office directly or send us a message indicating urgency.

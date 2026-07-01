@@ -183,7 +183,7 @@ $member = isset( $bios[ $current_slug ] ) ? $bios[ $current_slug ] : null;
 
 <?php if ( $member ) : ?>
 
-<div class="page-hero" style="background: var(--tan-pale);">
+<div class="page-hero" style="background: var(--bg-light);">
   <div class="container" style="display:flex; align-items:center; gap:12px;">
     <a href="<?php echo esc_url( home_url('/team/') ); ?>" style="color:var(--taupe); font-size:13px; font-weight:500;">← Our Team</a>
     <span style="color:var(--color-border);">/</span>
@@ -210,7 +210,7 @@ $member = isset( $bios[ $current_slug ] ) ? $bios[ $current_slug ] : null;
         <div style="display:flex; flex-direction:column; gap:8px;">
           <?php foreach ( $member['focus'] as $area ) : ?>
           <span style="font-size:.875rem; color:var(--text-mid); display:flex; align-items:center; gap:8px;">
-            <span style="width:6px; height:6px; border-radius:50%; background:var(--rust); flex-shrink:0;"></span>
+            <span style="width:6px; height:6px; border-radius:50%; background:var(--gold-dark); flex-shrink:0;"></span>
             <?php echo esc_html( $area ); ?>
           </span>
           <?php endforeach; ?>
