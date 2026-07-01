@@ -635,6 +635,50 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   margin-top: 4px;
   display: block;
 }
+.about-highlight {
+  width: 100%;
+  aspect-ratio: 4/5;
+  background: linear-gradient(160deg, var(--navy) 0%, #1B2F5E 100%);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+  color: var(--white);
+}
+.about-highlight-number {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--gold);
+}
+@media (min-width: 768px)  { .about-highlight-number { font-size: 6rem; } }
+@media (min-width: 1024px) { .about-highlight-number { font-size: 7.5rem; } }
+.about-highlight-rule {
+  width: 44px;
+  height: 2px;
+  background: var(--gold);
+  margin: var(--space-md) 0;
+}
+.about-highlight-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+.about-highlight-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,.8);
+  max-width: 260px;
+  margin-top: var(--space-md);
+}
 
 /* ── PRACTICE AREAS ──────────────────────────────────────────── */
 .practice-areas { background: var(--color-bg-alt); }
