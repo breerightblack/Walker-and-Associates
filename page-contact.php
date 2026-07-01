@@ -110,17 +110,58 @@ get_header();
         <!-- Payment Section -->
         <div id="payment-section" style="margin-top:var(--space-3xl); padding-top:var(--space-xl); border-top:1px solid var(--color-border);">
           <span class="eyebrow">Consultation Fee</span>
-          <h2 style="font-family:var(--font-serif); font-size:1.875rem; margin-bottom:var(--space-sm);">Secure Consultation Payment</h2>
-          <p style="color:var(--taupe); margin-bottom:var(--space-xl);">
-            If you have already spoken with our team and are ready to pay your consultation fee,
-            you can do so securely below. WooCommerce / Stripe payment integration will be activated
-            here upon installation.
+          <h2 style="font-family:var(--font-serif); font-size:1.875rem; margin-bottom:var(--space-sm);">$250 Consultation Fee</h2>
+          <p style="color:var(--taupe); margin-bottom:var(--space-lg);">
+            A flat $250 fee applies to initial consultations, due prior to your scheduled meeting.
+            You can pay using any of the options below.
           </p>
-          <!-- Payment embed placeholder — replace with WooCommerce product shortcode or Stripe embed -->
-          <div style="background:var(--tan-pale); border:1px solid var(--color-border); border-radius:var(--radius-md); padding:var(--space-xl); text-align:center;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--taupe)" stroke-width="1.5" style="width:48px; height:48px; margin:0 auto var(--space-md);" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg>
-            <p style="font-size:.9375rem; color:var(--taupe);">Secure payment powered by Stripe.<br><strong style="color:var(--text-mid);">Payment form activates after WooCommerce + Stripe setup.</strong></p>
-            <!-- [woocommerce_checkout] or [woocommerce_cart] shortcode goes here -->
+
+          <div style="display:flex; flex-direction:column; gap:var(--space-md);">
+
+            <div style="display:flex; gap:12px; align-items:flex-start;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+              <div>
+                <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Cash App</p>
+                <a href="https://cash.app/$JamesWalkerEsq/250" target="_blank" rel="noopener noreferrer" style="font-size:.875rem; color:var(--green);">Pay $250 via Cash App &rarr;</a>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:12px; align-items:flex-start;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+              <div>
+                <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Zelle</p>
+                <p style="font-size:.875rem; color:var(--taupe); margin-bottom:4px;">Send to <span style="color:var(--text-dark);">jjwalker@walkerandassoc.com</span></p>
+                <button type="button" class="payment-copy-go-btn" data-copy="jjwalker@walkerandassoc.com" data-status="Copied! Open your banking app's Zelle feature and paste this email to send $250." style="font-size:.875rem; font-weight:600; color:var(--green); background:none; border:none; cursor:pointer; padding:0; text-decoration:underline;">Copy Email for Zelle &rarr;</button>
+                <p class="payment-copy-status" style="font-size:.8125rem; color:var(--green); margin-top:4px; display:none;"></p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:12px; align-items:flex-start;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+              <div>
+                <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">PayPal</p>
+                <p style="font-size:.875rem; color:var(--taupe); margin-bottom:4px;">Send to <span style="color:var(--text-dark);">jjwalker@walkerandassoc.com</span> &middot; 3% processing fee applies.</p>
+                <a href="https://www.paypal.com/myaccount/transfer/send" target="_blank" rel="noopener noreferrer" class="payment-copy-go-btn" data-copy="jjwalker@walkerandassoc.com" data-status="Email copied — opening PayPal. Paste it as the recipient to send $250." style="font-size:.875rem; font-weight:600; color:var(--green); text-decoration:none;">Copy Email &amp; Open PayPal &rarr;</a>
+                <p class="payment-copy-status" style="font-size:.8125rem; color:var(--green); margin-top:4px; display:none;"></p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:12px; align-items:flex-start;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+              <div>
+                <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">MyCase</p>
+                <p style="font-size:.875rem; color:var(--taupe);">We'll send a secure payment link via MyCase once your consultation is confirmed. 3.5% processing fee applies to card payments.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:12px; align-items:flex-start;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <div>
+                <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Wire Transfer</p>
+                <p style="font-size:.875rem; color:var(--taupe);">Available for consultation fees. Call or email us and we'll send secure bank transfer instructions directly.</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -167,5 +208,19 @@ get_header();
   </div>
 </section>
 </main>
+
+<script>
+  document.querySelectorAll('.payment-copy-go-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      navigator.clipboard.writeText(btn.dataset.copy);
+      var status = btn.parentElement.querySelector('.payment-copy-status');
+      if (status) {
+        status.textContent = btn.dataset.status;
+        status.style.display = 'block';
+      }
+      // Anchor tags (PayPal) continue navigating normally; buttons (Zelle) have nowhere to go.
+    });
+  });
+</script>
 
 <?php get_footer(); ?>
