@@ -8,7 +8,7 @@ get_header();
 <div class="page-hero">
   <div class="container">
     <span class="eyebrow">Media &amp; Press</span>
-    <h1>Awards, Accolades &amp; Press</h1>
+    <h1>Industry Recognition</h1>
     <p>Recognition from the industry, peers, and press that reflects Walker &amp; Associates' commitment to excellence.</p>
   </div>
 </div>
@@ -70,7 +70,7 @@ foreach ( $sections as $key => $config ) :
       <h2 id="heading-<?php echo esc_attr( $key ); ?>"><?php echo $config['heading']; ?></h2>
     </div>
 
-    <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:var(--space-md);">
+    <div class="three-col-grid">
 
       <?php if ( $query->have_posts() ) :
         while ( $query->have_posts() ) : $query->the_post();

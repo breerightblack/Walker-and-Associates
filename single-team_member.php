@@ -13,7 +13,7 @@ $bios = [
     'file'  => 'james-walker.jpg',
     'focus' => [ 'Entertainment Law', 'Film & Television', 'Litigation', 'Corporate Law' ],
     'bio'   => [
-      'James Walker is the founding attorney of J. Walker and Associates, LLP, one of Atlanta's most prominent entertainment law firms. With over 25 years of experience in the legal industry, Attorney Walker has built a reputation for providing strategic, results-driven counsel to clients in the music, film, television, and corporate sectors.',
+      'James Walker is the founding attorney of J. Walker and Associates, LLP, one of Atlanta\'s most prominent entertainment law firms. With over 25 years of experience in the legal industry, Attorney Walker has built a reputation for providing strategic, results-driven counsel to clients in the music, film, television, and corporate sectors.',
       'After earning his Juris Doctor from a leading law school, Walker launched his practice with a focus on the intersection of law and the entertainment industry — a space that was underserved, particularly for Black artists and creators. His vision: every artist, filmmaker, and entrepreneur deserves the same quality of legal representation that the major studios and labels command.',
       'Over the course of his career, Attorney Walker has negotiated hundreds of recording contracts, publishing agreements, and distribution deals. He has represented Grammy-nominated recording artists, award-winning filmmakers, major-label executives, and independent creators at every stage of their careers.',
       'As the firm expands into film and television law, Walker brings the same commitment to excellence that has defined his work in music law — providing comprehensive production legal services, talent agreements, IP licensing, and co-production negotiations for clients in front of and behind the camera.',
@@ -23,12 +23,12 @@ $bios = [
 
   'russ-green' => [
     'name'  => 'Russ Green',
-    'title' => 'Co-Executive Director',
+    'title' => 'Executive Assistant',
     'file'  => 'russ-green.jpg',
     'focus' => [ 'Operations', 'Business Development', 'Client Relations', 'Strategic Planning' ],
     'bio'   => [
-      'Russ Green serves as Co-Executive Director of J. Walker and Associates, LLP, overseeing the firm\'s day-to-day operations, business development strategy, and client relations. With a background spanning business management and the entertainment industry, Green brings a unique blend of operational expertise and creative industry knowledge to the firm\'s leadership team.',
-      'As Co-Executive Director, Green works in close partnership with Attorney Walker to position the firm for continued growth, managing the firm\'s expansion into film and television legal services while maintaining the high-touch client experience that has defined the practice for over two decades.',
+      'Russ Green serves as Executive Assistant at J. Walker and Associates, LLP, supporting the firm\'s day-to-day operations, business development strategy, and client relations. With a background spanning business management and the entertainment industry, Green brings a unique blend of operational expertise and creative industry knowledge to the firm\'s leadership team.',
+      'As Executive Assistant, Green works in close partnership with Attorney Walker to support the firm\'s continued growth, helping coordinate the firm\'s expansion into film and television legal services while maintaining the high-touch client experience that has defined the practice for over two decades.',
       'Green\'s work ensures that every client who engages Walker & Associates receives not only exceptional legal counsel but a seamlessly managed matter from intake through resolution. His focus on systems, process, and client communication has been instrumental in the firm\'s operational evolution.',
       'Green is deeply committed to the firm\'s mission of providing elite legal services to the creative community, and believes that access to top-tier legal counsel is a competitive advantage that every artist, filmmaker, and entrepreneur deserves.',
     ],
@@ -101,11 +101,11 @@ $bios = [
 
   'paul-wilson-ii' => [
     'name'  => 'Paul Wilson II',
-    'title' => 'Attorney',
+    'title' => 'Associate Attorney',
     'file'  => 'paul-wilson-ii.jpg',
     'focus' => [ 'Entertainment Law', 'Corporate Law', 'Contract Negotiation', 'Business Transactions' ],
     'bio'   => [
-      'Paul Wilson II is an Attorney at J. Walker and Associates, LLP, where he focuses on entertainment law, corporate transactions, and contract negotiation. With a sharp legal mind and a comprehensive understanding of the entertainment industry, Wilson has become a valued member of the firm\'s legal team.',
+      'Paul Wilson II is an Associate Attorney at J. Walker and Associates, LLP, where he focuses on entertainment law, corporate transactions, and contract negotiation. With a sharp legal mind and a comprehensive understanding of the entertainment industry, Wilson has become a valued member of the firm\'s legal team.',
       'Wilson\'s practice encompasses a broad range of entertainment and corporate legal matters, including recording and publishing agreements, management contracts, corporate entity formation, and business transactions for entertainment industry clients. He brings a client-centered approach to every matter, working to understand the business goals behind each legal need.',
       'Prior to joining Walker & Associates, Wilson gained experience in entertainment and corporate legal practice, developing expertise in contract drafting, business structure, and deal negotiation. His background gives him a nuanced perspective on the legal challenges facing artists, executives, and entrepreneurs in the modern entertainment landscape.',
       'Wilson holds a Juris Doctor from an accredited law school and is a member of the Georgia State Bar. He is committed to providing the same caliber of legal representation to independent artists and emerging companies that major industry players have always had access to.',
@@ -140,11 +140,11 @@ $bios = [
 
   'stephanie-hay' => [
     'name'  => 'Stephanie K. Hay',
-    'title' => 'Of Counsel — Film & Television',
+    'title' => 'Partner',
     'file'  => 'stephanie-hay.jpg',
     'focus' => [ 'Film & TV Production', 'IP Licensing', 'Distribution Agreements', 'Talent Contracts' ],
     'bio'   => [
-      'Stephanie K. Hay joins J. Walker and Associates, LLP as Of Counsel with a focus on Film and Television law. With over 15 years of experience in film and television production legal services, Hay brings unparalleled industry expertise to the firm\'s rapidly growing screen production practice.',
+      'Stephanie K. Hay is a Partner at J. Walker and Associates, LLP with a focus on Film and Television law. With over 15 years of experience in film and television production legal services, Hay brings unparalleled industry expertise to the firm\'s rapidly growing screen production practice.',
       'Hay\'s career has spanned the full spectrum of film and television legal work — from development agreements and co-production deals to distribution negotiations, talent agreements, IP licensing, and clearance. She has represented studios, independent production companies, directors, writers, and talent across both scripted and unscripted television and feature film.',
       'Her experience includes work with major studios, streaming platforms, and independent productions. She has been involved in projects distributed by major networks and streaming services, bringing a sophisticated understanding of the deals that drive the industry.',
       'As the entertainment industry increasingly converges around Atlanta as a major production hub, Hay\'s expertise positions Walker & Associates to serve the full range of clients in Georgia\'s thriving film and television ecosystem — from local independents to productions backed by major studio resources.',

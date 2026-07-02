@@ -97,6 +97,18 @@
   </div>
 </section>
 
+<!-- ── MISSION ────────────────────────────────────────────────── -->
+<section class="section section-dark" aria-labelledby="mission-heading">
+  <div class="container">
+    <div style="max-width:800px; margin:0 auto; text-align:center;">
+      <span class="eyebrow" style="color:var(--gold-light);">Our Mission</span>
+      <h2 id="mission-heading" style="font-family:var(--font-serif); font-style:italic; font-size:clamp(1.75rem,2.8vw,2.75rem); color:var(--white); line-height:1.3;">
+        "Our goal every day is to use our resources to touch and inspire and encourage."
+      </h2>
+    </div>
+  </div>
+</section>
+
 <!-- ── STATS BAR ──────────────────────────────────────────────── -->
 <div class="stats-bar" aria-label="Firm statistics">
   <div class="container">
@@ -234,8 +246,8 @@
       <?php
       $featured = [
         [ 'slug' => 'james-walker',   'name' => 'James Walker',      'title' => 'Founding Attorney',                'file' => 'james-walker.jpg'   ],
-        [ 'slug' => 'paul-wilson-ii', 'name' => 'Paul Wilson II',    'title' => 'Attorney',                         'file' => 'paul-wilson-ii.jpg' ],
-        [ 'slug' => 'stephanie-hay',  'name' => 'Stephanie K. Hay',  'title' => 'Of Counsel — Film &amp; Television','file' => 'stephanie-hay.jpg'  ],
+        [ 'slug' => 'paul-wilson-ii', 'name' => 'Paul Wilson II',    'title' => 'Associate Attorney',               'file' => 'paul-wilson-ii.jpg' ],
+        [ 'slug' => 'stephanie-hay',  'name' => 'Stephanie K. Hay',  'title' => 'Partner',                          'file' => 'stephanie-hay.jpg'  ],
         [ 'slug' => 'gina-e-ryan',    'name' => 'Gina E. Ryan',      'title' => 'Chief PR &amp; Strategic Communications', 'file' => 'gina-e-ryan.jpg' ],
       ];
       foreach ( $featured as $member ) :
@@ -265,7 +277,7 @@
   <div class="container">
     <div class="section-header">
       <span class="eyebrow">Media &amp; Recognition</span>
-      <h2 id="fiveas-heading">Awards, Press &amp; Appearances</h2>
+      <h2 id="fiveas-heading">Industry Recognition</h2>
     </div>
 
     <div class="five-as-tabs" role="tablist" aria-label="Media categories">

@@ -25,8 +25,7 @@
 <!-- ── TOPBAR ─────────────────────────────────────────────────────────── -->
 <div id="topbar" role="banner" aria-label="Firm announcement">
   <span class="topbar-text">
-    Expanding into Film &amp; Television —
-    <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>">Explore our new practice areas →</a>
+    <a href="<?php echo esc_url( home_url( '/practice-areas/#theater-law' ) ); ?>">Expanding our Film, Television and Theater practice →</a>
   </span>
 </div>
 
