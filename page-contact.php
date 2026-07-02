@@ -16,7 +16,7 @@ get_header();
 <main id="main" role="main">
 <section class="section">
   <div class="container">
-    <div style="display:grid; grid-template-columns:1fr 400px; gap:var(--space-3xl); align-items:start;">
+    <div class="sidebar-grid" style="--sidebar-w:400px;">
 
       <!-- Intake Form -->
       <div>

@@ -300,7 +300,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   gap: var(--space-md);
 }
 @media (min-width: 768px)  { .header-inner { padding: 0 32px; } }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .header-inner {
     padding: 0 48px;
     grid-template-columns: auto 1fr auto;
@@ -337,7 +337,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 /* Primary nav — hidden on mobile, shown on desktop */
 #primary-nav { display: none; }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   #primary-nav { display: block; justify-self: center; }
 }
 .nav-list {
@@ -366,7 +366,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 /* Header CTA — hidden on mobile */
 .header-cta { display: none; }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .header-cta {
     display: flex;
     align-items: center;
@@ -382,7 +382,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   gap: 5px;
   padding: 8px;
 }
-@media (min-width: 1024px) { .nav-toggle { display: none; } }
+@media (min-width: 1280px) { .nav-toggle { display: none; } }
 .hamburger-line {
   width: 22px;
   height: 2px;
@@ -506,7 +506,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   gap: var(--space-md);
 }
 @media (min-width: 768px)  { .credibility-bar-inner { padding: 0 32px; } }
-@media (min-width: 1024px) { .credibility-bar-inner { padding: 0 48px; flex-wrap: nowrap; gap: var(--space-xl); } }
+@media (min-width: 1024px) { .credibility-bar-inner { padding: 0 48px; } }
 .credibility-label {
   font-size: 11px;
   font-weight: 600;
@@ -531,7 +531,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   flex: 1;
   flex-wrap: wrap;
 }
-@media (min-width: 1024px) { .credibility-logos { flex-wrap: nowrap; gap: var(--space-xl); } }
 .credibility-logos span {
   font-family: var(--font-serif);
   font-size: 14px;
@@ -689,9 +688,49 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   margin-top: var(--space-lg);
 }
 @media (min-width: 480px)  { .practice-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1024px) {
-  .practice-grid { grid-template-columns: repeat(5, 1fr); margin-top: var(--space-xl); }
+@media (min-width: 768px) { .practice-grid { margin-top: var(--space-xl); } }
+@media (min-width: 1150px) {
+  .practice-grid { grid-template-columns: repeat(5, 1fr); }
 }
+.practice-grid-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+@media (min-width: 640px)  { .practice-grid-4 { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .practice-grid-4 { grid-template-columns: repeat(4, 1fr); } }
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+@media (min-width: 1024px) { .two-col-grid { grid-template-columns: 1fr 1fr; gap: var(--space-3xl); } }
+
+.sidebar-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+@media (min-width: 1024px) { .sidebar-grid { grid-template-columns: 1fr var(--sidebar-w, 380px); gap: var(--space-3xl); } }
+
+.three-col-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+@media (min-width: 640px)  { .three-col-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .three-col-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.stat-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+@media (min-width: 480px) { .stat-grid-2 { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .practice-grid-4 { grid-template-columns: repeat(4, 1fr); } }
 .practice-card {
   background: var(--white);
   border: 1px solid var(--color-border);
@@ -1082,7 +1121,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 @media (min-width: 1024px) {
   .footer-inner {
     grid-template-columns: 280px 1fr 1fr 220px;
-    gap: var(--space-3xl);
+    gap: var(--space-xl);
     padding: var(--space-3xl) 48px var(--space-2xl);
   }
 }
