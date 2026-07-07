@@ -270,12 +270,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   text-align: center;
   padding: 0 16px;
 }
-.topbar-text a {
-  color: var(--gold);
-  font-weight: 600;
-  transition: color var(--ease);
-}
-.topbar-text a:hover { color: var(--white); }
 
 /* ── SITE HEADER ─────────────────────────────────────────────── */
 #site-header {
@@ -343,14 +337,15 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 12px;
 }
-@media (min-width: 1200px) { .nav-list { gap: 36px; } }
+@media (min-width: 1440px) { .nav-list { gap: 20px; } }
+@media (min-width: 1600px) { .nav-list { gap: 28px; } }
 .nav-list a {
   font-family: var(--font-sans);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
-  letter-spacing: .08em;
+  letter-spacing: .04em;
   text-transform: uppercase;
   color: var(--text-mid);
   white-space: nowrap;
@@ -422,7 +417,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   overflow: hidden;
   background: var(--navy);
 }
-@media (min-width: 1024px) { .hero { min-height: 640px; } }
+@media (min-width: 768px)  { .hero { min-height: 620px; } }
+@media (min-width: 1024px) { .hero { min-height: 680px; } }
 .hero-video {
   position: absolute;
   inset: 0;
@@ -444,15 +440,15 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .hero-content {
   position: relative;
   z-index: 2;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   align-items: flex-end;
-  padding: 0 20px var(--space-xl);
+  padding: var(--space-md) 20px var(--space-xl);
   max-width: var(--max-width);
   margin: 0 auto;
 }
-@media (min-width: 768px)  { .hero-content { padding: 0 32px var(--space-2xl); } }
-@media (min-width: 1024px) { .hero-content { padding: 0 48px var(--space-3xl); } }
+@media (min-width: 768px)  { .hero-content { padding: var(--space-lg) 32px var(--space-2xl); } }
+@media (min-width: 1024px) { .hero-content { padding: var(--space-xl) 48px var(--space-3xl); } }
 .hero-body { max-width: 760px; }
 .hero-eyebrow {
   font-family: var(--font-sans);
