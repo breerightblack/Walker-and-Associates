@@ -119,7 +119,7 @@ get_header();
           <div style="display:flex; flex-direction:column; gap:var(--space-md);">
 
             <div style="display:flex; gap:12px; align-items:flex-start;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+              <svg viewBox="0 0 24 24" fill="#00C244" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" role="img" aria-label="Cash App"><path d="M23.59 3.475a5.1 5.1 0 00-3.05-3.05c-1.31-.42-2.5-.42-4.92-.42H8.36c-2.4 0-3.61 0-4.9.4a5.1 5.1 0 00-3.05 3.06C0 4.765 0 5.965 0 8.365v7.27c0 2.41 0 3.6.4 4.9a5.1 5.1 0 003.05 3.05c1.3.41 2.5.41 4.9.41h7.28c2.41 0 3.61 0 4.9-.4a5.1 5.1 0 003.06-3.06c.41-1.3.41-2.5.41-4.9v-7.25c0-2.41 0-3.61-.41-4.91zm-6.17 4.63l-.93.93a.5.5 0 01-.67.01 5 5 0 00-3.22-1.18c-.97 0-1.94.32-1.94 1.21 0 .9 1.04 1.2 2.24 1.65 2.1.7 3.84 1.58 3.84 3.64 0 2.24-1.74 3.78-4.58 3.95l-.26 1.2a.49.49 0 01-.48.39H9.63l-.09-.01a.5.5 0 01-.38-.59l.28-1.27a6.54 6.54 0 01-2.88-1.57v-.01a.48.48 0 010-.68l1-.97a.49.49 0 01.67 0c.91.86 2.13 1.34 3.39 1.32 1.3 0 2.17-.55 2.17-1.42 0-.87-.88-1.1-2.54-1.72-1.76-.63-3.43-1.52-3.43-3.6 0-2.42 2.01-3.6 4.39-3.71l.25-1.23a.48.48 0 01.48-.38h1.78l.1.01c.26.06.43.31.37.57l-.27 1.37c.9.3 1.75.77 2.48 1.39l.02.02c.19.2.19.5 0 .68z"/></svg>
               <div>
                 <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Cash App</p>
                 <a href="https://cash.app/$JamesWalkerEsq/250" target="_blank" rel="noopener noreferrer" style="font-size:.875rem; color:var(--navy);">Pay $250 via Cash App &rarr;</a>
@@ -127,7 +127,7 @@ get_header();
             </div>
 
             <div style="display:flex; gap:12px; align-items:flex-start;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+              <svg viewBox="0 0 24 24" fill="#6D1ED4" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" role="img" aria-label="Zelle"><path d="M13.559 24h-2.841a.483.483 0 0 1-.483-.483v-2.765H5.638a.667.667 0 0 1-.666-.666v-2.234a.67.67 0 0 1 .142-.412l8.139-10.382h-7.25a.667.667 0 0 1-.667-.667V3.914c0-.367.299-.666.666-.666h4.23V.483c0-.266.217-.483.483-.483h2.841c.266 0 .483.217.483.483v2.765h4.323c.367 0 .666.299.666.666v2.137a.67.67 0 0 1-.141.41l-8.19 10.481h7.665c.367 0 .666.299.666.666v2.477a.667.667 0 0 1-.666.667h-4.32v2.765a.483.483 0 0 1-.483.483Z"/></svg>
               <div>
                 <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Zelle</p>
                 <p style="font-size:.875rem; color:var(--taupe); margin-bottom:4px;">Send to <span style="color:var(--text-dark);">jjwalker@walkerandassoc.com</span></p>
@@ -137,7 +137,7 @@ get_header();
             </div>
 
             <div style="display:flex; gap:12px; align-items:flex-start;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+              <svg viewBox="0 0 24 24" fill="#002991" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" role="img" aria-label="PayPal"><path d="M15.607 4.653H8.941L6.645 19.251H1.82L4.862 0h7.995c3.754 0 6.375 2.294 6.473 5.513-.648-.478-2.105-.86-3.722-.86m6.57 5.546c0 3.41-3.01 6.853-6.958 6.853h-2.493L11.595 24H6.74l1.845-11.538h3.592c4.208 0 7.346-3.634 7.153-6.949a5.24 5.24 0 0 1 2.848 4.686M9.653 5.546h6.408c.907 0 1.942.222 2.363.541-.195 2.741-2.655 5.483-6.441 5.483H8.714Z"/></svg>
               <div>
                 <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">PayPal</p>
                 <p style="font-size:.875rem; color:var(--taupe); margin-bottom:4px;">Send to <span style="color:var(--text-dark);">jjwalker@walkerandassoc.com</span> &middot; 3% processing fee applies.</p>
@@ -175,7 +175,7 @@ get_header();
               <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
               <div>
                 <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Address</p>
-                <p style="font-size:.875rem; color:var(--taupe);">3421 Main Street<br>Atlanta, GA 30337</p>
+                <p style="font-size:.875rem; color:var(--taupe);">The Walker Building, 3421 Main Street<br>Atlanta, GA 30337</p>
               </div>
             </div>
             <div style="display:flex; gap:12px; align-items:flex-start;">
