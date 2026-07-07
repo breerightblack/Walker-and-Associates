@@ -127,7 +127,7 @@ add_action( 'wp_head', function() {
         'description'     => 'Atlanta entertainment law firm representing musicians, filmmakers, television and film professionals, and talent. 25+ years of experience.',
         'address'         => [
             '@type'           => 'PostalAddress',
-            'streetAddress'   => '3421 Main Street',
+            'streetAddress'   => 'The Walker Building, 3421 Main Street',
             'addressLocality' => 'Atlanta',
             'addressRegion'   => 'GA',
             'postalCode'      => '30337',
