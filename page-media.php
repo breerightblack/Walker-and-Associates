@@ -45,6 +45,14 @@ $sections = [
     'heading' => 'Articles &amp; Press Features',
     'icon'    => '<path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>',
   ],
+  'press' => [
+    'label'    => 'Press',
+    'cpt'      => 'wa_press',
+    'eyebrow'  => 'External Coverage',
+    'heading'  => 'In the Press',
+    'icon'     => '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20 15.3 15.3 0 010-20z"/>',
+    'external' => true,
+  ],
   'announcements' => [
     'label'   => 'Announcements',
     'cpt'     => 'wa_announcements',
@@ -72,7 +80,9 @@ foreach ( $sections as $key => $config ) :
 
     <div class="three-col-grid">
 
-      <?php if ( $query->have_posts() ) :
+      <?php
+      $link_attrs = ! empty( $config['external'] ) ? ' target="_blank" rel="noopener noreferrer"' : '';
+      if ( $query->have_posts() ) :
         while ( $query->have_posts() ) : $query->the_post();
           $link = get_post_meta( get_the_ID(), '_wa_article_url', true );
       ?>
@@ -81,7 +91,7 @@ foreach ( $sections as $key => $config ) :
           <h4><?php the_title(); ?></h4>
           <p><?php the_excerpt(); ?></p>
           <?php if ( $link ) : ?>
-            <a href="<?php echo esc_url( $link ); ?>" class="card-link" target="_blank" rel="noopener noreferrer">Read More</a>
+            <a href="<?php echo esc_url( $link ); ?>" class="card-link"<?php echo $link_attrs; ?>>Read More</a>
           <?php endif; ?>
         </div>
       <?php endwhile; wp_reset_postdata();
@@ -105,9 +115,23 @@ foreach ( $sections as $key => $config ) :
             ['year'=>'2023','title'=>'Urban One Radio — "Your Legal Rights" Segment','body'=>'Monthly recurring legal commentary segment on Urban One Radio Atlanta, educating listeners on entertainment contracts and artist rights.'],
           ],
           'articles' => [
-            ['year'=>'May 2024','title'=>'The New Music Business: Streaming Royalties Explained','body'=>'An in-depth analysis of streaming royalty structures and what independent artists can do to maximize income in the post-CD era.','link'=>''],
-            ['year'=>'Feb 2024','title'=>'From Script to Screen: Film Production Legal Essentials','body'=>'A practical guide to the contracts every filmmaker needs — from development agreements to distribution deals.','link'=>''],
-            ['year'=>'Nov 2023','title'=>'Protecting Your Brand: Trademark Registration for Entertainers','body'=>'Why stage names and logos are valuable assets — and how to protect them before someone else does.','link'=>''],
+            ['year'=>'September 4, 2024','title'=>'Judge Rules Trump Cannot Use Isaac Hayes Song at Rally','link'=>'https://walkerandassoc.com/1438-2/'],
+            ['year'=>'September 3, 2024','title'=>'Judge Blocks Trump Campaign from Using Iconic Isaac Hayes Song: A Victory for Artists\' Rights','link'=>'https://walkerandassoc.com/judge-blocks-trump-campaign-from-using-iconic-isaac-hayes-song-a-victory-for-artists-rights/'],
+            ['year'=>'September 2, 2024','title'=>'Family of Isaac Hayes Granted Day in Court – The Reid Out','link'=>'https://walkerandassoc.com/family-of-isaac-hayes-granted-day-in-court-the-reid-out/'],
+            ['year'=>'September 1, 2024','title'=>'Isaac Hayes Son Says Family Plans to Sue Donald Trump – Scripps News','link'=>'https://walkerandassoc.com/isaac-hayes-son-says-family-plans-to-sue-donald-trump-scripps-news/'],
+            ['year'=>'September 1, 2024','title'=>'Isaac Hayes Family Smack Donald Trump with Lawsuit – Roland Martin','link'=>'https://walkerandassoc.com/isaac-hayes-family-smack-donald-trump-with-lawsuit-roland-martin/'],
+            ['year'=>'April 15, 2024','title'=>'Congratulations to Attorney James L. Walker, Jr. on Being Named One of Billboard Magazine\'s Top Entertainment Attorneys for 2024','link'=>'https://walkerandassoc.com/congratulations-to-attorney-james-l-walker-jr-on-being-named-one-of-billboard-magazines-top-entertainment-attorneys-for-2024/'],
+            ['year'=>'July 10, 2023','title'=>'Call to Action – Darlene McCoy','link'=>'https://walkerandassoc.com/call-to-action/'],
+            ['year'=>'April 19, 2022','title'=>'H.E.R.\'s "Could\'ve Been" Song Hit with Another Copyright Infringement Lawsuit','link'=>'https://walkerandassoc.com/491-2/'],
+            ['year'=>'August 5, 2021','title'=>'Three Reasons: Political, Civil & Criminal! Why Gov. Cuomo Must Resign Immediately!','link'=>'https://walkerandassoc.com/three-reasons-political-civil-criminal-why-gov-cuomo-must-resign-immediately/'],
+            ['year'=>'February 11, 2021','title'=>'The Source: H.E.R. Was Reportedly Sued For Alleged Copyright Infringement For \'Focus\'','link'=>'https://walkerandassoc.com/457-2/'],
+          ],
+          'press' => [
+            ['year'=>'PRLog','title'=>'Entertainment Attorney James L. Walker Jr. Successfully Settles Copyright Infringement Lawsuit on Behalf of Take 6 and Co-Writers','link'=>'https://www.prlog.org/12961180-entertainment-attorney-james-walker-jr-successfully-settles-copyright-infringement-lawsuit-on-behalf-of-take-6-and-co-writers.html'],
+            ['year'=>'PRWeb','title'=>'Prominent Entertainment Lawyer James L. Walker, Jr. Buys Landmark Building in Greater Atlanta — Becoming a Major Legal Force in the Georgia Area','link'=>'https://www.prweb.com/releases/2017/07/prweb14476061.htm'],
+            ['year'=>'Business Wire','title'=>'Black-Owned Law Firm Walker and Associates, LLP Announces That Sony BMG Settles Major Legal Battle for the Rights of Artists','link'=>'https://www.businesswire.com/news/home/20130429005470/en/CORRECTING-and-REPLACING-Black-Owned-Law-Firm-Walker-and-Associates-LLP-Announces-That-Sony-BMG-Settles-Major-Legal-Battle-for-the-Rights-of-Artists'],
+            ['year'=>'CBS News','title'=>'Howard Student Is Falsely Accused of Embezzling Over $400K','link'=>'https://www.cbsnews.com/video/tyrone-hankerson-howard-university-speaks-out/'],
+            ['year'=>'Penguin Random House','title'=>'This Business of Urban Music: A Practical Guide to Achieving Success in the Industry, from Gospel to Funk to R&B to Hip-Hop','link'=>'https://www.penguinrandomhouse.ca/books/184924/this-business-of-urban-music-by-james-l-walker-jr/9780307874979'],
           ],
           'announcements' => [
             ['year'=>'June 2024','title'=>'Firm Launches Film & Television Practice','body'=>'Walker & Associates formally launches its Film & Television practice area with the addition of Of Counsel Stephanie K. Hay, bringing 15+ years of production legal experience.'],
@@ -121,9 +145,11 @@ foreach ( $sections as $key => $config ) :
             <div class="five-as-card">
               <div class="card-year"><?php echo esc_html( $p['year'] ); ?></div>
               <h4><?php echo esc_html( $p['title'] ); ?></h4>
-              <p><?php echo esc_html( $p['body'] ); ?></p>
+              <?php if ( ! empty( $p['body'] ) ) : ?>
+                <p><?php echo esc_html( $p['body'] ); ?></p>
+              <?php endif; ?>
               <?php if ( ! empty( $p['link'] ) ) : ?>
-                <a href="<?php echo esc_url( $p['link'] ); ?>" class="card-link" target="_blank" rel="noopener noreferrer">Read More</a>
+                <a href="<?php echo esc_url( $p['link'] ); ?>" class="card-link"<?php echo $link_attrs; ?>>Read More</a>
               <?php endif; ?>
             </div>
           <?php endforeach;

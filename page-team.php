@@ -89,6 +89,13 @@ $team = [
     'file'  => 'blythe-silvetz.png',
     'focus' => 'Social Media · Content · Communications',
   ],
+  [
+    'slug'  => 'enrique-ramos',
+    'name'  => 'Enrique Ramos',
+    'title' => 'Personal Injury Attorney',
+    'file'  => null,
+    'focus' => 'Personal Injury · Automobile & Motorcycle Accidents',
+  ],
 ];
 ?>
 
@@ -96,7 +103,7 @@ $team = [
   <div class="container">
     <span class="eyebrow">Our People</span>
     <h1>Meet the Team</h1>
-    <p>12 attorneys and professionals united by a commitment to excellence, creativity, and client success.</p>
+    <p>13 attorneys and professionals united by a commitment to excellence, creativity, and client success.</p>
   </div>
 </div>
 
@@ -104,17 +111,26 @@ $team = [
   <div class="container">
     <div class="team-full-grid">
       <?php foreach ( $team as $member ) :
-        $photo = wa_img( 'team/' . $member['file'] );
-        $url   = esc_url( home_url( '/team/' . $member['slug'] . '/' ) );
+        $url = esc_url( home_url( '/team/' . $member['slug'] . '/' ) );
       ?>
       <div class="team-full-card">
         <a href="<?php echo $url; ?>">
+          <?php if ( $member['file'] ) : ?>
           <img
             class="team-full-photo"
-            src="<?php echo esc_url( $photo ); ?>"
+            src="<?php echo esc_url( wa_img( 'team/' . $member['file'] ) ); ?>"
             alt="<?php echo esc_attr( $member['name'] ); ?>"
             loading="lazy"
           >
+          <?php else : ?>
+          <div style="width:100%; aspect-ratio:3/4; background:linear-gradient(135deg,var(--navy),#1B2F5E); border-radius:8px; display:flex; align-items:center; justify-content:center; margin-bottom:var(--space-md);">
+            <span style="color:var(--gold-light); font-family:'Cormorant Garamond',serif; font-size:4rem;"><?php
+              $initials = '';
+              foreach ( explode( ' ', $member['name'] ) as $part ) { $initials .= mb_substr( $part, 0, 1 ); }
+              echo esc_html( $initials );
+            ?></span>
+          </div>
+          <?php endif; ?>
           <div class="team-full-name"><?php echo esc_html( $member['name'] ); ?></div>
           <div class="team-full-title"><?php echo esc_html( $member['title'] ); ?></div>
         </a>

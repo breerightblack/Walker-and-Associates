@@ -28,6 +28,16 @@
     });
   });
 
+  // ── Practice Areas accordion ─────────────────────────────────
+  document.querySelectorAll('.pa-accordion-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function() {
+      const panel = trigger.nextElementSibling;
+      const expanded = trigger.getAttribute('aria-expanded') === 'true';
+      trigger.setAttribute('aria-expanded', String(!expanded));
+      if (panel) panel.classList.toggle('active', !expanded);
+    });
+  });
+
   // ── Mobile nav toggle ────────────────────────────────────────
   const toggle = document.querySelector('.nav-toggle');
   const nav    = document.getElementById('primary-nav');

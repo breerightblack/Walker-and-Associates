@@ -51,7 +51,7 @@
       Clients Served
     </div>
     <div class="credibility-stat">
-      <strong data-target="12">12</strong>
+      <strong data-target="13">13</strong>
       Attorneys &amp; Professionals
     </div>
   </div>
@@ -126,7 +126,7 @@
         <div class="stat-label">Practice Areas</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number" data-target="12">12</div>
+        <div class="stat-number" data-target="13">13</div>
         <div class="stat-label">Legal Professionals</div>
       </div>
     </div>
@@ -236,7 +236,7 @@
       <div>
         <span class="eyebrow">Our People</span>
         <h2 id="team-heading">The Minds Behind the Firm</h2>
-        <p>12 attorneys and professionals who bring expertise, creativity, and dedication to every client relationship.</p>
+        <p>13 attorneys and professionals who bring expertise, creativity, and dedication to every client relationship.</p>
       </div>
       <a href="<?php echo esc_url( home_url('/team/') ); ?>" class="btn btn-outline" style="flex-shrink:0; margin-bottom:10px;">Meet the Full Team</a>
     </div>

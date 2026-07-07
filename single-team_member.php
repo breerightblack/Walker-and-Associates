@@ -165,6 +165,20 @@ $bios = [
     ],
   ],
 
+  'enrique-ramos' => [
+    'name'  => 'Enrique Ramos',
+    'title' => 'Personal Injury Attorney',
+    'file'  => null,
+    'focus' => [ 'Personal Injury Litigation', 'Automobile & Motorcycle Accidents', 'Premises Liability', 'Client Advocacy' ],
+    'bio'   => [
+      'Enrique Ramos is an experienced trial attorney dedicated to representing individuals who have been injured due to the negligence of others. With a strong commitment to justice and client advocacy, Enrique has built a reputation for delivering results-driven representation and ensuring that injury victims receive the compensation they deserve.',
+      'A graduate of Emory Law, Enrique has extensive experience in personal injury litigation, including automobile accidents, motorcycle accidents, premises liability claims, and other serious injury matters. His strategic approach to litigation, deep understanding of personal injury law, and relentless pursuit of justice have led to numerous successful case resolutions and significant recoveries for his clients.',
+      'Enrique is known for combining legal expertise with compassionate representation, keeping clients informed and empowered throughout the legal process. His ability to balance aggressive advocacy with personalized attention makes him a trusted advocate for injury victims.',
+      'Beyond the courtroom, Enrique is committed to continuous professional growth and staying ahead of legal developments. He is also actively involved in his community, promoting safety, awareness, and legal education to help prevent injuries before they occur.',
+      'Enrique Ramos remains dedicated to protecting the rights of the injured and ensuring they receive the justice they deserve.',
+    ],
+  ],
+
 ];
 
 get_header();
@@ -196,11 +210,21 @@ $member = isset( $bios[ $current_slug ] ) ? $bios[ $current_slug ] : null;
 
     <!-- Sidebar: Photo + Quick info -->
     <aside class="bio-sidebar">
+      <?php if ( ! empty( $member['file'] ) ) : ?>
       <img
         class="bio-photo"
         src="<?php echo esc_url( wa_img( 'team/' . $member['file'] ) ); ?>"
         alt="<?php echo esc_attr( $member['name'] ); ?>"
       >
+      <?php else : ?>
+      <div style="width:100%; aspect-ratio:3/4; background:linear-gradient(135deg,var(--navy),#1B2F5E); border-radius:var(--radius-lg); display:flex; align-items:center; justify-content:center; margin-bottom:var(--space-lg);">
+        <span style="color:var(--gold-light); font-family:'Cormorant Garamond',serif; font-size:5rem;"><?php
+          $initials = '';
+          foreach ( explode( ' ', $member['name'] ) as $part ) { $initials .= mb_substr( $part, 0, 1 ); }
+          echo esc_html( $initials );
+        ?></span>
+      </div>
+      <?php endif; ?>
       <h1 class="bio-name"><?php echo esc_html( $member['name'] ); ?></h1>
       <p class="bio-title"><?php echo esc_html( $member['title'] ); ?></p>
 
