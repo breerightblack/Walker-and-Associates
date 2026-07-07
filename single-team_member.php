@@ -140,11 +140,11 @@ $bios = [
 
   'stephanie-hay' => [
     'name'  => 'Stephanie K. Hay',
-    'title' => 'Partner',
+    'title' => 'Of Counsel — Film &amp; Television',
     'file'  => 'stephanie-hay.jpg',
     'focus' => [ 'Film & TV Production', 'IP Licensing', 'Distribution Agreements', 'Talent Contracts' ],
     'bio'   => [
-      'Stephanie K. Hay is a Partner at J. Walker and Associates, LLP with a focus on Film and Television law. With over 15 years of experience in film and television production legal services, Hay brings unparalleled industry expertise to the firm\'s rapidly growing screen production practice.',
+      'Stephanie K. Hay joins J. Walker and Associates, LLP as Of Counsel with a focus on Film and Television law. With over 15 years of experience in film and television production legal services, Hay brings unparalleled industry expertise to the firm\'s rapidly growing screen production practice.',
       'Hay\'s career has spanned the full spectrum of film and television legal work — from development agreements and co-production deals to distribution negotiations, talent agreements, IP licensing, and clearance. She has represented studios, independent production companies, directors, writers, and talent across both scripted and unscripted television and feature film.',
       'Her experience includes work with major studios, streaming platforms, and independent productions. She has been involved in projects distributed by major networks and streaming services, bringing a sophisticated understanding of the deals that drive the industry.',
       'As the entertainment industry increasingly converges around Atlanta as a major production hub, Hay\'s expertise positions Walker & Associates to serve the full range of clients in Georgia\'s thriving film and television ecosystem — from local independents to productions backed by major studio resources.',
@@ -168,7 +168,7 @@ $bios = [
   'enrique-ramos' => [
     'name'  => 'Enrique Ramos',
     'title' => 'Personal Injury Attorney',
-    'file'  => null,
+    'file'  => 'enrique-ramos.jpg',
     'focus' => [ 'Personal Injury Litigation', 'Automobile & Motorcycle Accidents', 'Premises Liability', 'Client Advocacy' ],
     'bio'   => [
       'Enrique Ramos is an experienced trial attorney dedicated to representing individuals who have been injured due to the negligence of others. With a strong commitment to justice and client advocacy, Enrique has built a reputation for delivering results-driven representation and ensuring that injury victims receive the compensation they deserve.',

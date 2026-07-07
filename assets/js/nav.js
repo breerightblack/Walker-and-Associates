@@ -6,7 +6,7 @@
 
   const nav = `
 <div id="topbar">
-  <span class="topbar-text"><a href="${root}practice-areas.html#theater-law">Expanding our Film, Television and Theater practice →</a></span>
+  <span class="topbar-text">Our goal every day is to use our resources to touch and inspire and encourage.</span>
 </div>
 <header id="site-header">
   <div class="header-inner">
@@ -21,6 +21,8 @@
         <li><a href="${root}team.html">Our Team</a></li>
         <li><a href="${root}practice-areas.html">Practice Areas</a></li>
         <li><a href="${root}media.html">Media &amp; Press</a></li>
+        <li><a href="${root}photos.html">Photos</a></li>
+        <li><a href="${root}testimonials.html">Testimonials</a></li>
         <li><a href="${root}contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -69,7 +71,7 @@
     <div class="footer-col footer-contact">
       <h4 class="footer-heading">Contact</h4>
       <address>
-        <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>3421 Main Street<br>Atlanta, GA 30337</p>
+        <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>The Walker Building, 3421 Main Street<br>Atlanta, GA 30337</p>
         <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg><a href="tel:7708477363">(770) 847-7363</a></p>
       </address>
       <a href="${root}contact.html" class="btn btn-outline-light footer-cta">Schedule Consultation</a>

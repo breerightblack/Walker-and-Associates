@@ -24,9 +24,7 @@
 
 <!-- ── TOPBAR ─────────────────────────────────────────────────────────── -->
 <div id="topbar" role="banner" aria-label="Firm announcement">
-  <span class="topbar-text">
-    <a href="<?php echo esc_url( home_url( '/practice-areas/#theater-law' ) ); ?>">Expanding our Film, Television and Theater practice →</a>
-  </span>
+  <span class="topbar-text">Our goal every day is to use our resources to touch and inspire and encourage.</span>
 </div>
 
 <!-- ── SITE HEADER ────────────────────────────────────────────────────── -->
@@ -64,6 +62,8 @@
             <li><a href="<?php echo home_url('/team/'); ?>">Our Team</a></li>
             <li><a href="<?php echo home_url('/practice-areas/'); ?>">Practice Areas</a></li>
             <li><a href="<?php echo home_url('/media/'); ?>">Media &amp; Press</a></li>
+            <li><a href="<?php echo home_url('/photos/'); ?>">Photos</a></li>
+            <li><a href="<?php echo home_url('/testimonials/'); ?>">Testimonials</a></li>
             <li><a href="<?php echo home_url('/contact/'); ?>">Contact</a></li>
           </ul>
         <?php },

@@ -247,7 +247,7 @@
       $featured = [
         [ 'slug' => 'james-walker',   'name' => 'James Walker',      'title' => 'Founding Attorney',                'file' => 'james-walker.jpg'   ],
         [ 'slug' => 'paul-wilson-ii', 'name' => 'Paul Wilson II',    'title' => 'Associate Attorney',               'file' => 'paul-wilson-ii.jpg' ],
-        [ 'slug' => 'stephanie-hay',  'name' => 'Stephanie K. Hay',  'title' => 'Partner',                          'file' => 'stephanie-hay.jpg'  ],
+        [ 'slug' => 'stephanie-hay',  'name' => 'Stephanie K. Hay',  'title' => 'Of Counsel — Film &amp; Television',      'file' => 'stephanie-hay.jpg'  ],
         [ 'slug' => 'gina-e-ryan',    'name' => 'Gina E. Ryan',      'title' => 'Chief PR &amp; Strategic Communications', 'file' => 'gina-e-ryan.jpg' ],
       ];
       foreach ( $featured as $member ) :

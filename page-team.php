@@ -22,7 +22,7 @@ $team = [
   [
     'slug'  => 'stephanie-hay',
     'name'  => 'Stephanie K. Hay',
-    'title' => 'Partner',
+    'title' => 'Of Counsel — Film &amp; Television',
     'file'  => 'stephanie-hay.jpg',
     'focus' => 'Film & TV Production · IP Licensing',
   ],
@@ -93,7 +93,7 @@ $team = [
     'slug'  => 'enrique-ramos',
     'name'  => 'Enrique Ramos',
     'title' => 'Personal Injury Attorney',
-    'file'  => null,
+    'file'  => 'enrique-ramos.jpg',
     'focus' => 'Personal Injury · Automobile & Motorcycle Accidents',
   ],
 ];
