@@ -1111,6 +1111,38 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 .testimonial-meta span { font-size: .8125rem; color: var(--taupe); }
 
+/* ── PHOTO GALLERY (placeholder tiles) ──────────────────────── */
+.photo-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+@media (min-width: 640px)  { .photo-gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .photo-gallery-grid { gap: var(--space-lg); } }
+.photo-tile {
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  text-align: center;
+  color: rgba(255,255,255,.9);
+}
+.photo-tile svg { width: 32px; height: 32px; opacity: .8; }
+.photo-tile span {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.photo-tile--1 { background: linear-gradient(135deg, var(--navy), #1B2F5E); }
+.photo-tile--2 { background: linear-gradient(135deg, var(--navy-light), var(--navy)); }
+.photo-tile--3 { background: linear-gradient(135deg, var(--gold-dark), var(--taupe)); }
+.photo-tile--4 { background: linear-gradient(135deg, #1B2F5E, var(--gold-dark)); }
+
 /* ── CTA BAND ────────────────────────────────────────────────── */
 .cta-band { background: var(--navy); padding: var(--space-xl) 0; }
 @media (min-width: 1024px) { .cta-band { padding: var(--space-2xl) 0; } }
