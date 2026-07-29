@@ -29,7 +29,13 @@
             <li><a href="${root}testimonials.html">Testimonials</a></li>
           </ul>
         </li>
-        <li><a href="${root}contact.html">Contact</a></li>
+        <li class="has-dropdown">
+          <a href="${root}contact.html">Contact</a>
+          <ul class="nav-dropdown">
+            <li><a href="${root}contact.html">Contact Us</a></li>
+            <li><a href="${root}consultation.html">Book a Consultation</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
     <div class="header-cta">
@@ -74,6 +80,7 @@
         <li><a href="${root}photos.html">Photos</a></li>
         <li><a href="${root}testimonials.html">Testimonials</a></li>
         <li><a href="${root}contact.html">Contact Us</a></li>
+        <li><a href="${root}consultation.html">Book a Consultation</a></li>
       </ul>
     </div>
     <div class="footer-col footer-contact">
@@ -87,8 +94,11 @@
   </div>
   <div class="footer-bottom">
     <div class="footer-bottom-inner">
-      <p class="footer-legal">&copy; 2026 J. Walker and Associates, LLP. All rights reserved. Attorney advertising. Prior results do not guarantee similar outcomes.</p>
-      <nav class="footer-legal-nav"><a href="${root}privacy-policy.html">Privacy Policy</a><a href="${root}disclaimer.html">Disclaimer</a><a href="${root}accessibility.html">Accessibility</a></nav>
+      <p class="footer-disclaimer">This website is for general information only and is an attorney advertisement. The content on this site is not legal advice and should not be relied on as such. Viewing this site, using its forms or chat, or communicating with the firm through this site does not create an attorney-client relationship. <a href="${root}disclaimer.html">Read our full Disclaimer &amp; Terms</a>.</p>
+      <div class="footer-bottom-row">
+        <p class="footer-legal">&copy; 2026 J. Walker and Associates, LLP. All rights reserved. Prior results do not guarantee similar outcomes.</p>
+        <nav class="footer-legal-nav"><a href="${root}privacy-policy.html">Privacy Policy</a><a href="${root}disclaimer.html">Disclaimer</a><a href="${root}accessibility.html">Accessibility</a></nav>
+      </div>
     </div>
   </div>
 </footer>`;

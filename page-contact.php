@@ -1,6 +1,9 @@
 <?php
 /**
- * Template Name: Contact Page
+ * Template Name: Contact
+ *
+ * GENERATED from contact.html by _build/html-to-php.py — do not hand-edit.
+ * Edit contact.html, then re-run the build script.
  */
 get_header();
 ?>
@@ -9,163 +12,161 @@ get_header();
   <div class="container">
     <span class="eyebrow">Get In Touch</span>
     <h1>Contact Walker &amp; Associates</h1>
-    <p>Ready to discuss your legal needs? Schedule a confidential consultation or send us a message below.</p>
+    <p>Ready to discuss your legal needs? Schedule a confidential consultation below.</p>
   </div>
 </div>
 
 <main id="main" role="main">
-<section class="section">
-  <div class="container">
-    <div style="display:grid; grid-template-columns:1fr 400px; gap:var(--space-3xl); align-items:start;">
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 380px;gap:var(--space-3xl);align-items:start;">
 
-      <!-- Intake Form -->
-      <div>
-        <div class="section-header">
-          <span class="eyebrow">New Client Inquiry</span>
-          <h2>Tell Us About Your Matter</h2>
-          <p>All inquiries are confidential. We will respond within one business day.</p>
+        <!-- Form -->
+        <div>
+          <div class="section-header">
+            <span class="eyebrow">New Client Inquiry</span>
+            <h2>Tell Us About Your Matter</h2>
+            <p>All inquiries are confidential. We respond within one business day.</p>
+          </div>
+
+          <form id="contact-form" style="margin-top:var(--space-xl);" novalidate>
+            <div class="form-row">
+              <div class="form-field"><label class="form-label" for="first_name">First Name *</label><input class="form-input" type="text" id="first_name" name="first_name" required autocomplete="given-name"></div>
+              <div class="form-field"><label class="form-label" for="last_name">Last Name *</label><input class="form-input" type="text" id="last_name" name="last_name" required autocomplete="family-name"></div>
+            </div>
+            <div class="form-row">
+              <div class="form-field"><label class="form-label" for="email">Email Address *</label><input class="form-input" type="email" id="email" name="email" required autocomplete="email"></div>
+              <div class="form-field"><label class="form-label" for="phone">Phone Number</label><input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel"></div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="practice_area">Practice Area *</label>
+              <select class="form-input" id="practice_area" name="practice_area" required>
+                <option value="">Select a practice area...</option>
+                <option value="entertainment">Entertainment Law</option>
+                <option value="film-tv">Film &amp; Television Law</option>
+                <option value="music">Music Law</option>
+                <option value="litigation">Litigation</option>
+                <option value="corporate">Corporate Law</option>
+                <option value="real-estate">Real Estate Law</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="preferred_contact">Preferred Contact Time</label>
+              <select class="form-input" id="preferred_contact" name="preferred_contact">
+                <option value="">No preference</option>
+                <option value="morning">Morning (9am – 12pm ET)</option>
+                <option value="afternoon">Afternoon (12pm – 5pm ET)</option>
+                <option value="evening">Evening (5pm – 7pm ET)</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="opposing_party">Opposing Party / Other Names Involved</label>
+              <input class="form-input" type="text" id="opposing_party" name="opposing_party" placeholder="e.g. other party, company, or label involved">
+              <p style="font-size:.8125rem;color:var(--taupe);margin-top:6px;line-height:1.5;">We ask so we can run a conflicts check before your consultation. Leave blank if not applicable.</p>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="message">Describe Your Matter *</label>
+              <textarea class="form-input" id="message" name="message" required placeholder="Please provide a brief description of your legal matter. All communications are confidential."></textarea>
+            </div>
+            <div class="form-field">
+              <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;">
+                <input type="checkbox" name="consent" required style="margin-top:3px;flex-shrink:0;accent-color:var(--navy);">
+                <span style="font-size:.875rem;color:var(--taupe);line-height:1.55;">I consent to Walker &amp; Associates contacting me regarding my legal matter. Submitting this form does not create an attorney-client relationship.</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="font-size:14px;padding:16px 40px;">Submit Inquiry</button>
+          </form>
+
+          <!-- Success message (hidden by default) -->
+          <div id="form-success" style="display:none;margin-top:var(--space-xl);padding:var(--space-xl);background:var(--bg-light);border-radius:var(--radius-md);border-left:4px solid var(--navy);">
+            <h3 style="font-family:var(--font-serif);font-size:1.5rem;color:var(--navy);margin-bottom:var(--space-sm);">Thank you for reaching out.</h3>
+            <p style="color:var(--text-mid);">We've received your inquiry and will be in touch within one business day. If your matter is urgent, please call us directly at <a href="tel:7708477363" style="color:var(--navy);font-weight:600;">(770) 847-7363</a>.</p>
+            <p style="color:var(--text-mid);margin-top:var(--space-sm);">Please note: a <strong>$250 consultation fee</strong> is due prior to your scheduled meeting. See the Consultation Fee options in the sidebar to pay.</p>
+          </div>
         </div>
 
-        <?php
-        // If WPForms or Gravity Forms is active, replace this with the shortcode:
-        // echo do_shortcode('[wpforms id="XXX"]');
-        // For now, render a native HTML form (works standalone, no plugin required)
-        ?>
-
-        <form
-          id="contact-form"
-          method="post"
-          action="<?php echo esc_url( admin_url('admin-post.php') ); ?>"
-          novalidate
-          style="margin-top: var(--space-xl);"
-        >
-          <?php wp_nonce_field( 'wa_contact_form', 'wa_nonce' ); ?>
-          <input type="hidden" name="action" value="wa_contact_form">
-          <!-- Honeypot -->
-          <input type="text" name="website_url" value="" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off">
-
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-md); margin-bottom:var(--space-md);">
-            <div>
-              <label for="first_name" style="display:block; font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--taupe); margin-bottom:6px;">First Name *</label>
-              <input type="text" id="first_name" name="first_name" required autocomplete="given-name" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--color-border)'">
+        <!-- Sidebar -->
+        <aside style="position:sticky;top:calc(var(--header-h) + var(--topbar-h) + var(--space-lg));">
+          <div style="background:var(--bg-light);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-lg);">
+            <h3 style="font-family:var(--font-serif);font-size:1.5rem;margin-bottom:var(--space-sm);color:var(--text-dark);">Consultation Fee</h3>
+            <p style="font-size:.9375rem;color:var(--taupe);margin-bottom:var(--space-lg);">A flat <strong style="color:var(--text-dark);">$250</strong> fee applies to initial consultations, due prior to your scheduled meeting. You can pay using any of the options below.</p>
+            <div style="display:flex;flex-direction:column;gap:var(--space-md);">
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <svg viewBox="0 0 24 24" fill="#00C244" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;" role="img" aria-label="Cash App"><path d="M23.59 3.475a5.1 5.1 0 00-3.05-3.05c-1.31-.42-2.5-.42-4.92-.42H8.36c-2.4 0-3.61 0-4.9.4a5.1 5.1 0 00-3.05 3.06C0 4.765 0 5.965 0 8.365v7.27c0 2.41 0 3.6.4 4.9a5.1 5.1 0 003.05 3.05c1.3.41 2.5.41 4.9.41h7.28c2.41 0 3.61 0 4.9-.4a5.1 5.1 0 003.06-3.06c.41-1.3.41-2.5.41-4.9v-7.25c0-2.41 0-3.61-.41-4.91zm-6.17 4.63l-.93.93a.5.5 0 01-.67.01 5 5 0 00-3.22-1.18c-.97 0-1.94.32-1.94 1.21 0 .9 1.04 1.2 2.24 1.65 2.1.7 3.84 1.58 3.84 3.64 0 2.24-1.74 3.78-4.58 3.95l-.26 1.2a.49.49 0 01-.48.39H9.63l-.09-.01a.5.5 0 01-.38-.59l.28-1.27a6.54 6.54 0 01-2.88-1.57v-.01a.48.48 0 010-.68l1-.97a.49.49 0 01.67 0c.91.86 2.13 1.34 3.39 1.32 1.3 0 2.17-.55 2.17-1.42 0-.87-.88-1.1-2.54-1.72-1.76-.63-3.43-1.52-3.43-3.6 0-2.42 2.01-3.6 4.39-3.71l.25-1.23a.48.48 0 01.48-.38h1.78l.1.01c.26.06.43.31.37.57l-.27 1.37c.9.3 1.75.77 2.48 1.39l.02.02c.19.2.19.5 0 .68z"/></svg>
+                <div>
+                  <p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">Cash App</p>
+                  <a href="https://cash.app/$JamesWalkerEsq/250" target="_blank" rel="noopener noreferrer" style="font-size:.875rem;color:var(--navy);">Pay $250 via Cash App →</a>
+                </div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <svg viewBox="0 0 24 24" fill="#6D1ED4" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;" role="img" aria-label="Zelle"><path d="M13.559 24h-2.841a.483.483 0 0 1-.483-.483v-2.765H5.638a.667.667 0 0 1-.666-.666v-2.234a.67.67 0 0 1 .142-.412l8.139-10.382h-7.25a.667.667 0 0 1-.667-.667V3.914c0-.367.299-.666.666-.666h4.23V.483c0-.266.217-.483.483-.483h2.841c.266 0 .483.217.483.483v2.765h4.323c.367 0 .666.299.666.666v2.137a.67.67 0 0 1-.141.41l-8.19 10.481h7.665c.367 0 .666.299.666.666v2.477a.667.667 0 0 1-.666.667h-4.32v2.765a.483.483 0 0 1-.483.483Z"/></svg>
+                <div>
+                  <p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">Zelle</p>
+                  <p style="font-size:.875rem;color:var(--taupe);margin-bottom:4px;">Send to <span style="color:var(--text-dark);">jjwalker@walkerandassoc.com</span></p>
+                  <button type="button" class="payment-copy-go-btn" data-copy="jjwalker@walkerandassoc.com" data-status="Copied! Open your banking app's Zelle feature and paste this email to send $250." style="font-size:.875rem;font-weight:600;color:var(--navy);background:none;border:none;cursor:pointer;padding:0;text-decoration:underline;">Copy Email for Zelle →</button>
+                  <p class="payment-copy-status" style="font-size:.8125rem;color:var(--navy);margin-top:4px;display:none;"></p>
+                </div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <svg viewBox="0 0 24 24" fill="#002991" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;" role="img" aria-label="PayPal"><path d="M15.607 4.653H8.941L6.645 19.251H1.82L4.862 0h7.995c3.754 0 6.375 2.294 6.473 5.513-.648-.478-2.105-.86-3.722-.86m6.57 5.546c0 3.41-3.01 6.853-6.958 6.853h-2.493L11.595 24H6.74l1.845-11.538h3.592c4.208 0 7.346-3.634 7.153-6.949a5.24 5.24 0 0 1 2.848 4.686M9.653 5.546h6.408c.907 0 1.942.222 2.363.541-.195 2.741-2.655 5.483-6.441 5.483H8.714Z"/></svg>
+                <div>
+                  <p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">PayPal</p>
+                  <p style="font-size:.875rem;color:var(--taupe);margin-bottom:4px;">Send to <span style="color:var(--text-dark);">jjwalker@walkerandassoc.com</span> · 3% processing fee applies.</p>
+                  <a href="https://www.paypal.com/myaccount/transfer/send" target="_blank" rel="noopener noreferrer" class="payment-copy-go-btn" data-copy="jjwalker@walkerandassoc.com" data-status="Email copied — opening PayPal. Paste it as the recipient to send $250." style="font-size:.875rem;font-weight:600;color:var(--navy);text-decoration:none;">Copy Email &amp; Open PayPal →</a>
+                  <p class="payment-copy-status" style="font-size:.8125rem;color:var(--navy);margin-top:4px;display:none;"></p>
+                </div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+                <div>
+                  <p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">MyCase</p>
+                  <p style="font-size:.875rem;color:var(--taupe);">We'll send a secure payment link via MyCase once your consultation is confirmed. 3.5% processing fee applies to card payments.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                <div>
+                  <p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">Wire Transfer</p>
+                  <p style="font-size:.875rem;color:var(--taupe);">Available for consultation fees. Call or email us and we'll send secure bank transfer instructions directly.</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <label for="last_name" style="display:block; font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--taupe); margin-bottom:6px;">Last Name *</label>
-              <input type="text" id="last_name" name="last_name" required autocomplete="family-name" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--color-border)'">
+          </div>
+          <div class="legal-notice" style="margin-bottom:var(--space-lg);">
+            <div class="legal-notice-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>Important Information</div>
+            <p>Payment of the consultation fee secures your appointment time and entitles you to a one-hour legal consultation. Booking and paying for a consultation creates a limited attorney-client relationship for the duration of that consultation so that we can provide legal advice about your situation. It does not, by itself, create an ongoing attorney-client relationship for continued representation in your matter.</p>
+            <p>If, after the consultation, both you and the Firm decide to move forward, we will provide a separate written engagement agreement describing the scope of representation, fees, and responsibilities. Representation begins only after that agreement is signed.</p>
+            <p>Please do not send confidential documents or information through the website before your consultation is scheduled and confirmed. Confidential information should be shared directly with the attorney during your consultation, or through secure channels we provide.</p>
+            <p><a href="<?php echo esc_url( home_url( '/disclaimer/' ) ); ?>">Read our full Disclaimer &amp; Terms</a></p>
+          </div>
+          <div style="background:var(--bg-light);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-lg);">
+            <h3 style="font-family:var(--font-serif);font-size:1.5rem;margin-bottom:var(--space-lg);color:var(--text-dark);">Office Information</h3>
+            <div style="display:flex;flex-direction:column;gap:var(--space-md);">
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <div><p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">Address</p><p style="font-size:.875rem;color:var(--taupe);">The Walker Building<br>3421 Main Street<br>Atlanta, GA 30337</p></div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                <div><p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">Phone</p><a href="tel:7708477363" style="font-size:.875rem;color:var(--navy);">(770) 847-7363</a></div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div><p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">Office Hours</p><p style="font-size:.875rem;color:var(--taupe);">Monday – Friday<br>9:00 AM – 6:00 PM ET</p></div>
+              </div>
             </div>
           </div>
-
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-md); margin-bottom:var(--space-md);">
-            <div>
-              <label for="email" style="display:block; font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--taupe); margin-bottom:6px;">Email Address *</label>
-              <input type="email" id="email" name="email" required autocomplete="email" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--color-border)'">
-            </div>
-            <div>
-              <label for="phone" style="display:block; font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--taupe); margin-bottom:6px;">Phone Number</label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--color-border)'">
-            </div>
+          <div style="background:var(--navy);border-radius:var(--radius-lg);padding:var(--space-xl);color:var(--white);">
+            <h3 style="font-family:var(--font-serif);font-size:1.375rem;color:var(--white);margin-bottom:var(--space-sm);">Urgent Matter?</h3>
+            <p style="font-size:.9rem;color:rgba(255,255,255,.75);margin-bottom:var(--space-lg);line-height:1.6;">For time-sensitive matters, call us directly and indicate urgency.</p>
+            <a href="tel:7708477363" class="btn btn-outline-light" style="width:100%;justify-content:center;">(770) 847-7363</a>
           </div>
+        </aside>
 
-          <div style="margin-bottom:var(--space-md);">
-            <label for="practice_area" style="display:block; font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--taupe); margin-bottom:6px;">Practice Area *</label>
-            <select id="practice_area" name="practice_area" required style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); transition:border-color var(--ease); -webkit-appearance:none; appearance:none; background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238B7D75' stroke-width='1.5' fill='none'/%3E%3C/svg%3E\"); background-repeat:no-repeat; background-position:right 16px center;">
-              <option value="">Select a practice area...</option>
-              <option value="entertainment">Entertainment Law</option>
-              <option value="film-tv">Film &amp; Television Law</option>
-              <option value="music">Music Law</option>
-              <option value="litigation">Litigation</option>
-              <option value="corporate">Corporate Law</option>
-              <option value="real-estate">Real Estate Law</option>
-              <option value="other">Other / Not Sure</option>
-            </select>
-          </div>
-
-          <div style="margin-bottom:var(--space-md);">
-            <label for="preferred_contact" style="display:block; font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--taupe); margin-bottom:6px;">Preferred Contact Time</label>
-            <select id="preferred_contact" name="preferred_contact" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); -webkit-appearance:none; appearance:none; background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238B7D75' stroke-width='1.5' fill='none'/%3E%3C/svg%3E\"); background-repeat:no-repeat; background-position:right 16px center;">
-              <option value="">No preference</option>
-              <option value="morning">Morning (9am – 12pm ET)</option>
-              <option value="afternoon">Afternoon (12pm – 5pm ET)</option>
-              <option value="evening">Evening (5pm – 7pm ET)</option>
-            </select>
-          </div>
-
-          <div style="margin-bottom:var(--space-lg);">
-            <label for="message" style="display:block; font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--taupe); margin-bottom:6px;">Describe Your Matter *</label>
-            <textarea id="message" name="message" required rows="6" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:.9375rem; color:var(--text-dark); background:var(--white); resize:vertical; transition:border-color var(--ease);" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--color-border)'" placeholder="Please provide a brief description of your legal matter. All communications are confidential."></textarea>
-          </div>
-
-          <div style="margin-bottom:var(--space-xl);">
-            <label style="display:flex; align-items:flex-start; gap:12px; cursor:pointer;">
-              <input type="checkbox" name="consent" required style="margin-top:3px; flex-shrink:0; accent-color:var(--green);">
-              <span style="font-size:.875rem; color:var(--taupe); line-height:1.55;">
-                I consent to Walker &amp; Associates contacting me regarding my legal matter. I understand that submitting this form does not create an attorney-client relationship. <a href="<?php echo home_url('/privacy-policy/'); ?>" style="color:var(--green);">Privacy Policy</a>
-              </span>
-            </label>
-          </div>
-
-          <button type="submit" class="btn btn-primary" style="font-size:14px; padding:16px 40px;">Submit Inquiry</button>
-        </form>
-
-        <!-- Payment Section -->
-        <div id="payment-section" style="margin-top:var(--space-3xl); padding-top:var(--space-xl); border-top:1px solid var(--color-border);">
-          <span class="eyebrow">Consultation Fee</span>
-          <h2 style="font-family:var(--font-serif); font-size:1.875rem; margin-bottom:var(--space-sm);">Secure Consultation Payment</h2>
-          <p style="color:var(--taupe); margin-bottom:var(--space-xl);">
-            If you have already spoken with our team and are ready to pay your consultation fee,
-            you can do so securely below. WooCommerce / Stripe payment integration will be activated
-            here upon installation.
-          </p>
-          <!-- Payment embed placeholder — replace with WooCommerce product shortcode or Stripe embed -->
-          <div style="background:var(--tan-pale); border:1px solid var(--color-border); border-radius:var(--radius-md); padding:var(--space-xl); text-align:center;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--taupe)" stroke-width="1.5" style="width:48px; height:48px; margin:0 auto var(--space-md);" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg>
-            <p style="font-size:.9375rem; color:var(--taupe);">Secure payment powered by Stripe.<br><strong style="color:var(--text-mid);">Payment form activates after WooCommerce + Stripe setup.</strong></p>
-            <!-- [woocommerce_checkout] or [woocommerce_cart] shortcode goes here -->
-          </div>
-        </div>
       </div>
-
-      <!-- Sidebar: Contact info + map placeholder -->
-      <aside style="position:sticky; top:calc(var(--header-h) + var(--space-lg));">
-        <div style="background:var(--tan-pale); border-radius:var(--radius-lg); padding:var(--space-xl); margin-bottom:var(--space-lg);">
-          <h3 style="font-family:var(--font-serif); font-size:1.5rem; margin-bottom:var(--space-lg); color:var(--text-dark);">Office Information</h3>
-          <div style="display:flex; flex-direction:column; gap:var(--space-md);">
-            <div style="display:flex; gap:12px; align-items:flex-start;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <div>
-                <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Address</p>
-                <p style="font-size:.875rem; color:var(--taupe);">3421 Main Street<br>Atlanta, GA 30337</p>
-              </div>
-            </div>
-            <div style="display:flex; gap:12px; align-items:flex-start;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              <div>
-                <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Phone</p>
-                <a href="tel:7708477363" style="font-size:.875rem; color:var(--green);">(770) 847-7363</a>
-              </div>
-            </div>
-            <div style="display:flex; gap:12px; align-items:flex-start;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" style="width:20px; height:20px; flex-shrink:0; margin-top:2px;" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <div>
-                <p style="font-size:.9375rem; font-weight:600; color:var(--text-dark); margin-bottom:2px;">Office Hours</p>
-                <p style="font-size:.875rem; color:var(--taupe);">Monday – Friday<br>9:00 AM – 6:00 PM ET</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div style="background:var(--green); border-radius:var(--radius-lg); padding:var(--space-xl); color:var(--white);">
-          <h3 style="font-family:var(--font-serif); font-size:1.375rem; color:var(--white); margin-bottom:var(--space-sm);">Need Immediate Assistance?</h3>
-          <p style="font-size:.9rem; color:rgba(255,255,255,.75); margin-bottom:var(--space-lg); line-height:1.6;">
-            For time-sensitive matters, please call our office directly or send us a message indicating urgency.
-          </p>
-          <a href="tel:7708477363" class="btn btn-outline-light" style="width:100%; justify-content:center;">(770) 847-7363</a>
-        </div>
-      </aside>
-
     </div>
-  </div>
-</section>
+  </section>
 </main>
 
 <?php get_footer(); ?>

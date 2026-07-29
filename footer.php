@@ -49,8 +49,10 @@
         <li><a href="<?php echo home_url('/attorney-james-walker/'); ?>">Attorney Walker</a></li>
         <li><a href="<?php echo home_url('/team/'); ?>">Our Team</a></li>
         <li><a href="<?php echo home_url('/media/'); ?>">Media &amp; Press</a></li>
-        <li><a href="<?php echo home_url('/clients/'); ?>">Clients</a></li>
+        <li><a href="<?php echo home_url('/photos/'); ?>">Photos</a></li>
+        <li><a href="<?php echo home_url('/testimonials/'); ?>">Testimonials</a></li>
         <li><a href="<?php echo home_url('/contact/'); ?>">Contact Us</a></li>
+        <li><a href="<?php echo home_url('/consultation/'); ?>">Book a Consultation</a></li>
       </ul>
     </div>
 
@@ -60,7 +62,7 @@
       <address>
         <p>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          3421 Main Street<br>Atlanta, GA 30337
+          The Walker Building<br>3421 Main Street<br>Atlanta, GA 30337
         </p>
         <p>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
@@ -79,15 +81,23 @@
   <!-- Footer bottom bar -->
   <div class="footer-bottom">
     <div class="footer-bottom-inner">
-      <p class="footer-legal">
-        &copy; <?php echo date('Y'); ?> J. Walker and Associates, LLP. All rights reserved.
-        Attorney advertising. Prior results do not guarantee similar outcomes.
+      <p class="footer-disclaimer">
+        This website is for general information only and is an attorney advertisement. The content on this
+        site is not legal advice and should not be relied on as such. Viewing this site, using its forms or
+        chat, or communicating with the firm through this site does not create an attorney-client
+        relationship. <a href="<?php echo home_url('/disclaimer/'); ?>">Read our full Disclaimer &amp; Terms</a>.
       </p>
-      <nav class="footer-legal-nav" aria-label="Legal">
-        <a href="<?php echo home_url('/privacy-policy/'); ?>">Privacy Policy</a>
-        <a href="<?php echo home_url('/disclaimer/'); ?>">Disclaimer</a>
-        <a href="<?php echo home_url('/accessibility/'); ?>">Accessibility</a>
-      </nav>
+      <div class="footer-bottom-row">
+        <p class="footer-legal">
+          &copy; <?php echo date('Y'); ?> J. Walker and Associates, LLP. All rights reserved.
+          Prior results do not guarantee similar outcomes.
+        </p>
+        <nav class="footer-legal-nav" aria-label="Legal">
+          <a href="<?php echo home_url('/privacy-policy/'); ?>">Privacy Policy</a>
+          <a href="<?php echo home_url('/disclaimer/'); ?>">Disclaimer</a>
+          <a href="<?php echo home_url('/accessibility/'); ?>">Accessibility</a>
+        </nav>
+      </div>
     </div>
   </div>
 

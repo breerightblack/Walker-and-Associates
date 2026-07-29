@@ -1,77 +1,93 @@
 <?php
 /**
  * Template Name: Testimonials
+ *
+ * GENERATED from testimonials.html by _build/html-to-php.py — do not hand-edit.
+ * Edit testimonials.html, then re-run the build script.
  */
 get_header();
-
-$star = '<svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
-
-$sample_testimonials = [
-  [
-    'initials' => 'MJ',
-    'name'     => 'Marcus J.',
-    'role'     => 'Recording Artist — Atlanta, GA',
-    'quote'    => "Attorney Walker and his team handled my label deal with expertise I've never seen from another law firm. They didn't just review the contract — they understood the industry and negotiated terms I didn't even know were possible to get.",
-  ],
-  [
-    'initials' => 'DN',
-    'name'     => 'Diane N.',
-    'role'     => 'Independent Film Producer',
-    'quote'    => 'From our first conversation, I knew this team was different. They handled our film production agreements with the kind of nuanced understanding that only comes from truly being embedded in the industry.',
-  ],
-  [
-    'initials' => 'KT',
-    'name'     => 'K. Thomas',
-    'role'     => 'Music Executive &amp; Brand Founder',
-    'quote'    => 'Walker &amp; Associates protected my brand when I needed it most. They won a case I was told was unwinnable. Their knowledge of entertainment IP law is on another level.',
-  ],
-  [
-    'initials' => 'AR',
-    'name'     => 'Angela R.',
-    'role'     => 'Author',
-    'quote'    => 'Publishing my memoir felt overwhelming until this team stepped in. They negotiated rights I would have signed away and made sure my story stayed mine.',
-  ],
-  [
-    'initials' => 'TB',
-    'name'     => 'T. Brooks',
-    'role'     => 'Television Producer',
-    'quote'    => 'Our production needed counsel who could move as fast as we did. Walker &amp; Associates kept every deal on schedule without ever cutting a corner.',
-  ],
-  [
-    'initials' => 'SK',
-    'name'     => 'Sam K.',
-    'role'     => 'Playwright &amp; Director',
-    'quote'    => "As a first-time playwright, I had no idea what I was signing. Walker &amp; Associates walked me through every clause and made sure the theater respected my rights.",
-  ],
-];
 ?>
 
 <div class="page-hero">
   <div class="container">
     <span class="eyebrow">Client Stories</span>
     <h1>Testimonials</h1>
-    <p>A preview of the layout — real client testimonials are on the way.</p>
+    <p>In their own words — from artists and athletes to pastors and families.</p>
   </div>
 </div>
 
 <main id="main" role="main">
   <section class="section">
     <div class="container">
-      <div class="testimonials-grid">
-        <?php foreach ( $sample_testimonials as $t ) : ?>
+      <div class="testimonials-masonry">
+
         <div class="testimonial-card">
-          <div class="testimonial-stars"><?php echo str_repeat( $star, 5 ); ?></div>
-          <blockquote><?php echo '"' . $t['quote'] . '"'; ?></blockquote>
+          <div class="testimonial-tag">Family Law</div>
+          <blockquote>&ldquo;Attorney Walker and his team delivered a result in my divorce case that went far beyond anything I expected. Because of their expertise, strategy, and dedication, I achieved an outcome that truly positioned me for a stronger future. Their ability to advocate with excellence made all the difference. Throughout the process, I felt genuinely supported, protected, and cared for every step of the way. I&rsquo;m especially grateful for Yillian&rsquo;s consistency and unwavering support. I truly believe God placed them in my life at the right time, and I will always be thankful.&rdquo;</blockquote>
           <div class="testimonial-attr">
-            <div class="testimonial-initials"><?php echo esc_html( $t['initials'] ); ?></div>
-            <div class="testimonial-meta"><strong><?php echo esc_html( $t['name'] ); ?></strong><span><?php echo $t['role']; ?></span></div>
+            <div class="testimonial-initials">MB</div>
+            <div class="testimonial-meta"><strong>Ms. Bankole</strong></div>
           </div>
         </div>
-        <?php endforeach; ?>
+
+        <div class="testimonial-card">
+          <div class="testimonial-tag">Actor</div>
+          <blockquote>&ldquo;Working with Attorney James L. Walker, Jr. at Walker &amp; Associates was a great experience. He was transparent from start to finish, explained every step clearly, and always kept me in the loop. I always felt heard and respected.&rdquo;</blockquote>
+          <div class="testimonial-attr">
+            <div class="testimonial-initials">CB</div>
+            <div class="testimonial-meta"><strong>Carter The Body</strong></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-tag">Music Industry</div>
+          <blockquote>I am very grateful to have met Attorney James L. Walker, Jr. He helped me with a very big case in the music industry, and I was fortunate to find someone who truly understood it. He diligently explained the process to me every step of the way. Attorney Walker is one of the best in the industry, and I always brag about him to my peers. His heart for making sure people get the diligence they deserve is great to see. If you ask me, he&rsquo;s a top-tier attorney.<br><br>I met him on a random phone call, and it generated a bond I didn&rsquo;t expect. He has a really great spirit, kind of like a big brother &mdash; a man of faith who was very encouraging at a time when I needed encouragement in my career. He&rsquo;s definitely a blessing and someone who genuinely helps others. There are a lot of good attorneys out there, but he is someone special. I appreciate him and his team, and I always make sure to shout out Attorney Walker every opportunity I get.</blockquote>
+          <div class="testimonial-attr">
+            <div class="testimonial-initials">AS</div>
+            <div class="testimonial-meta"><strong>Andre Sims</strong></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-tag">Nonprofit Formation</div>
+          <blockquote>&ldquo;Walker &amp; Associates did an outstanding job helping me establish my 501(c)(3) nonprofit organization. Their team was exceptionally professional, service-oriented, and highly knowledgeable, making the entire process smooth and stress-free. I highly recommend Walker &amp; Associates to anyone seeking experienced and trustworthy legal guidance for their nonprofit needs.&rdquo;</blockquote>
+          <div class="testimonial-attr">
+            <div class="testimonial-initials">AW</div>
+            <div class="testimonial-meta"><strong>Pastor Alfred Watts</strong></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-tag">NFL Player</div>
+          <blockquote>&ldquo;Attorney Walker and Walker &amp; Associates provided great service. They were very professional and kept me informed throughout the process. James L. Walker, Jr. is very direct and knowledgeable, which made everything clear.&rdquo;</blockquote>
+          <div class="testimonial-attr">
+            <div class="testimonial-initials">MR</div>
+            <div class="testimonial-meta"><strong>Micah Robinson</strong></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-tag">Music &amp; Ministry</div>
+          <blockquote>&ldquo;Attorney James L. Walker, Jr. and Walker &amp; Associates has been a very, very important part of my career and ministry. They have walked beside me in every situation, and they believe in the assignment of GOD on my life. I have learned so much and am forever grateful for the integrity they serve under. I recommend all of my friends who have an interest in the Music Business to talk to Attorney James L. Walker, Jr.&rdquo;</blockquote>
+          <div class="testimonial-attr">
+            <div class="testimonial-initials">SH</div>
+            <div class="testimonial-meta"><strong>Stephen Hurd</strong></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <blockquote>I have a very long and rich history with James L. Walker, Jr.; I&rsquo;ve known him for over 30 years. He used to be corporate counsel for our record company, and I was even his landlady at one point, though you&rsquo;d never know it now. I remember his Christmas parties, the Sony case, and so much more. James is an integrity-driven man for the people, and I&rsquo;ve found his team to be of the same caliber. He is synonymous with honor, integrity, and courage.<br><br>I&rsquo;ve watched him at the Walker Building in Connecticut, helping anyone he could and connecting people every chance he got. He is the epitome of someone who never forgot where he came from. James has never developed the arrogant gene that so many professionals in this industry seem to pick up. In other words, I am crazy about James L. Walker, Jr., and if you are around him, you are in good hands.</blockquote>
+          <div class="testimonial-attr">
+            <div class="testimonial-initials">BC</div>
+            <div class="testimonial-meta"><strong>Brenda Culpepper</strong></div>
+          </div>
+        </div>
+
       </div>
-      <p style="text-align:center; color:var(--taupe); font-size:.875rem; margin-top:var(--space-xl);">Sample content shown above — actual client testimonials will replace these placeholders soon.</p>
-      <div style="text-align:center; margin-top:var(--space-lg);">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn-primary">Back to Homepage</a>
+
+      <div style="text-align:center;margin-top:var(--space-2xl);">
+        <p style="color:var(--taupe);font-size:1rem;margin-bottom:var(--space-lg);">Ready to discuss your matter?</p>
+        <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary">Schedule a Consultation</a>
       </div>
     </div>
   </section>

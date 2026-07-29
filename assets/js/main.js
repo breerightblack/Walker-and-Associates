@@ -86,3 +86,28 @@
   }
 
 })();
+
+/* ── Contact form + consultation-fee copy buttons ──────────────────────── */
+(function () {
+  var form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      this.style.display = 'none';
+      var ok = document.getElementById('form-success');
+      if (ok) ok.style.display = 'block';
+    });
+  }
+
+  document.querySelectorAll('.payment-copy-go-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      if (navigator.clipboard) navigator.clipboard.writeText(btn.dataset.copy);
+      var status = btn.parentElement.querySelector('.payment-copy-status');
+      if (status) {
+        status.textContent = btn.dataset.status;
+        status.style.display = 'block';
+      }
+      // Anchors (PayPal) keep navigating; buttons (Zelle) have nowhere to go.
+    });
+  });
+})();

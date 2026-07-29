@@ -929,6 +929,49 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   color: var(--navy);
   box-shadow: var(--shadow-sm);
 }
+/* Required "Important Information" notice — must sit beside the pay/book area.
+   Spec calls for a clearly readable highlighted panel, not fine print. */
+.legal-notice {
+  background: #FFFDF6;
+  border: 1px solid var(--gold);
+  border-left: 3px solid var(--gold-dark);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+}
+.legal-notice-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  margin-bottom: var(--space-sm);
+}
+.legal-notice-title svg { width: 15px; height: 15px; flex-shrink: 0; }
+.legal-notice p {
+  font-size: .875rem;
+  line-height: 1.65;
+  color: var(--text-mid);
+}
+.legal-notice p + p { margin-top: var(--space-sm); }
+.legal-notice a { color: var(--navy); font-weight: 600; text-decoration: underline; }
+
+/* Media & Press — panoramic navy-to-gold bands, matching Practice Areas.
+   Each band's end colour is the next band's start so the flow reads continuous
+   down the page. All stops stay dark enough for white headings. */
+.media-band-1 { background: linear-gradient(160deg, #0A1628 0%, #1E3575 100%); }
+.media-band-2 { background: linear-gradient(160deg, #1E3575 0%, #3556A8 100%); }
+.media-band-3 { background: linear-gradient(160deg, #3556A8 0%, #4E63A2 100%); }
+.media-band-4 { background: linear-gradient(160deg, #4E63A2 0%, #7C6A3C 100%); }
+.media-band-5 { background: linear-gradient(160deg, #7C6A3C 0%, #8A7440 100%); }
+.media-band-6 { background: linear-gradient(160deg, #8A7440 0%, #967B3F 100%); }
+[class*="media-band-"] .section-header h2 { color: var(--white); }
+/* White, not gold — gold-on-gold washes out on the lower bands */
+[class*="media-band-"] .section-header .eyebrow { color: rgba(255,255,255,.8); }
+[class*="media-band-"] .section-header .eyebrow::before { background: rgba(255,255,255,.55); }
+
 .five-as-panel { display: none; }
 .five-as-panel.active {
   display: grid;
@@ -1039,6 +1082,32 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   color: var(--text-dark);
 }
 .testimonial-meta span { font-size: .8125rem; color: var(--taupe); }
+
+.testimonial-tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  margin-bottom: var(--space-md);
+}
+
+/* Masonry variant — for testimonials of widely varying length */
+.testimonials-masonry {
+  column-count: 1;
+  column-gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+@media (min-width: 768px)  { .testimonials-masonry { column-count: 2; } }
+@media (min-width: 1024px) { .testimonials-masonry { column-count: 3; column-gap: var(--space-lg); margin-top: var(--space-xl); } }
+.testimonials-masonry .testimonial-card {
+  break-inside: avoid;
+  margin-bottom: var(--space-md);
+}
+@media (min-width: 1024px) {
+  .testimonials-masonry .testimonial-card { margin-bottom: var(--space-lg); }
+}
+.testimonials-masonry .testimonial-card blockquote { flex: 0 1 auto; }
 
 /* ── CTA BAND ────────────────────────────────────────────────── */
 .cta-band { background: var(--navy); padding: var(--space-xl) 0; }
@@ -1194,12 +1263,32 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
+  gap: var(--space-md);
 }
 @media (min-width: 768px)  { .footer-bottom-inner { padding: 0 32px; } }
+@media (min-width: 1024px) { .footer-bottom-inner { padding: 0 48px; } }
+
+/* Required site-wide attorney advertising disclaimer — keep legible, not fine print */
+.footer-disclaimer {
+  font-size: .875rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.6);
+  max-width: 78ch;
+}
+.footer-disclaimer a {
+  color: rgba(255,255,255,.85);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--ease);
+}
+.footer-disclaimer a:hover { color: var(--gold); }
+.footer-bottom-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
 @media (min-width: 1024px) {
-  .footer-bottom-inner {
-    padding: 0 48px;
+  .footer-bottom-row {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -1359,3 +1448,65 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 .text-center { text-align: center; }
 .text-white { color: var(--white); }
+
+/* ── Consultation page ─────────────────────────────────────────────────── */
+.consult-layout { display: grid; grid-template-columns: 1fr; gap: var(--space-2xl); align-items: start; }
+@media (min-width: 1024px) { .consult-layout { grid-template-columns: 1fr 380px; gap: var(--space-3xl); } }
+@media (min-width: 1024px) {
+  .consult-aside { position: sticky; top: calc(var(--header-h) + var(--topbar-h) + var(--space-lg)); }
+}
+.consult-card {
+  background: var(--bg-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+}
+.consult-steps { display: flex; flex-direction: column; gap: var(--space-lg); }
+.consult-step { display: flex; gap: var(--space-md); align-items: flex-start; }
+.consult-step-num {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--navy); color: var(--white);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 600; flex-shrink: 0;
+}
+.consult-step h4 {
+  font-family: var(--font-serif); font-size: 1.125rem;
+  color: var(--text-dark); margin-bottom: 4px;
+}
+.consult-step p { font-size: .9375rem; color: var(--text-mid); line-height: 1.7; }
+
+.consult-price-card {
+  background: var(--bg-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+}
+.consult-price-label {
+  font-size: 11px; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--taupe); margin-bottom: 6px;
+}
+.consult-price {
+  font-family: var(--font-serif); font-size: 3rem; line-height: 1;
+  color: var(--navy); margin-bottom: var(--space-sm);
+}
+.consult-price-sub { font-size: .9375rem; color: var(--text-mid); line-height: 1.6; margin-bottom: var(--space-md); }
+.consult-price-note { font-size: .8125rem; color: var(--taupe); line-height: 1.6; margin-bottom: var(--space-lg); }
+
+/* Drop-in slot for a ThriveCart / Calendly embed */
+.booking-slot { padding-top: var(--space-md); border-top: 1px solid var(--color-border); }
+.booking-slot-text {
+  font-size: .875rem; color: var(--taupe);
+  margin-bottom: var(--space-md); text-align: center;
+}
+.consult-payment-note { margin-top: var(--space-md); }
+
+/* ── Contact / inquiry form ────────────────────────────────────────────── */
+.form-field { margin-bottom: var(--space-md); }
+.form-label { display:block;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--taupe);margin-bottom:6px; }
+.form-input {
+  width:100%;padding:13px 16px;border:1px solid var(--color-border);border-radius:var(--radius-sm);
+  font-family:var(--font-sans);font-size:.9375rem;color:var(--text-dark);background:var(--white);
+  transition:border-color var(--ease);outline:none;
+}
+.form-input:focus { border-color:var(--navy); }
+.form-row { display:grid;grid-template-columns:1fr 1fr;gap:var(--space-md); }
+select.form-input { -webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238B7D75' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center; }
+textarea.form-input { resize:vertical;min-height:140px; }

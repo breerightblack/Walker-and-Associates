@@ -1,6 +1,9 @@
 <?php
 /**
  * Template Name: Privacy Policy
+ *
+ * GENERATED from privacy-policy.html by _build/html-to-php.py — do not hand-edit.
+ * Edit privacy-policy.html, then re-run the build script.
  */
 get_header();
 ?>
@@ -18,25 +21,25 @@ get_header();
     <div class="container">
       <div style="max-width:760px;">
 
-        <p style="color:var(--text-mid); line-height:1.8; margin-bottom:var(--space-lg);">Walker &amp; Associates ("the Firm," "we," "us") respects your privacy. This policy explains what information we collect through walkerandassoc.com, how we use it, and the choices you have.</p>
+        <p style="color:var(--text-mid);line-height:1.8;margin-bottom:var(--space-lg);">Walker &amp; Associates ("the Firm," "we," "us") respects your privacy. This policy explains what information we collect through walkerandassoc.com, how we use it, and the choices you have.</p>
 
-        <h2 style="font-family:var(--font-serif); font-size:1.625rem; margin-bottom:var(--space-sm); margin-top:var(--space-xl);">Information We Collect</h2>
-        <p style="color:var(--text-mid); line-height:1.8; margin-bottom:var(--space-md);">When you submit our contact form, we collect the information you provide: your name, email address, phone number, practice area of interest, preferred contact time, and the details of your message. We do not use cookies, analytics, or third-party tracking scripts on this site today. If that changes, this policy will be updated to reflect it.</p>
+        <h2 style="font-family:var(--font-serif);font-size:1.625rem;margin-bottom:var(--space-sm);margin-top:var(--space-xl);">Information We Collect</h2>
+        <p style="color:var(--text-mid);line-height:1.8;margin-bottom:var(--space-md);">When you submit our contact form, we collect the information you provide: your name, email address, phone number, practice area of interest, preferred contact time, and the details of your message. We do not use cookies, analytics, or third-party tracking scripts on this site today. If that changes, this policy will be updated to reflect it.</p>
 
-        <h2 style="font-family:var(--font-serif); font-size:1.625rem; margin-bottom:var(--space-sm); margin-top:var(--space-xl);">How We Use Your Information</h2>
-        <p style="color:var(--text-mid); line-height:1.8; margin-bottom:var(--space-md);">We use the information you submit solely to respond to your inquiry, evaluate whether we can assist with your legal matter, and communicate with you about that matter. We do not sell, rent, or share your information with third parties for marketing purposes.</p>
+        <h2 style="font-family:var(--font-serif);font-size:1.625rem;margin-bottom:var(--space-sm);margin-top:var(--space-xl);">How We Use Your Information</h2>
+        <p style="color:var(--text-mid);line-height:1.8;margin-bottom:var(--space-md);">We use the information you submit solely to respond to your inquiry, evaluate whether we can assist with your legal matter, and communicate with you about that matter. We do not sell, rent, or share your information with third parties for marketing purposes.</p>
 
-        <h2 style="font-family:var(--font-serif); font-size:1.625rem; margin-bottom:var(--space-sm); margin-top:var(--space-xl);">Consultation Fee Payments</h2>
-        <p style="color:var(--text-mid); line-height:1.8; margin-bottom:var(--space-md);">If you pay a consultation fee using Cash App, Zelle, PayPal, MyCase, or wire transfer, that transaction is processed entirely by the third-party platform or your financial institution — not by this website. Any payment information you provide is governed by that platform's own privacy policy, not this one.</p>
+        <h2 style="font-family:var(--font-serif);font-size:1.625rem;margin-bottom:var(--space-sm);margin-top:var(--space-xl);">Consultation Fee Payments</h2>
+        <p style="color:var(--text-mid);line-height:1.8;margin-bottom:var(--space-md);">If you pay a consultation fee using Cash App, Zelle, PayPal, MyCase, or wire transfer, that transaction is processed entirely by the third-party platform or your financial institution — not by this website. Any payment information you provide is governed by that platform's own privacy policy, not this one.</p>
 
-        <h2 style="font-family:var(--font-serif); font-size:1.625rem; margin-bottom:var(--space-sm); margin-top:var(--space-xl);">Data Retention</h2>
-        <p style="color:var(--text-mid); line-height:1.8; margin-bottom:var(--space-md);">We retain inquiry and client information for as long as necessary to respond to your request, maintain our client records, and comply with our professional and legal obligations.</p>
+        <h2 style="font-family:var(--font-serif);font-size:1.625rem;margin-bottom:var(--space-sm);margin-top:var(--space-xl);">Data Retention</h2>
+        <p style="color:var(--text-mid);line-height:1.8;margin-bottom:var(--space-md);">We retain inquiry and client information for as long as necessary to respond to your request, maintain our client records, and comply with our professional and legal obligations.</p>
 
-        <h2 style="font-family:var(--font-serif); font-size:1.625rem; margin-bottom:var(--space-sm); margin-top:var(--space-xl);">Your Choices</h2>
-        <p style="color:var(--text-mid); line-height:1.8; margin-bottom:var(--space-md);">You may request that we delete information you've submitted through our contact form, provided doing so doesn't conflict with our recordkeeping obligations for an active or former client matter.</p>
+        <h2 style="font-family:var(--font-serif);font-size:1.625rem;margin-bottom:var(--space-sm);margin-top:var(--space-xl);">Your Choices</h2>
+        <p style="color:var(--text-mid);line-height:1.8;margin-bottom:var(--space-md);">You may request that we delete information you've submitted through our contact form, provided doing so doesn't conflict with our recordkeeping obligations for an active or former client matter.</p>
 
-        <h2 style="font-family:var(--font-serif); font-size:1.625rem; margin-bottom:var(--space-sm); margin-top:var(--space-xl);">Contact Us</h2>
-        <p style="color:var(--text-mid); line-height:1.8;">Questions about this policy can be directed to <a href="mailto:info@walkerandassoc.com" style="color:var(--navy); font-weight:600;">info@walkerandassoc.com</a> or <a href="tel:7708477363" style="color:var(--navy); font-weight:600;">(770) 847-7363</a>.</p>
+        <h2 style="font-family:var(--font-serif);font-size:1.625rem;margin-bottom:var(--space-sm);margin-top:var(--space-xl);">Contact Us</h2>
+        <p style="color:var(--text-mid);line-height:1.8;">Questions about this policy can be directed to <a href="mailto:info@walkerandassoc.com" style="color:var(--navy);font-weight:600;">info@walkerandassoc.com</a> or <a href="tel:7708477363" style="color:var(--navy);font-weight:600;">(770) 847-7363</a>.</p>
 
       </div>
     </div>

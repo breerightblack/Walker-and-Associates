@@ -1,0 +1,111 @@
+<?php
+/**
+ * Template Name: About the Firm
+ *
+ * GENERATED from about.html by _build/html-to-php.py — do not hand-edit.
+ * Edit about.html, then re-run the build script.
+ */
+get_header();
+?>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Our Story</span>
+    <h1>About the Firm</h1>
+    <p>30+ years of excellence at the intersection of law and the entertainment industry.</p>
+  </div>
+</div>
+
+<main id="main" role="main">
+
+  <!-- Firm Story -->
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3xl);align-items:start;">
+        <div>
+          <span class="eyebrow">Who We Are</span>
+          <h2 style="font-family:var(--font-serif);font-size:clamp(1.875rem,2.8vw,3rem);margin-bottom:var(--space-lg);">Built from the ground up for the creative community</h2>
+          <p style="font-size:1.05rem;color:var(--text-mid);line-height:1.8;margin-bottom:var(--space-md);">J. Walker and Associates, LLP was founded on a simple but powerful belief: that artists, creators, and entertainment professionals deserve the same quality of legal representation that major studios and labels have always had access to.</p>
+          <p style="font-size:1.05rem;color:var(--text-mid);line-height:1.8;margin-bottom:var(--space-md);">Attorney James Walker launched the firm in Atlanta with a focus on music industry law — a space that was underserved, particularly for Black artists and creators. Over 30 years, that practice has grown into one of the Southeast's most respected entertainment law firms, expanding its reach to serve clients in film, television, corporate, real estate, and litigation matters.</p>
+          <p style="font-size:1.05rem;color:var(--text-mid);line-height:1.8;margin-bottom:var(--space-xl);">Today, Walker & Associates stands at a pivotal moment in its history — formally expanding into film and television law as Atlanta cements its position as one of the nation's leading production hubs. The same commitment that defined our music practice now drives our work for filmmakers, showrunners, studios, and talent on both sides of the camera.</p>
+          <a href="<?php echo esc_url( home_url( '/team/james-walker/' ) ); ?>" class="btn btn-primary">Meet Attorney Walker</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-lg);">
+          <div style="background:var(--bg-light);border-radius:var(--radius-lg);padding:var(--space-xl);">
+            <div style="font-family:var(--font-serif);font-size:3rem;color:var(--navy);line-height:1;">1994</div>
+            <div style="font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--taupe);margin-top:4px;">Year Founded</div>
+          </div>
+          <div style="background:var(--navy);border-radius:var(--radius-lg);padding:var(--space-xl);color:var(--white);">
+            <div style="font-family:var(--font-serif);font-size:3rem;color:var(--gold);line-height:1;">4,000+</div>
+            <div style="font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:4px;">Clients Represented</div>
+          </div>
+          <div style="background:var(--gold-dark);border-radius:var(--radius-lg);padding:var(--space-xl);color:var(--white);">
+            <div style="font-family:var(--font-serif);font-size:3rem;color:var(--white);line-height:1;">5</div>
+            <div style="font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:4px;">Core Practice Areas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="section section-dark">
+    <div class="container">
+      <div style="max-width:800px;margin:0 auto;text-align:center;">
+        <span class="eyebrow" style="color:var(--gold);">Our Mission</span>
+        <h2 style="font-family:var(--font-serif);font-size:clamp(2rem,3vw,3.25rem);color:var(--white);margin-bottom:var(--space-lg);line-height:1.1;">Every artist, filmmaker, and creator deserves world-class legal counsel</h2>
+        <p style="font-size:1.125rem;color:rgba(255,255,255,.7);line-height:1.75;">We believe that access to expert legal representation should never be a barrier to creative success. Walker & Associates exists to level that playing field — combining deep industry knowledge, strategic thinking, and relentless advocacy on behalf of the clients who trust us with what matters most.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">What Drives Us</span>
+        <h2>Our Core Values</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-lg);margin-top:var(--space-xl);">
+        <div style="background:var(--white);border-radius:var(--radius-md);padding:var(--space-xl);border:1px solid var(--color-border);">
+          <div style="width:48px;height:48px;background:var(--bg-light);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-lg);color:var(--navy);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:24px;height:24px;"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          </div>
+          <h3 style="font-family:var(--font-serif);font-size:1.375rem;margin-bottom:var(--space-sm);">Excellence</h3>
+          <p style="color:var(--taupe);font-size:.9375rem;line-height:1.65;">We hold ourselves to the highest standard in every matter — whether it's a first contract negotiation or a complex multi-party dispute.</p>
+        </div>
+        <div style="background:var(--white);border-radius:var(--radius-md);padding:var(--space-xl);border:1px solid var(--color-border);">
+          <div style="width:48px;height:48px;background:var(--bg-light);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-lg);color:var(--gold-dark);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:24px;height:24px;"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 style="font-family:var(--font-serif);font-size:1.375rem;margin-bottom:var(--space-sm);">Client-Centered</h3>
+          <p style="color:var(--taupe);font-size:.9375rem;line-height:1.65;">Your goals drive every decision we make. We take the time to understand not just your legal need, but the creative and business vision behind it.</p>
+        </div>
+        <div style="background:var(--white);border-radius:var(--radius-md);padding:var(--space-xl);border:1px solid var(--color-border);">
+          <div style="width:48px;height:48px;background:var(--bg-light);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-lg);color:var(--teal);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:24px;height:24px;"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 style="font-family:var(--font-serif);font-size:1.375rem;margin-bottom:var(--space-sm);">Industry Expertise</h3>
+          <p style="color:var(--taupe);font-size:.9375rem;line-height:1.65;">We don't just know the law — we know the industry. Our attorneys are embedded in the entertainment community, not just advising from the outside.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="cta-band-inner">
+      <div>
+        <h2>Ready to work with a firm that understands your world?</h2>
+        <p>Schedule a confidential consultation to discuss your legal needs.</p>
+      </div>
+      <div class="cta-band-actions">
+        <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-outline-light" style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.6);font-size:14px;padding:16px 36px;">Schedule Consultation</a>
+        <a href="tel:7708477363" style="color:rgba(255,255,255,.75);font-size:13px;font-weight:600;">(770) 847-7363</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<?php get_footer(); ?>
