@@ -5,7 +5,7 @@
   <title>Practice Areas — Entertainment, Film & TV Law | Walker & Associates</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/main.css?v=2" />
   <meta name="description" content="Entertainment law, film & television, music law, IP, litigation, corporate law, and real estate. 20+ practice areas. 30+ years serving creative professionals in GA, NY, DC, and CT." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://walkerandassoc.com/practice-areas.html" />
@@ -133,11 +133,11 @@
       min-width: 48px;
     }
     .pa-box.active { flex: 5; }
-    /* Color backgrounds */
-    .pa-box-1 { background: #3D6BB5; }
-    .pa-box-2 { background: #B69143; }
-    .pa-box-3 { background: #2A3A5C; }
-    .pa-box-4 { background: #1A5C6B; }
+    /* Color backgrounds — seamless panoramic gradient L→R */
+    .pa-box-1 { background: linear-gradient(160deg, #0A1628 0%, #1E3575 100%); }
+    .pa-box-2 { background: linear-gradient(160deg, #1E3575 0%, #3556A8 100%); }
+    .pa-box-3 { background: linear-gradient(160deg, #3556A8 0%, #967B3F 100%); }
+    .pa-box-4 { background: linear-gradient(160deg, #967B3F 0%, #BFAA62 100%); }
     /* Vertical label on collapsed box */
     .pa-box-label {
       position: absolute;
@@ -272,8 +272,8 @@
   <section style="background:#0D1B3E;" id="film-tv">
     <div style="display:flex;height:560px;gap:3px;" id="featuredBoxes">
 
-      <!-- Box A: Film & TV — blue -->
-      <div class="pa-box active" style="background:#28458B;" data-featured="0">
+      <!-- Box A: Film & TV -->
+      <div class="pa-box active" style="background:linear-gradient(160deg,#0A1628 0%,#1E3575 100%);" data-featured="0">
         <span class="pa-box-label">Film &amp; Television</span>
         <div class="pa-box-content">
           <div style="font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;">Featured Practice</div>
@@ -292,7 +292,7 @@
       </div>
 
       <!-- Box B: Notable Cases — deep navy -->
-      <div class="pa-box" style="background:linear-gradient(160deg,#0A1428 0%,#162040 100%);" data-featured="1">
+      <div class="pa-box" style="background:linear-gradient(160deg,#1E3575 0%,#3556A8 100%);" data-featured="1">
         <span class="pa-box-label">Notable Cases</span>
         <div class="pa-box-content">
           <div class="cases-eyebrow">Notable Matters &amp; Case Wins</div>
@@ -320,7 +320,7 @@
       </div>
 
       <!-- Box C: Entertainment & Music — gold -->
-      <div class="pa-box" style="background:#B69143;" data-featured="2">
+      <div class="pa-box" style="background:linear-gradient(160deg,#3556A8 0%,#967B3F 100%);" data-featured="2">
         <span class="pa-box-label">Entertainment &amp; Music</span>
         <div class="pa-box-content">
           <div style="font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:14px;">Core Practice</div>
@@ -339,7 +339,7 @@
       </div>
 
       <!-- Box D: About the Firm — dark brown -->
-      <div class="pa-box" style="background:linear-gradient(150deg,#2B1A00 0%,#4A2E00 100%);" data-featured="3">
+      <div class="pa-box" style="background:linear-gradient(160deg,#967B3F 0%,#BFAA62 100%);" data-featured="3">
         <span class="pa-box-label">The Firm</span>
         <div class="pa-box-content">
           <div style="font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;">Walker &amp; Associates</div>
@@ -466,8 +466,8 @@
 </main>
 
 <div id="wa-footer"></div>
-<script src="assets/js/main.js" defer></script>
-<script src="assets/js/nav.js" defer></script>
+<script src="assets/js/main.js?v=2" defer></script>
+<script src="assets/js/nav.js?v=2" defer></script>
 <script>
   (function() {
     function wireBoxes(selector) {

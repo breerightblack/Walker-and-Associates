@@ -6,7 +6,7 @@
 
   const nav = `
 <div id="topbar">
-  <span class="topbar-text">Expanding into Film &amp; Television — <a href="${root}practice-areas.html">Explore our new practice areas →</a></span>
+  <span class="topbar-text">Our goal every day is to use our resources to touch and inspire and encourage.</span>
 </div>
 <header id="site-header">
   <div class="header-inner">
@@ -21,7 +21,14 @@
         <li><a href="${root}team/james-walker.html">Attorney Walker</a></li>
         <li><a href="${root}team.html">Our Team</a></li>
         <li><a href="${root}practice-areas.html">Practice Areas</a></li>
-        <li><a href="${root}media.html">Media &amp; Press</a></li>
+        <li class="has-dropdown">
+          <a href="${root}media.html">Media &amp; Press</a>
+          <ul class="nav-dropdown">
+            <li><a href="${root}media.html">Media &amp; Press</a></li>
+            <li><a href="${root}photos.html">Photos</a></li>
+            <li><a href="${root}testimonials.html">Testimonials</a></li>
+          </ul>
+        </li>
         <li><a href="${root}contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -64,6 +71,8 @@
         <li><a href="${root}team/james-walker.html">Attorney Walker</a></li>
         <li><a href="${root}team.html">Our Team</a></li>
         <li><a href="${root}media.html">Media &amp; Press</a></li>
+        <li><a href="${root}photos.html">Photos</a></li>
+        <li><a href="${root}testimonials.html">Testimonials</a></li>
         <li><a href="${root}contact.html">Contact Us</a></li>
       </ul>
     </div>
@@ -79,7 +88,7 @@
   <div class="footer-bottom">
     <div class="footer-bottom-inner">
       <p class="footer-legal">&copy; 2026 J. Walker and Associates, LLP. All rights reserved. Attorney advertising. Prior results do not guarantee similar outcomes.</p>
-      <nav class="footer-legal-nav"><a href="#">Privacy Policy</a><a href="#">Disclaimer</a><a href="#">Accessibility</a></nav>
+      <nav class="footer-legal-nav"><a href="${root}privacy-policy.html">Privacy Policy</a><a href="${root}disclaimer.html">Disclaimer</a><a href="${root}accessibility.html">Accessibility</a></nav>
     </div>
   </div>
 </footer>`;
