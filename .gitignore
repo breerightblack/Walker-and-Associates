@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Client-supplied source documents — keep local, never publish.
+# Contains client names, matter details, and staff personal information.
+_source-docs/
+
+# Generated WordPress theme folder (built by _build/sync-to-wordpress.sh)
+../walker-associates-wp/

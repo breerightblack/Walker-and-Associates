@@ -23,8 +23,9 @@ def parse(slug):
     art   = re.search(r'<article class="bio-content">(.*?)</article>', s, re.S)
     if not (name and title and photo and art): return None
     # keep block-level elements as discrete HTML strings
-    blocks = re.findall(r'<(p|h3)\b[^>]*>.*?</\1>', art.group(1), re.S)
-    blocks = [' '.join(b.split()) for b in blocks]
+    # finditer + group(0): findall with a capture group returns the group, not the match
+    blocks = [' '.join(m.group(0).split())
+              for m in re.finditer(r'<(p|h3)\b[^>]*>.*?</\1>', art.group(1), re.S)]
     return {
         'name':  ' '.join(name.group(1).split()),
         'title': ' '.join(title.group(1).split()),
