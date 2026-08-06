@@ -476,8 +476,10 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 /* ── HERO ────────────────────────────────────────────────────── */
 .hero {
   position: relative;
-  height: calc(100svh - var(--header-h) - var(--topbar-h));
-  min-height: 480px;
+  /* min-height, not height: a fixed box clipped longer copy off the top
+     because .hero-content is bottom-aligned and grows upward. */
+  min-height: max(480px, calc(100svh - var(--header-h) - var(--topbar-h)));
+  display: flex;
   overflow: hidden;
   background: #0a0a0a;
 }
@@ -503,10 +505,11 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .hero-content {
   position: relative;
   z-index: 2;
-  height: 100%;
+  flex: 1;
   display: flex;
   align-items: flex-end;
-  padding: 0 20px var(--space-xl);
+  /* top padding keeps the first line clear of the sticky header */
+  padding: var(--space-2xl) 20px var(--space-xl);
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -515,6 +518,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .hero-body { max-width: 760px; }
 .hero-eyebrow {
   font-family: var(--font-sans);
+  max-width: 62ch;
+  text-wrap: balance;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: .18em;
@@ -1720,4 +1725,24 @@ body.lightbox-open { overflow: hidden; }
 .pa-accordion-cta { margin-top: var(--space-md); font-size: 12px; padding: 11px 22px; }
 @media (prefers-reduced-motion: reduce) {
   .pa-accordion-icon::before, .pa-accordion-icon::after { transition: none; }
+}
+
+/* ── Hero on short viewports ───────────────────────────────────────────────
+   On laptops around 720-800px tall the full-size hero type overflowed the
+   available space. Scale it down so the strapline, headline, paragraph and
+   buttons all stay on screen without scrolling. */
+@media (max-height: 820px) and (min-width: 1024px) {
+  .hero-content {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
+  }
+  .hero h1 {
+    font-size: clamp(1.875rem, 3.4vw, 3.25rem);
+    line-height: 1.08;
+  }
+  .hero-eyebrow { margin-bottom: var(--space-xs); }
+  .hero-body p {
+    font-size: .9375rem;
+    margin-bottom: var(--space-sm);
+  }
 }
