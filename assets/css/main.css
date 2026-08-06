@@ -1463,6 +1463,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 .consult-card {
   background: var(--bg-light);
+  border: 1px solid var(--navy);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
 }
@@ -1482,6 +1483,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 .consult-price-card {
   background: var(--bg-light);
+  border: 1px solid var(--navy);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
 }
