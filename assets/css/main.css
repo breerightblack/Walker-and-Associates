@@ -513,9 +513,10 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   max-width: var(--max-width);
   margin: 0 auto;
 }
-@media (min-width: 768px)  { .hero-content { padding: 0 32px var(--space-2xl); } }
-@media (min-width: 1024px) { .hero-content { padding: 0 48px var(--space-3xl); } }
+@media (min-width: 768px)  { .hero-content { padding: var(--space-lg) 32px var(--space-2xl); } }
+@media (min-width: 1024px) { .hero-content { padding: var(--space-xl) 48px var(--space-2xl); } }
 .hero-body { max-width: 760px; }
+.hero-body p.hero-eyebrow,
 .hero-eyebrow {
   font-family: var(--font-sans);
   max-width: 62ch;
@@ -527,7 +528,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   color: var(--gold);
   margin-bottom: var(--space-sm);
 }
-@media (min-width: 768px) { .hero-eyebrow { font-size: 12px; margin-bottom: var(--space-md); } }
+@media (min-width: 768px) { .hero-body p.hero-eyebrow { font-size: 12px; margin-bottom: var(--space-md); } }
 .hero-body h1 {
   font-family: var(--font-serif);
   font-size: clamp(2.25rem, 6vw, 6rem);
@@ -1740,7 +1741,7 @@ body.lightbox-open { overflow: hidden; }
     font-size: clamp(1.875rem, 3.4vw, 3.25rem);
     line-height: 1.08;
   }
-  .hero-eyebrow { margin-bottom: var(--space-xs); }
+  .hero-body p.hero-eyebrow { margin-bottom: var(--space-xs); }
   .hero-body p {
     font-size: .9375rem;
     margin-bottom: var(--space-sm);

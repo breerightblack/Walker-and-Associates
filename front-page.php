@@ -18,7 +18,7 @@ get_header();
   <div class="hero-content">
     <div class="hero-body">
       <p class="hero-eyebrow">A Multi-Market Legal Firm for Entertainment, Business, Film, and Television</p>
-      <h1>Counsel for the people<br>and companies<br><em>shaping culture</em></h1>
+      <h1>Counsel for the<br>people and companies<br><em>shaping culture</em></h1>
       <p>Walker &amp; Associates is a modern law firm advising founders, rights holders, production companies, executives, and talent on complex business, media, and entertainment matters.</p>
       <div class="hero-actions">
         <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-accent">Schedule a Consultation</a>
