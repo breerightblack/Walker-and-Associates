@@ -17,7 +17,7 @@
           <span class="footer-logo-sub">&amp; Associates</span>
         </div>
       </a>
-      <p class="footer-tagline">Atlanta's Premier Entertainment,<br>Film &amp; Television Law Firm</p>
+      <p class="footer-tagline">A Multi-Market Legal Firm for Entertainment, Business, Film, and Television</p>
       <div class="footer-social">
         <a href="https://www.instagram.com/walkerandassociates/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>

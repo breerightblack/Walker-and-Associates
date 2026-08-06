@@ -17,9 +17,9 @@ get_header();
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-body">
-      <p class="hero-eyebrow">Atlanta Entertainment Law · Film &amp; Television · Music</p>
-      <h1>Representing the<br><em>voices that move</em><br>culture forward</h1>
-      <p>From the recording studio to the production stage, J. Walker and Associates has protected artists, filmmakers, and talent for over 30 years. Your story deserves counsel that understands the industry.</p>
+      <p class="hero-eyebrow">A Multi-Market Legal Firm for Entertainment, Business, Film, and Television</p>
+      <h1>Counsel for the people<br>and companies<br><em>shaping culture</em></h1>
+      <p>Walker &amp; Associates is a modern law firm advising founders, rights holders, production companies, executives, and talent on complex business, media, and entertainment matters.</p>
       <div class="hero-actions">
         <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-accent">Schedule a Consultation</a>
         <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>" class="btn btn-outline-light">Explore Practice Areas</a>
@@ -43,10 +43,10 @@ get_header();
     <div class="about-intro-text">
       <div class="section-header">
         <span class="eyebrow">About the Firm</span>
-        <h2>A cutting-edge law firm built for the entertainment industry</h2>
+        <h2>A forward-thinking law firm built for the modern entertainment and business landscape</h2>
       </div>
-      <p>Walker &amp; Associates is a cutting-edge law firm that provides top-tier legal services tailored to your unique needs. We bring institutional knowledge, creative strategy, and unwavering advocacy to every matter — from record deal negotiations to major motion picture transactions.</p>
-      <p>Founded by Attorney James Walker and headquartered in Atlanta, the firm has grown from a music-industry powerhouse into one of the Southeast's premier entertainment, film &amp; television legal practices.</p>
+      <p>Walker &amp; Associates delivers top-tier legal counsel tailored to the unique demands of creators, companies, and executives. We combine deep industry knowledge, strategic insight, and relentless advocacy across every matter — from recording contracts and film financing to corporate transactions, disputes, and reputation-sensitive issues.</p>
+      <p>Founded by Attorney James Walker and based in Atlanta, the firm has evolved from a respected music-law practice into one of the Southeast's leading firms for entertainment, media, business, and litigation matters.</p>
       <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="btn btn-outline">Learn About the Firm</a>
     </div>
     <div class="about-intro-visual about-intro-visual--wm">
@@ -70,6 +70,43 @@ get_header();
     </div>
   </div>
 </div>
+
+<!-- WHO WE HELP -->
+<section class="section who-we-help" id="who-we-help">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Who We Help</span>
+      <h2>Counsel for the people and companies shaping culture</h2>
+      <p>Walker &amp; Associates serves clients who operate at the intersection of business, media, and culture — from founders and executives to creators, production stakeholders, and brands navigating high-stakes legal and strategic matters.</p>
+    </div>
+    <div class="who-grid">
+      <div class="who-card">
+        <h3>Founders &amp; Growing Businesses</h3>
+        <p>We advise entrepreneurs, startups, and established companies on entity formation, contracts, partnerships, financing, intellectual property, and day-to-day legal infrastructure. Whether you&rsquo;re launching a new venture, scaling operations, or managing complex agreements, we help you build a strong legal foundation for growth.</p>
+      </div>
+      <div class="who-card">
+        <h3>Film, Television, and Media Professionals</h3>
+        <p>Our Film &amp; Television division represents producers, directors, writers, crew members, production companies, and content creators in deal negotiation, rights acquisition, financing structures, distribution agreements, and other critical matters across the production lifecycle.</p>
+      </div>
+      <div class="who-card">
+        <h3>Artists, Musicians, and Talent</h3>
+        <p>We continue to serve the creative community that helped build our reputation — including recording artists, songwriters, producers, managers, and other talent — with counsel on recording contracts, publishing, licensing, trademarks, and brand partnerships.</p>
+      </div>
+      <div class="who-card">
+        <h3>Executives &amp; Decision-Makers</h3>
+        <p>We work with C-suite leaders, investors, and key stakeholders who need strategic guidance on corporate governance, transactions, employment matters, disputes, and reputation-sensitive issues where legal and business risks converge.</p>
+      </div>
+      <div class="who-card">
+        <h3>Production Companies &amp; Studios</h3>
+        <p>From independent producers to larger production entities, we provide comprehensive support for development, financing, production services, talent agreements, post-production, and distribution across film, television, and digital content.</p>
+      </div>
+      <div class="who-card">
+        <h3>Agencies, Brands, and Cultural Organizations</h3>
+        <p>We represent agencies, brands, and organizations active in entertainment, media, sports, and lifestyle spaces, advising on contracts, partnerships, intellectual property, marketing agreements, and other matters that protect and advance their commercial interests.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- PRACTICE AREAS -->
 <section class="section practice-areas">
@@ -171,7 +208,7 @@ get_header();
           <div class="team-card-photo-overlay"><span>View Bio</span></div>
         </a>
         <h3><a href="<?php echo esc_url( home_url( '/team/paul-wilson-ii/' ) ); ?>">Paul Wilson II</a></h3>
-        <p class="team-card-title">Attorney</p>
+        <p class="team-card-title">Associate Attorney</p>
       </div>
       <div class="team-card">
         <a href="<?php echo esc_url( home_url( '/team/stephanie-hay/' ) ); ?>" class="team-card-photo">

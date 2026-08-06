@@ -54,7 +54,7 @@
       <a href="${root}index.html" class="footer-logo-wrap">
         <div class="footer-logo-text"><span class="footer-logo-name">Walker</span><span class="footer-logo-sub">&amp; Associates</span></div>
       </a>
-      <p class="footer-tagline">Atlanta's Premier Entertainment,<br>Film &amp; Television Law Firm</p>
+      <p class="footer-tagline">A Multi-Market Legal Firm for Entertainment, Business, Film, and Television</p>
       <div class="footer-social">
         <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
         <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>

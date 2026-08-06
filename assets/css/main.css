@@ -1601,3 +1601,50 @@ body.lightbox-open { overflow: hidden; }
   .gallery-item, .gallery-item img { transition: none; }
   .gallery-item:hover img { transform: none; }
 }
+
+/* ── Who We Help ───────────────────────────────────────────────────────── */
+.who-we-help { background: var(--color-bg-alt); }
+.who-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+@media (min-width: 768px)  { .who-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .who-grid { grid-template-columns: repeat(3, 1fr); gap: var(--space-lg); margin-top: var(--space-xl); } }
+.who-card {
+  background: var(--white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  border-top: 3px solid var(--gold);
+  padding: var(--space-lg);
+  transition: box-shadow var(--ease);
+}
+.who-card:hover { box-shadow: var(--shadow-md); }
+.who-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  margin-bottom: var(--space-sm);
+  text-wrap: balance;
+}
+.who-card p { font-size: .9375rem; color: var(--taupe); line-height: 1.7; }
+
+/* ── Breadcrumb (sits on the navy .page-hero) ──────────────────────────── */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-sm);
+  font-size: .9375rem;
+}
+.breadcrumb a {
+  color: rgba(255,255,255,.78);
+  font-weight: 500;
+  transition: color var(--ease);
+}
+.breadcrumb a:hover { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
+.breadcrumb a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
+.breadcrumb .breadcrumb-sep { color: rgba(255,255,255,.4); }
+.breadcrumb .breadcrumb-current { color: var(--white); font-weight: 500; }
