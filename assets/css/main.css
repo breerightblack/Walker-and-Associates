@@ -1648,3 +1648,76 @@ body.lightbox-open { overflow: hidden; }
 .breadcrumb a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
 .breadcrumb .breadcrumb-sep { color: rgba(255,255,255,.4); }
 .breadcrumb .breadcrumb-current { color: var(--gold); font-weight: 500; }
+
+/* ── Practice-area accordion (full directory) ──────────────────────────── */
+.pa-detail { background: var(--color-bg-alt); }
+.pa-accordion {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xs);
+  max-width: 900px;
+}
+.pa-accordion-item {
+  background: var(--white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.pa-accordion-item:has(.pa-accordion-trigger[aria-expanded="true"]) {
+  border-color: var(--gold);
+  box-shadow: var(--shadow-sm);
+}
+.pa-accordion-heading { margin: 0; font-family: inherit; font-size: inherit; font-weight: inherit; }
+.pa-accordion-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  text-align: left;
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  color: var(--text-dark);
+  transition: background var(--ease), color var(--ease);
+}
+.pa-accordion-trigger:hover { background: var(--bg-light); color: var(--navy); }
+.pa-accordion-trigger:focus-visible { outline: 3px solid var(--gold); outline-offset: -3px; }
+.pa-accordion-trigger[aria-expanded="true"] { color: var(--navy); }
+
+/* plus / minus built from two bars */
+.pa-accordion-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.pa-accordion-icon::before,
+.pa-accordion-icon::after {
+  content: '';
+  position: absolute;
+  background: var(--gold-dark);
+  transition: transform var(--ease), opacity var(--ease);
+}
+.pa-accordion-icon::before { top: 7px; left: 0; width: 16px; height: 2px; }
+.pa-accordion-icon::after  { left: 7px; top: 0; width: 2px; height: 16px; }
+.pa-accordion-trigger[aria-expanded="true"] .pa-accordion-icon::after {
+  transform: scaleY(0);
+  opacity: 0;
+}
+.pa-accordion-panel[hidden] { display: none; }
+.pa-accordion-body {
+  padding: 0 var(--space-lg) var(--space-lg);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-md);
+}
+.pa-accordion-body p {
+  font-size: .9375rem;
+  line-height: 1.75;
+  color: var(--text-mid);
+}
+.pa-accordion-body p + p { margin-top: var(--space-sm); }
+.pa-accordion-cta { margin-top: var(--space-md); font-size: 12px; padding: 11px 22px; }
+@media (prefers-reduced-motion: reduce) {
+  .pa-accordion-icon::before, .pa-accordion-icon::after { transition: none; }
+}

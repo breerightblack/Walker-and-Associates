@@ -174,3 +174,27 @@
     }
   });
 })();
+
+/* ── Practice-area accordion ───────────────────────────────────────────── */
+(function () {
+  var triggers = document.querySelectorAll('.pa-accordion-trigger');
+  if (!triggers.length) return;
+
+  triggers.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var panel = document.getElementById(btn.getAttribute('aria-controls'));
+      var open  = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      if (panel) panel.hidden = open;
+    });
+  });
+
+  // deep link: /practice-areas#book-deals opens that panel
+  if (window.location.hash) {
+    var t = document.getElementById('pa-trigger-' + window.location.hash.slice(1));
+    if (t) {
+      t.click();
+      t.scrollIntoView({ block: 'center' });
+    }
+  }
+})();
