@@ -1640,11 +1640,11 @@ body.lightbox-open { overflow: hidden; }
   font-size: .9375rem;
 }
 .breadcrumb a {
-  color: rgba(255,255,255,.78);
+  color: var(--gold);
   font-weight: 500;
   transition: color var(--ease);
 }
-.breadcrumb a:hover { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
+.breadcrumb a:hover { color: var(--gold-light); text-decoration: underline; text-underline-offset: 3px; }
 .breadcrumb a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
 .breadcrumb .breadcrumb-sep { color: rgba(255,255,255,.4); }
-.breadcrumb .breadcrumb-current { color: var(--white); font-weight: 500; }
+.breadcrumb .breadcrumb-current { color: var(--gold); font-weight: 500; }

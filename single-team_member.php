@@ -188,10 +188,12 @@ $member = isset( $bios[ $current_slug ] ) ? $bios[ $current_slug ] : null;
 <?php if ( $member ) : ?>
 
 <div class="page-hero" style="background: var(--tan-pale);">
-  <div class="container" style="display:flex; align-items:center; gap:12px;">
-    <a href="<?php echo esc_url( home_url('/team/') ); ?>" style="color:var(--taupe); font-size:13px; font-weight:500;">← Our Team</a>
-    <span style="color:var(--color-border);">/</span>
-    <span style="color:var(--text-mid); font-size:13px;"><?php echo esc_html( $member['name'] ); ?></span>
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="<?php echo esc_url( home_url('/team/') ); ?>">&larr; Our Team</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span class="breadcrumb-current" aria-current="page"><?php echo esc_html( $member['name'] ); ?></span>
+    </nav>
   </div>
 </div>
 
