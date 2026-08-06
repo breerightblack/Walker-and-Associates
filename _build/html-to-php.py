@@ -64,9 +64,9 @@ def wp_ify(body):
             return m.group(0)
         return '''href="<?php echo esc_url( home_url( '%s' ) ); ?>%s"''' % (slug, anchor)
     body = re.sub(r'href="([a-z0-9-]+)\.html(#[a-z0-9-]+)?"', link, body)
-    # theme images
-    body = re.sub(r'src="(?:\.\./)?assets/images/([^"]+)"',
-                  lambda m: '''src="<?php echo esc_url( wa_img( '%s' ) ); ?>"''' % m.group(1),
+    # theme images — src= and any data-* attribute pointing at assets/images
+    body = re.sub(r'(src|data-full|data-src|data-thumb)="(?:\.\./)?assets/images/([^"]+)"',
+                  lambda m: '''%s="<?php echo esc_url( wa_img( '%s' ) ); ?>"''' % (m.group(1), m.group(2)),
                   body)
     # theme video
     body = re.sub(r'src="(?:\.\./)?assets/video/([^"]+)"',

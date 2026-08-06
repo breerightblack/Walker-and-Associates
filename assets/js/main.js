@@ -111,3 +111,66 @@
     });
   });
 })();
+
+/* ── Photo gallery lightbox ────────────────────────────────────────────── */
+(function () {
+  var items = Array.prototype.slice.call(document.querySelectorAll('.gallery-item'));
+  var box   = document.getElementById('lightbox');
+  if (!items.length || !box) return;
+
+  var img     = document.getElementById('lightbox-img');
+  var counter = document.getElementById('lightbox-counter');
+  var closeEl = document.getElementById('lightbox-close');
+  var prevEl  = document.getElementById('lightbox-prev');
+  var nextEl  = document.getElementById('lightbox-next');
+  var index   = 0;
+  var lastFocused = null;
+
+  function show(i) {
+    index = (i + items.length) % items.length;
+    var btn = items[index];
+    img.src = btn.dataset.full;
+    img.alt = btn.dataset.alt || '';
+    counter.textContent = (index + 1) + ' / ' + items.length;
+  }
+
+  function open(i) {
+    lastFocused = document.activeElement;
+    show(i);
+    box.hidden = false;
+    document.body.classList.add('lightbox-open');
+    closeEl.focus();
+  }
+
+  function close() {
+    box.hidden = true;
+    document.body.classList.remove('lightbox-open');
+    img.src = '';
+    if (lastFocused) lastFocused.focus();
+  }
+
+  items.forEach(function (btn, i) {
+    btn.addEventListener('click', function () { open(i); });
+  });
+
+  closeEl.addEventListener('click', close);
+  prevEl.addEventListener('click', function () { show(index - 1); });
+  nextEl.addEventListener('click', function () { show(index + 1); });
+
+  // click the backdrop (not the image or controls) to dismiss
+  box.addEventListener('click', function (e) { if (e.target === box) close(); });
+
+  document.addEventListener('keydown', function (e) {
+    if (box.hidden) return;
+    if (e.key === 'Escape')     close();
+    if (e.key === 'ArrowLeft')  show(index - 1);
+    if (e.key === 'ArrowRight') show(index + 1);
+    // keep tab focus inside the dialog
+    if (e.key === 'Tab') {
+      var f = [closeEl, prevEl, nextEl];
+      var at = f.indexOf(document.activeElement);
+      e.preventDefault();
+      f[(at + (e.shiftKey ? -1 : 1) + f.length) % f.length].focus();
+    }
+  });
+})();

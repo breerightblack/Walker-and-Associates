@@ -12,20 +12,56 @@ get_header();
   <div class="container">
     <span class="eyebrow">Gallery</span>
     <h1>Photos</h1>
-    <p>A preview of the gallery layout — real photos are on the way.</p>
+    <p>Moments from the firm — our people, our work, and the milestones along the way.</p>
   </div>
 </div>
 
 <main id="main" role="main">
   <section class="section">
     <div class="container">
-      <div style="text-align:center;padding:var(--space-3xl) 0;">
-        <div style="width:64px;height:64px;border-radius:50%;background:var(--bg-light);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-lg);">
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:28px;height:28px;"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="M8 5l1.5-2h5L16 5"/></svg>
-        </div>
-        <h2 style="font-family:var(--font-serif);font-size:clamp(1.75rem,3vw,2.5rem);font-weight:300;margin-bottom:var(--space-md);color:var(--text-dark);">Coming Soon</h2>
-        <p style="color:var(--taupe);font-size:1rem;max-width:420px;margin:0 auto var(--space-xl);line-height:1.7;">We're curating a gallery of moments from the firm — events, milestones, and the people behind the work. Check back soon.</p>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn-outline">Back to Homepage</a>
+      <div class="gallery-grid">
+        <button class="gallery-item" type="button" data-full="<?php echo esc_url( wa_img( 'gallery/01-full-team.jpg' ) ); ?>" data-alt="The Walker & Associates team" aria-label="View larger: The Walker & Associates team">
+          <img src="<?php echo esc_url( wa_img( 'gallery/01-full-team-thumb.jpg' ) ); ?>" alt="The Walker & Associates team" loading="lazy">
+        </button>
+        <button class="gallery-item" type="button" data-full="<?php echo esc_url( wa_img( 'gallery/02-team-group.jpg' ) ); ?>" data-alt="Members of the Walker & Associates team" aria-label="View larger: Members of the Walker & Associates team">
+          <img src="<?php echo esc_url( wa_img( 'gallery/02-team-group-thumb.jpg' ) ); ?>" alt="Members of the Walker & Associates team" loading="lazy">
+        </button>
+        <button class="gallery-item" type="button" data-full="<?php echo esc_url( wa_img( 'gallery/03-walker-with-team.jpg' ) ); ?>" data-alt="Attorney James L. Walker, Jr. with members of the firm" aria-label="View larger: Attorney James L. Walker, Jr. with members of the firm">
+          <img src="<?php echo esc_url( wa_img( 'gallery/03-walker-with-team-thumb.jpg' ) ); ?>" alt="Attorney James L. Walker, Jr. with members of the firm" loading="lazy">
+        </button>
+        <button class="gallery-item" type="button" data-full="<?php echo esc_url( wa_img( 'gallery/04-walker-with-team.jpg' ) ); ?>" data-alt="Attorney James L. Walker, Jr. with members of the firm" aria-label="View larger: Attorney James L. Walker, Jr. with members of the firm">
+          <img src="<?php echo esc_url( wa_img( 'gallery/04-walker-with-team-thumb.jpg' ) ); ?>" alt="Attorney James L. Walker, Jr. with members of the firm" loading="lazy">
+        </button>
+        <button class="gallery-item" type="button" data-full="<?php echo esc_url( wa_img( 'gallery/05-walker-with-team.jpg' ) ); ?>" data-alt="Attorney James L. Walker, Jr. with members of the firm" aria-label="View larger: Attorney James L. Walker, Jr. with members of the firm">
+          <img src="<?php echo esc_url( wa_img( 'gallery/05-walker-with-team-thumb.jpg' ) ); ?>" alt="Attorney James L. Walker, Jr. with members of the firm" loading="lazy">
+        </button>
+        <button class="gallery-item" type="button" data-full="<?php echo esc_url( wa_img( 'gallery/06-leadership.jpg' ) ); ?>" data-alt="Walker & Associates leadership" aria-label="View larger: Walker & Associates leadership">
+          <img src="<?php echo esc_url( wa_img( 'gallery/06-leadership-thumb.jpg' ) ); ?>" alt="Walker & Associates leadership" loading="lazy">
+        </button>
+        <button class="gallery-item" type="button" data-full="<?php echo esc_url( wa_img( 'gallery/07-leadership.jpg' ) ); ?>" data-alt="Walker & Associates leadership" aria-label="View larger: Walker & Associates leadership">
+          <img src="<?php echo esc_url( wa_img( 'gallery/07-leadership-thumb.jpg' ) ); ?>" alt="Walker & Associates leadership" loading="lazy">
+        </button>
+        <button class="gallery-item" type="button" data-full="<?php echo esc_url( wa_img( 'gallery/08-leadership.jpg' ) ); ?>" data-alt="Walker & Associates leadership" aria-label="View larger: Walker & Associates leadership">
+          <img src="<?php echo esc_url( wa_img( 'gallery/08-leadership-thumb.jpg' ) ); ?>" alt="Walker & Associates leadership" loading="lazy">
+        </button>
+        <button class="gallery-item" type="button" data-full="<?php echo esc_url( wa_img( 'gallery/09-leadership.jpg' ) ); ?>" data-alt="Walker & Associates leadership" aria-label="View larger: Walker & Associates leadership">
+          <img src="<?php echo esc_url( wa_img( 'gallery/09-leadership-thumb.jpg' ) ); ?>" alt="Walker & Associates leadership" loading="lazy">
+        </button>
+        <button class="gallery-item" type="button" data-full="<?php echo esc_url( wa_img( 'gallery/10-leadership.jpg' ) ); ?>" data-alt="Walker & Associates leadership" aria-label="View larger: Walker & Associates leadership">
+          <img src="<?php echo esc_url( wa_img( 'gallery/10-leadership-thumb.jpg' ) ); ?>" alt="Walker & Associates leadership" loading="lazy">
+        </button>
+        <button class="gallery-item" type="button" data-full="<?php echo esc_url( wa_img( 'gallery/11-leadership.jpg' ) ); ?>" data-alt="Walker & Associates leadership" aria-label="View larger: Walker & Associates leadership">
+          <img src="<?php echo esc_url( wa_img( 'gallery/11-leadership-thumb.jpg' ) ); ?>" alt="Walker & Associates leadership" loading="lazy">
+        </button>
+        <button class="gallery-item" type="button" data-full="<?php echo esc_url( wa_img( 'gallery/12-walker-associate.jpg' ) ); ?>" data-alt="Attorney James L. Walker, Jr. with a member of the firm" aria-label="View larger: Attorney James L. Walker, Jr. with a member of the firm">
+          <img src="<?php echo esc_url( wa_img( 'gallery/12-walker-associate-thumb.jpg' ) ); ?>" alt="Attorney James L. Walker, Jr. with a member of the firm" loading="lazy">
+        </button>
+        <button class="gallery-item" type="button" data-full="<?php echo esc_url( wa_img( 'gallery/13-handshake.jpg' ) ); ?>" data-alt="Attorney James L. Walker, Jr. greeting a colleague" aria-label="View larger: Attorney James L. Walker, Jr. greeting a colleague">
+          <img src="<?php echo esc_url( wa_img( 'gallery/13-handshake-thumb.jpg' ) ); ?>" alt="Attorney James L. Walker, Jr. greeting a colleague" loading="lazy">
+        </button>
+        <button class="gallery-item" type="button" data-full="<?php echo esc_url( wa_img( 'gallery/14-handshake-portrait.jpg' ) ); ?>" data-alt="Attorney James L. Walker, Jr. greeting a colleague" aria-label="View larger: Attorney James L. Walker, Jr. greeting a colleague">
+          <img src="<?php echo esc_url( wa_img( 'gallery/14-handshake-portrait-thumb.jpg' ) ); ?>" alt="Attorney James L. Walker, Jr. greeting a colleague" loading="lazy">
+        </button>
       </div>
     </div>
   </section>
