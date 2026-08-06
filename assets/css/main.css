@@ -1747,3 +1747,39 @@ body.lightbox-open { overflow: hidden; }
     margin-bottom: var(--space-sm);
   }
 }
+
+/* ── Who We Help teaser (homepage) ─────────────────────────────────────── */
+.who-teaser { background: var(--color-bg-alt); }
+.who-teaser-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+@media (min-width: 1024px) {
+  .who-teaser-inner { grid-template-columns: 1fr 1fr; gap: var(--space-3xl); }
+}
+.who-teaser-text h2 { color: var(--text-dark); margin-bottom: var(--space-sm); }
+.who-teaser-text p { color: var(--taupe); font-size: 1.05rem; line-height: 1.7; max-width: 46ch; }
+.who-teaser-list {
+  display: grid;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-lg);
+}
+.who-teaser-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: .9375rem;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+.who-teaser-list li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+  margin-top: .5em;
+}

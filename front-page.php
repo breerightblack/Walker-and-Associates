@@ -71,38 +71,25 @@ get_header();
   </div>
 </div>
 
-<!-- WHO WE HELP -->
-<section class="section who-we-help" id="who-we-help">
+<!-- WHO WE HELP (teaser) -->
+<section class="section who-teaser" id="who-we-help">
   <div class="container">
-    <div class="section-header">
-      <span class="eyebrow">Who We Help</span>
-      <h2>Counsel for the people and companies shaping culture</h2>
-      <p>Walker &amp; Associates serves clients who operate at the intersection of business, media, and culture — from founders and executives to creators, production stakeholders, and brands navigating high-stakes legal and strategic matters.</p>
-    </div>
-    <div class="who-grid">
-      <div class="who-card">
-        <h3>Founders &amp; Growing Businesses</h3>
-        <p>We advise entrepreneurs, startups, and established companies on entity formation, contracts, partnerships, financing, intellectual property, and day-to-day legal infrastructure. Whether you&rsquo;re launching a new venture, scaling operations, or managing complex agreements, we help you build a strong legal foundation for growth.</p>
+    <div class="who-teaser-inner">
+      <div class="who-teaser-text">
+        <span class="eyebrow">Who We Help</span>
+        <h2>Clients at the intersection of business, media, and culture</h2>
+        <p>From founders and executives to creators, production stakeholders, and brands navigating high-stakes legal and strategic matters.</p>
       </div>
-      <div class="who-card">
-        <h3>Film, Television, and Media Professionals</h3>
-        <p>Our Film &amp; Television division represents producers, directors, writers, crew members, production companies, and content creators in deal negotiation, rights acquisition, financing structures, distribution agreements, and other critical matters across the production lifecycle.</p>
-      </div>
-      <div class="who-card">
-        <h3>Artists, Musicians, and Talent</h3>
-        <p>We continue to serve the creative community that helped build our reputation — including recording artists, songwriters, producers, managers, and other talent — with counsel on recording contracts, publishing, licensing, trademarks, and brand partnerships.</p>
-      </div>
-      <div class="who-card">
-        <h3>Executives &amp; Decision-Makers</h3>
-        <p>We work with C-suite leaders, investors, and key stakeholders who need strategic guidance on corporate governance, transactions, employment matters, disputes, and reputation-sensitive issues where legal and business risks converge.</p>
-      </div>
-      <div class="who-card">
-        <h3>Production Companies &amp; Studios</h3>
-        <p>From independent producers to larger production entities, we provide comprehensive support for development, financing, production services, talent agreements, post-production, and distribution across film, television, and digital content.</p>
-      </div>
-      <div class="who-card">
-        <h3>Agencies, Brands, and Cultural Organizations</h3>
-        <p>We represent agencies, brands, and organizations active in entertainment, media, sports, and lifestyle spaces, advising on contracts, partnerships, intellectual property, marketing agreements, and other matters that protect and advance their commercial interests.</p>
+      <div class="who-teaser-aside">
+        <ul class="who-teaser-list">
+          <li>Founders &amp; Growing Businesses</li>
+          <li>Film, Television, and Media Professionals</li>
+          <li>Artists, Musicians, and Talent</li>
+          <li>Executives &amp; Decision-Makers</li>
+          <li>Production Companies &amp; Studios</li>
+          <li>Agencies, Brands, and Cultural Organizations</li>
+        </ul>
+        <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>#who-we-help" class="btn btn-outline">See Who We Help</a>
       </div>
     </div>
   </div>
