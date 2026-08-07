@@ -96,8 +96,8 @@
       </a>
       <p class="footer-tagline">A Multi-Market Legal Firm for Entertainment, Business, Film, and Television</p>
       <div class="footer-social">
-        <a href="https://www.instagram.com/jameswalkerjresq/?hl=en" aria-label="Instagram — James L. Walker, Jr." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
-        <a href="https://www.linkedin.com/in/james-l-walker-jr-a324035/" aria-label="LinkedIn — James L. Walker, Jr." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="https://www.instagram.com/jameswalkerjresq/?hl=en" aria-label="Instagram — James L. Walker Esq." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
+        <a href="https://www.linkedin.com/in/james-l-walker-jr-a324035/" aria-label="LinkedIn — James L. Walker Esq." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
       </div>
     </div>
     <div class="footer-col">

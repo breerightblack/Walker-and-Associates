@@ -46,7 +46,7 @@ get_header();
         <h2>A forward-thinking law firm built for the modern entertainment and business landscape</h2>
       </div>
       <p>Walker &amp; Associates delivers top-tier legal counsel tailored to the unique demands of creators, companies, and executives. We combine deep industry knowledge, strategic insight, and relentless advocacy across every matter — from recording contracts and film financing to corporate transactions, disputes, and reputation-sensitive issues.</p>
-      <p>Founded by Attorney James Walker and based in Atlanta, the firm has evolved from a respected music-law practice into one of the Southeast's leading firms for entertainment, media, business, and litigation matters.</p>
+      <p>Founded by Attorney James L. Walker Esq. and based in Atlanta, the firm has evolved from a respected music-law practice into one of the Southeast's leading firms for entertainment, media, business, and litigation matters.</p>
       <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="btn btn-outline">Learn About the Firm</a>
     </div>
     <div class="about-intro-visual about-intro-visual--wm">
@@ -183,10 +183,10 @@ get_header();
     <div class="team-grid-preview">
       <div class="team-card">
         <a href="<?php echo esc_url( home_url( '/team/james-walker/' ) ); ?>" class="team-card-photo">
-          <img src="<?php echo esc_url( wa_img( 'team/James.jpg' ) ); ?>" alt="James Walker" loading="lazy">
+          <img src="<?php echo esc_url( wa_img( 'team/James.jpg' ) ); ?>" alt="James L. Walker Esq." loading="lazy">
           <div class="team-card-photo-overlay"><span>View Bio</span></div>
         </a>
-        <h3><a href="<?php echo esc_url( home_url( '/team/james-walker/' ) ); ?>">James Walker</a></h3>
+        <h3><a href="<?php echo esc_url( home_url( '/team/james-walker/' ) ); ?>">James L. Walker Esq.</a></h3>
         <p class="team-card-title">Founding Attorney</p>
       </div>
       <div class="team-card">
@@ -247,7 +247,7 @@ get_header();
       <div class="five-as-card"><h4>Internship Program</h4><p>Runs an internship program for law students committed to developing the next generation of entertainment lawyers and creatives.</p></div>
     </div>
     <div id="tab-articles" class="five-as-panel">
-      <div class="five-as-card"><h4>This Business of Urban Music</h4><p>Authored by Attorney James L. Walker, Jr. — a leading guide for young entertainment lawyers and musicians navigating the industry.</p></div>
+      <div class="five-as-card"><h4>This Business of Urban Music</h4><p>Authored by Attorney James L. Walker Esq. — a leading guide for young entertainment lawyers and musicians navigating the industry.</p></div>
     </div>
     <div id="tab-announcements" class="five-as-panel">
       <div class="five-as-card"><h4>Firm Expands into Film &amp; Television</h4><p>Walker & Associates expands its Film & Television practice with the addition of Of Counsel Stephanie K. Hay.</p></div>
@@ -268,7 +268,7 @@ get_header();
 
       <div class="testimonial-card">
         <div class="testimonial-tag">Actor</div>
-        <blockquote>&ldquo;Working with Attorney James L. Walker, Jr. at Walker &amp; Associates was a great experience. He was transparent from start to finish, explained every step clearly, and always kept me in the loop. I always felt heard and respected.&rdquo;</blockquote>
+        <blockquote>&ldquo;Working with Attorney James L. Walker Esq. at Walker &amp; Associates was a great experience. He was transparent from start to finish, explained every step clearly, and always kept me in the loop. I always felt heard and respected.&rdquo;</blockquote>
         <div class="testimonial-attr">
           <div class="testimonial-initials">CB</div>
           <div class="testimonial-meta"><strong>Carter The Body</strong></div>
@@ -277,7 +277,7 @@ get_header();
 
       <div class="testimonial-card">
         <div class="testimonial-tag">NFL Player</div>
-        <blockquote>&ldquo;Attorney Walker and Walker &amp; Associates provided great service. They were very professional and kept me informed throughout the process. James L. Walker, Jr. is very direct and knowledgeable, which made everything clear.&rdquo;</blockquote>
+        <blockquote>&ldquo;Attorney Walker and Walker &amp; Associates provided great service. They were very professional and kept me informed throughout the process. James L. Walker Esq. is very direct and knowledgeable, which made everything clear.&rdquo;</blockquote>
         <div class="testimonial-attr">
           <div class="testimonial-initials">MR</div>
           <div class="testimonial-meta"><strong>Micah Robinson</strong></div>
@@ -286,7 +286,7 @@ get_header();
 
       <div class="testimonial-card">
         <div class="testimonial-tag">Music Industry</div>
-        <blockquote>I am very grateful to have met Attorney James L. Walker, Jr. He helped me with a very big case in the music industry, and I was fortunate to find someone who truly understood it. He diligently explained the process to me every step of the way. Attorney Walker is one of the best in the industry, and I always brag about him to my peers&hellip;</blockquote>
+        <blockquote>I am very grateful to have met Attorney James L. Walker Esq. He helped me with a very big case in the music industry, and I was fortunate to find someone who truly understood it. He diligently explained the process to me every step of the way. Attorney Walker is one of the best in the industry, and I always brag about him to my peers&hellip;</blockquote>
         <div class="testimonial-attr">
           <div class="testimonial-initials">AS</div>
           <div class="testimonial-meta"><strong>Andre Sims</strong></div>

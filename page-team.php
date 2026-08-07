@@ -22,8 +22,8 @@ get_header();
 
       <div class="team-full-card">
         <a href="<?php echo esc_url( home_url( '/team/james-walker/' ) ); ?>">
-          <img class="team-full-photo" src="<?php echo esc_url( wa_img( 'team/James.jpg' ) ); ?>" alt="James Walker" loading="lazy">
-          <div class="team-full-name">James Walker</div>
+          <img class="team-full-photo" src="<?php echo esc_url( wa_img( 'team/James.jpg' ) ); ?>" alt="James L. Walker Esq." loading="lazy">
+          <div class="team-full-name">James L. Walker Esq.</div>
           <div class="team-full-title">Founding Attorney</div>
         </a>
       </div>
