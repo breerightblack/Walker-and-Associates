@@ -1,8 +1,9 @@
 /* Shared nav/footer injector — edit once, updates all pages */
 (function() {
   const path = window.location.pathname;
-  const isTeam = path.includes('/team/');
-  const root = isTeam ? '../' : '';
+  // any page living in a subfolder needs to climb one level for shared links
+  const inSubfolder = /\/(team|practice-areas)\//.test(path);
+  const root = inSubfolder ? '../' : '';
 
   const nav = `
 <div id="topbar">
@@ -20,7 +21,46 @@
         <li><a href="${root}about.html">About the Firm</a></li>
         <li><a href="${root}team/james-walker.html">Attorney Walker</a></li>
         <li><a href="${root}team.html">Our Team</a></li>
-        <li><a href="${root}practice-areas.html">Practice Areas</a></li>
+        <li class="has-dropdown has-dropdown-wide">
+          <a href="${root}practice-areas.html">Practice Areas</a>
+          <ul class="nav-dropdown nav-dropdown-cols">
+            <li class="pa-all"><a href="${root}practice-areas.html"><strong>All Practice Areas</strong></a></li>
+            <li class="pa-cols-wrap">
+              <ul class="pa-cols">
+              <li><a href="${root}practice-areas/advertising-contracts.html">Advertising Contracts</a></li>
+              <li><a href="${root}practice-areas/book-deals.html">Book Deals</a></li>
+              <li><a href="${root}practice-areas/business-disputes.html">Business Disputes</a></li>
+              <li><a href="${root}practice-areas/business-litigation.html">Business Litigation</a></li>
+              <li><a href="${root}practice-areas/commercial-contracts.html">Commercial Contracts</a></li>
+              <li><a href="${root}practice-areas/commercial-litigation.html">Commercial Litigation</a></li>
+              <li><a href="${root}practice-areas/copyright-law.html">Copyright Law</a></li>
+              <li><a href="${root}practice-areas/corporate.html">Corporate</a></li>
+              <li><a href="${root}practice-areas/crisis-management.html">Crisis Management</a></li>
+              <li><a href="${root}practice-areas/digital-and-streaming.html">Digital &amp; Streaming</a></li>
+              <li><a href="${root}practice-areas/dispute-resolution.html">Dispute Resolution</a></li>
+              <li><a href="${root}practice-areas/employment-and-labor.html">Employment &amp; Labor</a></li>
+              <li><a href="${root}practice-areas/entertainment-law.html">Entertainment Law</a></li>
+              <li><a href="${root}practice-areas/family-law.html">Family Law (Divorces, Pre-Nups &amp; More)</a></li>
+              <li><a href="${root}practice-areas/film-deals.html">Film Deals</a></li>
+              <li><a href="${root}practice-areas/immigration.html">Immigration</a></li>
+              <li><a href="${root}practice-areas/intellectual-property-and-entertainment-law.html">Intellectual Property and Entertainment Law</a></li>
+              <li><a href="${root}practice-areas/internet-protection.html">Internet Protection</a></li>
+              <li><a href="${root}practice-areas/llc-s-corp-and-c-corp-set-up.html">LLC, S-Corp &amp; C-Corp Set Up</a></li>
+              <li><a href="${root}practice-areas/personal-injury.html">Personal Injury</a></li>
+              <li><a href="${root}practice-areas/power-of-attorney.html">Power of Attorney</a></li>
+              <li><a href="${root}practice-areas/production-and-financing-agreements.html">Production &amp; Financing Agreements</a></li>
+              <li><a href="${root}practice-areas/publishing-deals.html">Publishing Deals</a></li>
+              <li><a href="${root}practice-areas/real-estate.html">Real Estate</a></li>
+              <li><a href="${root}practice-areas/recording-contracts.html">Recording Contracts</a></li>
+              <li><a href="${root}practice-areas/small-business-governance-and-operations.html">Small Business Governance &amp; Operations</a></li>
+              <li><a href="${root}practice-areas/synchronization-and-mechanical-licensing.html">Synchronization &amp; Mechanical Licensing</a></li>
+              <li><a href="${root}practice-areas/taxes.html">Taxes</a></li>
+              <li><a href="${root}practice-areas/trademarks.html">Trademarks</a></li>
+              <li><a href="${root}practice-areas/wills-and-trusts.html">Wills &amp; Trusts</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li class="has-dropdown">
           <a href="${root}media.html">Media &amp; Press</a>
           <ul class="nav-dropdown">
@@ -56,8 +96,8 @@
       </a>
       <p class="footer-tagline">A Multi-Market Legal Firm for Entertainment, Business, Film, and Television</p>
       <div class="footer-social">
-        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
-        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="https://www.instagram.com/jameswalkerjresq/?hl=en" aria-label="Instagram — James L. Walker, Jr." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
+        <a href="https://www.linkedin.com/in/james-l-walker-jr-a324035/" aria-label="LinkedIn — James L. Walker, Jr." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
       </div>
     </div>
     <div class="footer-col">

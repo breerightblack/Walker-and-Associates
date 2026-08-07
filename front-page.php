@@ -18,7 +18,7 @@ get_header();
   <div class="hero-content">
     <div class="hero-body">
       <p class="hero-eyebrow">A Multi-Market Legal Firm for Entertainment, Business, Film, and Television</p>
-      <h1>Counsel for the<br>people and companies<br><em>shaping culture</em></h1>
+      <h1>A cutting-edge law firm<br><em>built for the future</em></h1>
       <p>Walker &amp; Associates is a modern law firm advising founders, rights holders, production companies, executives, and talent on complex business, media, and entertainment matters.</p>
       <div class="hero-actions">
         <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-accent">Schedule a Consultation</a>
@@ -65,7 +65,7 @@ get_header();
     <div class="stats-grid">
       <div class="stat-item"><div class="stat-number" data-target="30" data-suffix="+">30+</div><div class="stat-label">Years in Practice</div></div>
       <div class="stat-item"><div class="stat-number" data-target="4000" data-suffix="+">4,000+</div><div class="stat-label">Clients Represented</div></div>
-      <div class="stat-item"><div class="stat-number">20+</div><div class="stat-label">Practice Areas</div></div>
+      <div class="stat-item"><div class="stat-number">30</div><div class="stat-label">Practice Areas</div></div>
       <div class="stat-item"><div class="stat-number">4</div><div class="stat-label">Licensed States</div></div>
     </div>
   </div>
@@ -100,7 +100,7 @@ get_header();
   <div class="container">
     <div class="section-header">
       <span class="eyebrow">What We Do</span>
-      <h2>Comprehensive Entertainment Legal Services</h2>
+      <h2>Comprehensive Legal Services</h2>
       <p>From your first contract to your landmark deal — we protect what you've built and position you for what's next.</p>
     </div>
     <div class="practice-grid">

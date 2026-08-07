@@ -1788,3 +1788,158 @@ body.lightbox-open { overflow: hidden; }
   flex-shrink: 0;
   margin-top: .5em;
 }
+
+/* ── Practice-area detail pages ─────────────────────────────────────────── */
+.pa-page-hero {
+  position: relative;
+  overflow: hidden;
+  /* brand gradient shows until a hero photo is supplied */
+  background: linear-gradient(160deg, #0A1628 0%, #1E3575 55%, #967B3F 100%);
+  padding: var(--space-xl) 0 var(--space-lg);
+}
+@media (min-width: 1024px) { .pa-page-hero { padding: var(--space-2xl) 0 var(--space-xl); } }
+.pa-page-hero-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: .45;
+}
+.pa-page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(10,22,40,.55) 0%, rgba(10,22,40,.75) 100%);
+}
+.pa-page-hero-content { position: relative; z-index: 2; }
+.pa-page-hero .eyebrow { color: var(--gold); }
+.pa-page-hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.875rem, 3.2vw, 3.25rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--white);
+  text-wrap: balance;
+  max-width: 22ch;
+}
+
+.pa-page-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+@media (min-width: 1024px) {
+  .pa-page-layout { grid-template-columns: 1fr 340px; gap: var(--space-3xl); }
+  .pa-page-aside { position: sticky; top: calc(var(--header-h) + var(--topbar-h) + var(--space-lg)); }
+}
+.pa-page-body p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--text-mid);
+}
+.pa-page-body p + p { margin-top: var(--space-md); }
+
+.pa-page-related {
+  margin-top: var(--space-lg);
+  background: var(--bg-light);
+  border: 1px solid var(--navy);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+.pa-page-related-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  margin-bottom: var(--space-sm);
+}
+.pa-page-related ul { display: grid; gap: 6px; max-height: 320px; overflow-y: auto; }
+.pa-page-related a {
+  font-size: .875rem;
+  color: var(--text-mid);
+  line-height: 1.5;
+  transition: color var(--ease);
+}
+.pa-page-related a:hover { color: var(--navy); text-decoration: underline; }
+
+/* ── Wide dropdown: 30 practice areas ──────────────────────────────────────
+   Outer <ul> is the scroll container; the inner list uses CSS columns so each
+   column flows independently. A grid here coupled row heights across columns,
+   so one two-line label inflated every item beside it. CSS columns alone can't
+   scroll vertically (a height limit spills into extra columns), hence the nest.
+   NB: no `display` on .nav-dropdown-cols — .nav-dropdown{display:none} must
+   keep it closed; the open state is set below. */
+.nav-dropdown-cols {
+  width: max-content;
+  max-width: calc(100vw - 48px);
+  padding: var(--space-sm) var(--space-xs);
+  max-height: calc(100vh - var(--header-h) - var(--topbar-h) - 32px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.has-dropdown:hover > .nav-dropdown-cols,
+.has-dropdown:focus-within > .nav-dropdown-cols { display: block; }
+
+.nav-dropdown-cols > .pa-all { margin-bottom: 4px; }
+.nav-dropdown-cols > .pa-all a strong { font-weight: 600; color: var(--navy); }
+
+.pa-cols {
+  columns: 2;
+  column-gap: var(--space-sm);
+  width: 430px;
+}
+@media (min-width: 1200px) { .pa-cols { columns: 3; width: 640px; } }
+.pa-cols li { break-inside: avoid; }
+
+.nav-dropdown-cols a {
+  display: block;
+  padding: 4px 10px;
+  text-transform: none;
+  letter-spacing: .01em;
+  font-size: 13px;
+  line-height: 1.35;
+  white-space: normal;
+  border-bottom: none;
+}
+.nav-dropdown-cols a:hover { background: var(--bg-light); color: var(--navy); }
+
+.nav-dropdown-cols::-webkit-scrollbar { width: 10px; }
+.nav-dropdown-cols::-webkit-scrollbar-thumb {
+  background: var(--bg-soft); border-radius: 5px; border: 3px solid #fff;
+}
+.nav-dropdown-cols::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+.has-dropdown-wide { position: relative; }
+.has-dropdown-wide .nav-dropdown-cols { left: 0; transform: none; }
+@media (min-width: 1024px) {
+  .has-dropdown-wide .nav-dropdown-cols { left: 50%; transform: translateX(-50%); }
+}
+#primary-nav.mobile-open .nav-dropdown-cols {
+  display: block;
+  width: 100%;
+  max-width: none;
+  max-height: 45vh;
+}
+#primary-nav.mobile-open .pa-cols { columns: 1; width: auto; }
+
+/* ── Consultation page: payment methods (display only, no links) ────────── */
+.pay-methods-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  margin-bottom: var(--space-sm);
+}
+.pay-methods { display: grid; gap: 10px; margin-bottom: var(--space-md); }
+.pay-methods li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: .9375rem;
+  color: var(--text-dark);
+}
+.pay-icon { display: inline-flex; flex-shrink: 0; }
+.pay-icon svg { width: 20px; height: 20px; }
+.pay-methods-note { font-size: .8125rem; color: var(--taupe); line-height: 1.6; }

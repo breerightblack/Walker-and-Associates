@@ -8,7 +8,7 @@
 
   <!-- SEO: Primary meta description fallback (Yoast overrides this) -->
   <?php if ( is_front_page() ) : ?>
-  <meta name="description" content="Atlanta entertainment law firm specializing in film, television, and music law. J. Walker and Associates represents musicians, filmmakers, and talent nationwide. Call (770) 847-7363." />
+  <meta name="description" content="A Multi-market Legal Firm for Entertainment, Business, Film, and Television. 30+ years advising founders, rights holders, executives, and talent. Call (770) 847-7363." />
   <?php endif; ?>
 
   <!-- OG defaults (Yoast overrides per-page) -->
@@ -60,7 +60,46 @@
             <li><a href="<?php echo home_url('/about/'); ?>">About the Firm</a></li>
             <li><a href="<?php echo home_url('/attorney-james-walker/'); ?>">Attorney Walker</a></li>
             <li><a href="<?php echo home_url('/team/'); ?>">Our Team</a></li>
-            <li><a href="<?php echo home_url('/practice-areas/'); ?>">Practice Areas</a></li>
+            <li class="has-dropdown has-dropdown-wide">
+          <a href="<?php echo home_url('/practice-areas/'); ?>">Practice Areas</a>
+          <ul class="nav-dropdown nav-dropdown-cols">
+            <li class="pa-all"><a href="<?php echo home_url('/practice-areas/'); ?>"><strong>All Practice Areas</strong></a></li>
+            <li class="pa-cols-wrap">
+              <ul class="pa-cols">
+              <li><a href="<?php echo home_url('/practice-areas/advertising-contracts/'); ?>">Advertising Contracts</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/book-deals/'); ?>">Book Deals</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/business-disputes/'); ?>">Business Disputes</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/business-litigation/'); ?>">Business Litigation</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/commercial-contracts/'); ?>">Commercial Contracts</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/commercial-litigation/'); ?>">Commercial Litigation</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/copyright-law/'); ?>">Copyright Law</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/corporate/'); ?>">Corporate</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/crisis-management/'); ?>">Crisis Management</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/digital-and-streaming/'); ?>">Digital &amp; Streaming</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/dispute-resolution/'); ?>">Dispute Resolution</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/employment-and-labor/'); ?>">Employment &amp; Labor</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/entertainment-law/'); ?>">Entertainment Law</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/family-law/'); ?>">Family Law (Divorces, Pre-Nups &amp; More)</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/film-deals/'); ?>">Film Deals</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/immigration/'); ?>">Immigration</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/intellectual-property-and-entertainment-law/'); ?>">Intellectual Property and Entertainment Law</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/internet-protection/'); ?>">Internet Protection</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/llc-s-corp-and-c-corp-set-up/'); ?>">LLC, S-Corp &amp; C-Corp Set Up</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/personal-injury/'); ?>">Personal Injury</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/power-of-attorney/'); ?>">Power of Attorney</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/production-and-financing-agreements/'); ?>">Production &amp; Financing Agreements</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/publishing-deals/'); ?>">Publishing Deals</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/real-estate/'); ?>">Real Estate</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/recording-contracts/'); ?>">Recording Contracts</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/small-business-governance-and-operations/'); ?>">Small Business Governance &amp; Operations</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/synchronization-and-mechanical-licensing/'); ?>">Synchronization &amp; Mechanical Licensing</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/taxes/'); ?>">Taxes</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/trademarks/'); ?>">Trademarks</a></li>
+              <li><a href="<?php echo home_url('/practice-areas/wills-and-trusts/'); ?>">Wills &amp; Trusts</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
             <li class="has-dropdown">
           <a href="<?php echo home_url('/media/'); ?>">Media &amp; Press</a>
           <ul class="nav-dropdown">
