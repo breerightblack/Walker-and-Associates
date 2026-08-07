@@ -8,12 +8,12 @@
 $bios = [
 
   'james-walker' => [
-    'name'  => 'James L. Walker Esq.',
+    'name'  => 'James L Walker Jr. Esq.',
     'title' => 'Founding Attorney',
     'file'  => 'James.jpg',
     'focus' => [ 'Television &amp; Film', 'Theatre &amp; Broadway', 'Music &amp; Recording', 'Intellectual Property', 'Entertainment Litigation' ],
     'bio'   => [
-      '<p>James L. Walker Esq. is a nationally recognized entertainment attorney whose practice sits at the intersection of television, film, theatre, and music. As founder of Walker and Associates, LLP, a leading entertainment and media law firm in the Greater Atlanta area, he has counseled more than 1,000 clients — including television and film talent, recording artists, producers, filmmakers, athletes, and media companies — on entertainment transactions, television and streaming contracts, intellectual property, litigation, and corporate matters.</p>',
+      '<p>James L Walker Jr. Esq. is a nationally recognized entertainment attorney whose practice sits at the intersection of television, film, theatre, and music. As founder of Walker and Associates, LLP, a leading entertainment and media law firm in the Greater Atlanta area, he has counseled more than 1,000 clients — including television and film talent, recording artists, producers, filmmakers, athletes, and media companies — on entertainment transactions, television and streaming contracts, intellectual property, litigation, and corporate matters.</p>',
       '<h3 style="font-family:var(--font-serif);font-size:1.25rem;font-weight:600;margin:var(--space-lg) 0 var(--space-sm);color:var(--text-dark);">Television &amp; Film</h3>',
       '<p>Attorney Walker\'s clients have been featured on every major network and platform, including Netflix, Hulu, ABC, CBS, NBC, BET, TVOne, and ALLBLK. His television work spans some of the most-watched franchises in unscripted and scripted programming, including <em>The Real Housewives of Atlanta</em>, <em>The Real Housewives of Potomac</em>, <em>Growing Up Hip Hop</em>, <em>Growing Up Gospel</em>, <em>Basketball Wives</em>, <em>Power</em>, <em>Sistas</em>, and <em>All the Queens Men</em>, as well as clients on <em>American Idol</em>, <em>BET\'s Sunday Best</em>, and <em>The Four</em>. He has worked with a wide range of screen and music talent, including Candace Dillard Bassett, Jamie Foxx, Soledad O\'Brien, Naturi Naughton, Skyh Black, KJ Smith, Aretha Franklin, DMX, Kerry Gordy, K Camp, Take 6, Koryn Hawthorne, Miki Howard, Keke Wyatt, Shirley Caesar, Pinky Cole, and many others.</p>',
       '<p>Walker also serves as a Board Member and General Counsel of the BronzeLens Film Festival in Atlanta, one of the nation\'s premier festivals celebrating filmmakers of color. He was also Chairman of the Board for the Gospel Stellar Awards and saw it expand extensively under his vision.</p>',
