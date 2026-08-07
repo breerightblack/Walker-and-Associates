@@ -32,12 +32,11 @@
     <div class="footer-col">
       <h4 class="footer-heading">Practice Areas</h4>
       <ul>
-        <li><a href="<?php echo home_url('/practice-areas/#entertainment'); ?>">Entertainment Law</a></li>
-        <li><a href="<?php echo home_url('/practice-areas/#film-tv'); ?>">Film &amp; Television</a></li>
-        <li><a href="<?php echo home_url('/practice-areas/#music'); ?>">Music Law</a></li>
-        <li><a href="<?php echo home_url('/practice-areas/#litigation'); ?>">Litigation</a></li>
-        <li><a href="<?php echo home_url('/practice-areas/#corporate'); ?>">Corporate Law</a></li>
-        <li><a href="<?php echo home_url('/practice-areas/#real-estate'); ?>">Real Estate</a></li>
+        <li><a href="<?php echo home_url('/entertainment-law/'); ?>">Entertainment Law</a></li>
+        <li><a href="<?php echo home_url('/film-and-television-law/'); ?>">Film &amp; Television Law</a></li>
+        <li><a href="<?php echo home_url('/litigation/'); ?>">Litigation</a></li>
+        <li><a href="<?php echo home_url('/corporate-law/'); ?>">Corporate Law</a></li>
+        <li><a href="<?php echo home_url('/practice-areas/real-estate/'); ?>">Real Estate Law</a></li>
       </ul>
     </div>
 

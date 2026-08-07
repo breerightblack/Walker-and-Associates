@@ -13,6 +13,10 @@ import re, sys, os, glob
 # html file -> (php template, WP "Template Name")
 PAGES = {
     'about.html':          ('page-about.php',          'About the Firm'),
+    'entertainment-law.html':        ('page-entertainment-law.php',        'Entertainment Law'),
+    'film-and-television-law.html':  ('page-film-and-television-law.php',  'Film & Television Law'),
+    'litigation.html':               ('page-litigation.php',               'Litigation'),
+    'corporate-law.html':            ('page-corporate-law.php',            'Corporate Law'),
     'team.html':           ('page-team.php',           'Our Team'),
     'consultation.html':   ('page-consultation.php',   'Consultation'),
     'contact.html':        ('page-contact.php',        'Contact'),
@@ -30,7 +34,11 @@ SLUGS = {
     'index.html': '/', 'about.html': '/about/', 'team.html': '/team/',
     'practice-areas.html': '/practice-areas/', 'media.html': '/media/',
     'photos.html': '/photos/', 'testimonials.html': '/testimonials/',
-    'contact.html': '/contact/', 'consultation.html': '/consultation/',
+    'contact.html': '/contact/',
+    'entertainment-law.html': '/entertainment-law/',
+    'film-and-television-law.html': '/film-and-television-law/',
+    'litigation.html': '/litigation/',
+    'corporate-law.html': '/corporate-law/', 'consultation.html': '/consultation/',
     'disclaimer.html': '/disclaimer/', 'privacy-policy.html': '/privacy-policy/',
     'accessibility.html': '/accessibility/',
 }

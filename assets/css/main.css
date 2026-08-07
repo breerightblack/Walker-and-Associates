@@ -1943,3 +1943,64 @@ body.lightbox-open { overflow: hidden; }
 .pay-icon { display: inline-flex; flex-shrink: 0; }
 .pay-icon svg { width: 20px; height: 20px; }
 .pay-methods-note { font-size: .8125rem; color: var(--taupe); line-height: 1.6; }
+
+/* ── Pillar directory cards ────────────────────────────────────────────────
+   Resting: white fill with a navy→gold gradient outline, always visible.
+   Hover:   the same gradient floods the card via a ::before overlay, which
+            fades (background-image itself can't transition). */
+.pillar-grid .practice-card {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(var(--white), var(--white)) padding-box,
+    linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 40%, var(--gold-dark) 78%, var(--gold) 100%) border-box;
+  transition: box-shadow var(--ease), transform var(--ease);
+}
+.pillar-grid .practice-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 40%, var(--gold-dark) 78%, var(--gold) 100%);
+  opacity: 0;
+  transition: opacity var(--ease);
+  z-index: 0;
+}
+.pillar-grid .practice-card > * { position: relative; z-index: 1; }
+.pillar-grid .practice-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.pillar-grid .practice-card:hover::before,
+.pillar-grid .practice-card:focus-within::before { opacity: 1; }
+
+.pillar-grid .practice-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  margin-bottom: var(--space-sm);
+  text-wrap: balance;
+  transition: color var(--ease);
+}
+.pillar-grid .practice-card p {
+  font-size: .9375rem;
+  line-height: 1.7;
+  color: var(--taupe);
+  margin-bottom: var(--space-md);
+  transition: color var(--ease);
+}
+.pillar-grid .practice-card .practice-link { transition: color var(--ease), gap var(--ease); }
+
+/* text flips to white once the gradient floods in */
+.pillar-grid .practice-card:hover h3,
+.pillar-grid .practice-card:focus-within h3 { color: var(--white); }
+.pillar-grid .practice-card:hover p,
+.pillar-grid .practice-card:focus-within p { color: rgba(255,255,255,.88); }
+.pillar-grid .practice-card:hover .practice-link,
+.pillar-grid .practice-card:focus-within .practice-link { color: var(--white); }
+
+@media (prefers-reduced-motion: reduce) {
+  .pillar-grid .practice-card:hover { transform: none; }
+  .pillar-grid .practice-card::before { transition: none; }
+}
+
+/* payment marks supplied as raster assets sit alongside the inline SVGs */
+.pay-icon img { width: 20px; height: 20px; object-fit: contain; display: block; }

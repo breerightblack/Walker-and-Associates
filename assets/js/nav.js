@@ -103,11 +103,11 @@
     <div class="footer-col">
       <h4 class="footer-heading">Practice Areas</h4>
       <ul>
-        <li><a href="${root}practice-areas.html#entertainment">Entertainment Law</a></li>
-        <li><a href="${root}practice-areas.html#film-tv">Film &amp; Television</a></li>
-        <li><a href="${root}practice-areas.html#litigation">Litigation</a></li>
-        <li><a href="${root}practice-areas.html#corporate">Corporate Law</a></li>
-        <li><a href="${root}practice-areas.html#real-estate">Real Estate</a></li>
+        <li><a href="${root}entertainment-law.html">Entertainment Law</a></li>
+        <li><a href="${root}film-and-television-law.html">Film &amp; Television Law</a></li>
+        <li><a href="${root}litigation.html">Litigation</a></li>
+        <li><a href="${root}corporate-law.html">Corporate Law</a></li>
+        <li><a href="${root}practice-areas/real-estate.html">Real Estate Law</a></li>
       </ul>
     </div>
     <div class="footer-col">

@@ -90,48 +90,14 @@ get_header();
         <aside style="position:sticky;top:calc(var(--header-h) + var(--topbar-h) + var(--space-lg));">
           <div style="background:var(--bg-light);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-lg);">
             <h3 style="font-family:var(--font-serif);font-size:1.5rem;margin-bottom:var(--space-sm);color:var(--text-dark);">Consultation Fee</h3>
-            <p style="font-size:.9375rem;color:var(--taupe);margin-bottom:var(--space-lg);">A flat <strong style="color:var(--text-dark);">$250</strong> fee applies to initial consultations, due prior to your scheduled meeting. You can pay using any of the options below.</p>
-            <div style="display:flex;flex-direction:column;gap:var(--space-md);">
-              <div style="display:flex;gap:12px;align-items:flex-start;">
-                <svg viewBox="0 0 24 24" fill="#00C244" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;" role="img" aria-label="Cash App"><path d="M23.59 3.475a5.1 5.1 0 00-3.05-3.05c-1.31-.42-2.5-.42-4.92-.42H8.36c-2.4 0-3.61 0-4.9.4a5.1 5.1 0 00-3.05 3.06C0 4.765 0 5.965 0 8.365v7.27c0 2.41 0 3.6.4 4.9a5.1 5.1 0 003.05 3.05c1.3.41 2.5.41 4.9.41h7.28c2.41 0 3.61 0 4.9-.4a5.1 5.1 0 003.06-3.06c.41-1.3.41-2.5.41-4.9v-7.25c0-2.41 0-3.61-.41-4.91zm-6.17 4.63l-.93.93a.5.5 0 01-.67.01 5 5 0 00-3.22-1.18c-.97 0-1.94.32-1.94 1.21 0 .9 1.04 1.2 2.24 1.65 2.1.7 3.84 1.58 3.84 3.64 0 2.24-1.74 3.78-4.58 3.95l-.26 1.2a.49.49 0 01-.48.39H9.63l-.09-.01a.5.5 0 01-.38-.59l.28-1.27a6.54 6.54 0 01-2.88-1.57v-.01a.48.48 0 010-.68l1-.97a.49.49 0 01.67 0c.91.86 2.13 1.34 3.39 1.32 1.3 0 2.17-.55 2.17-1.42 0-.87-.88-1.1-2.54-1.72-1.76-.63-3.43-1.52-3.43-3.6 0-2.42 2.01-3.6 4.39-3.71l.25-1.23a.48.48 0 01.48-.38h1.78l.1.01c.26.06.43.31.37.57l-.27 1.37c.9.3 1.75.77 2.48 1.39l.02.02c.19.2.19.5 0 .68z"/></svg>
-                <div>
-                  <p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">Cash App</p>
-                  <a href="https://cash.app/$JamesWalkerEsq/250" target="_blank" rel="noopener noreferrer" style="font-size:.875rem;color:var(--navy);">Pay $250 via Cash App →</a>
-                </div>
-              </div>
-              <div style="display:flex;gap:12px;align-items:flex-start;">
-                <svg viewBox="0 0 24 24" fill="#6D1ED4" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;" role="img" aria-label="Zelle"><path d="M13.559 24h-2.841a.483.483 0 0 1-.483-.483v-2.765H5.638a.667.667 0 0 1-.666-.666v-2.234a.67.67 0 0 1 .142-.412l8.139-10.382h-7.25a.667.667 0 0 1-.667-.667V3.914c0-.367.299-.666.666-.666h4.23V.483c0-.266.217-.483.483-.483h2.841c.266 0 .483.217.483.483v2.765h4.323c.367 0 .666.299.666.666v2.137a.67.67 0 0 1-.141.41l-8.19 10.481h7.665c.367 0 .666.299.666.666v2.477a.667.667 0 0 1-.666.667h-4.32v2.765a.483.483 0 0 1-.483.483Z"/></svg>
-                <div>
-                  <p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">Zelle</p>
-                  <p style="font-size:.875rem;color:var(--taupe);margin-bottom:4px;">Send to <span style="color:var(--text-dark);">jjwalker@walkerandassoc.com</span></p>
-                  <button type="button" class="payment-copy-go-btn" data-copy="jjwalker@walkerandassoc.com" data-status="Copied! Open your banking app's Zelle feature and paste this email to send $250." style="font-size:.875rem;font-weight:600;color:var(--navy);background:none;border:none;cursor:pointer;padding:0;text-decoration:underline;">Copy Email for Zelle →</button>
-                  <p class="payment-copy-status" style="font-size:.8125rem;color:var(--navy);margin-top:4px;display:none;"></p>
-                </div>
-              </div>
-              <div style="display:flex;gap:12px;align-items:flex-start;">
-                <svg viewBox="0 0 24 24" fill="#002991" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;" role="img" aria-label="PayPal"><path d="M15.607 4.653H8.941L6.645 19.251H1.82L4.862 0h7.995c3.754 0 6.375 2.294 6.473 5.513-.648-.478-2.105-.86-3.722-.86m6.57 5.546c0 3.41-3.01 6.853-6.958 6.853h-2.493L11.595 24H6.74l1.845-11.538h3.592c4.208 0 7.346-3.634 7.153-6.949a5.24 5.24 0 0 1 2.848 4.686M9.653 5.546h6.408c.907 0 1.942.222 2.363.541-.195 2.741-2.655 5.483-6.441 5.483H8.714Z"/></svg>
-                <div>
-                  <p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">PayPal</p>
-                  <p style="font-size:.875rem;color:var(--taupe);margin-bottom:4px;">Send to <span style="color:var(--text-dark);">jjwalker@walkerandassoc.com</span> · 3% processing fee applies.</p>
-                  <a href="https://www.paypal.com/myaccount/transfer/send" target="_blank" rel="noopener noreferrer" class="payment-copy-go-btn" data-copy="jjwalker@walkerandassoc.com" data-status="Email copied — opening PayPal. Paste it as the recipient to send $250." style="font-size:.875rem;font-weight:600;color:var(--navy);text-decoration:none;">Copy Email &amp; Open PayPal →</a>
-                  <p class="payment-copy-status" style="font-size:.8125rem;color:var(--navy);margin-top:4px;display:none;"></p>
-                </div>
-              </div>
-              <div style="display:flex;gap:12px;align-items:flex-start;">
-                <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
-                <div>
-                  <p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">MyCase</p>
-                  <p style="font-size:.875rem;color:var(--taupe);">We'll send a secure payment link via MyCase once your consultation is confirmed. 3.5% processing fee applies to card payments.</p>
-                </div>
-              </div>
-              <div style="display:flex;gap:12px;align-items:flex-start;">
-                <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-                <div>
-                  <p style="font-size:.9375rem;font-weight:600;color:var(--text-dark);margin-bottom:2px;">Wire Transfer</p>
-                  <p style="font-size:.875rem;color:var(--taupe);">Available for consultation fees. Call or email us and we'll send secure bank transfer instructions directly.</p>
-                </div>
-              </div>
-            </div>
+            <p style="font-size:.9375rem;color:var(--taupe);margin-bottom:var(--space-lg);">A flat <strong style="color:var(--text-dark);">$250</strong> fee applies to initial consultations, due prior to your scheduled meeting.</p>
+            <p class="pay-methods-label">We accept these forms of payment</p>
+            <ul class="pay-methods">
+                <li><span class="pay-icon"><svg viewBox="0 0 24 24" fill="#00C244" aria-hidden="true"><path d="M23.59 3.475a5.1 5.1 0 00-3.05-3.05c-1.31-.42-2.5-.42-4.92-.42H8.36c-2.4 0-3.61 0-4.9.4a5.1 5.1 0 00-3.05 3.06C0 4.765 0 5.965 0 8.365v7.27c0 2.41 0 3.6.4 4.9a5.1 5.1 0 003.05 3.05c1.3.41 2.5.41 4.9.41h7.28c2.41 0 3.61 0 4.9-.4a5.1 5.1 0 003.06-3.06c.41-1.3.41-2.5.41-4.9v-7.25c0-2.41 0-3.61-.41-4.91zm-6.17 4.63l-.93.93a.5.5 0 01-.67.01 5 5 0 00-3.22-1.18c-.97 0-1.94.32-1.94 1.21 0 .9 1.04 1.2 2.24 1.65 2.1.7 3.84 1.58 3.84 3.64 0 2.24-1.74 3.78-4.58 3.95l-.26 1.2a.49.49 0 01-.48.39H9.63l-.09-.01a.5.5 0 01-.38-.59l.28-1.27a6.54 6.54 0 01-2.88-1.57v-.01a.48.48 0 010-.68l1-.97a.49.49 0 01.67 0c.91.86 2.13 1.34 3.39 1.32 1.3 0 2.17-.55 2.17-1.42 0-.87-.88-1.1-2.54-1.72-1.76-.63-3.43-1.52-3.43-3.6 0-2.42 2.01-3.6 4.39-3.71l.25-1.23a.48.48 0 01.48-.38h1.78l.1.01c.26.06.43.31.37.57l-.27 1.37c.9.3 1.75.77 2.48 1.39l.02.02c.19.2.19.5 0 .68z"/></svg></span>Cash App</li>
+                <li><span class="pay-icon"><img src="<?php echo esc_url( wa_img( 'payment/venmo.png' ) ); ?>" alt="Venmo" width="20" height="20" loading="lazy"></span>Venmo</li>
+                <li><span class="pay-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.6" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h3"/></svg></span>All major credit &amp; debit cards</li>
+            </ul>
+            <p class="pay-methods-note">We&rsquo;ll confirm your appointment and arrange payment when you book. Card payments carry a 3.5% processing fee.</p>
           </div>
           <div class="legal-notice" style="margin-bottom:var(--space-lg);">
             <div class="legal-notice-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>Important Information</div>

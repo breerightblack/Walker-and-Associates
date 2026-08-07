@@ -108,31 +108,31 @@ get_header();
         <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 4V20M17 4V20M3 8H7M17 8H21M3 16H7M17 16H21M7 8H17V16H7V8Z"/></svg></div>
         <h3>Film &amp; Television Law</h3>
         <p>Production agreements, talent contracts, IP licensing, co-production deals, and distribution negotiations for the screen industry.</p>
-        <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>#film-tv" class="practice-link">Learn More</a>
+        <a href="<?php echo esc_url( home_url( '/film-and-television-law/' ) ); ?>" class="practice-link">Learn More</a>
       </div>
       <div class="practice-card">
         <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z"/></svg></div>
         <h3>Entertainment Law</h3>
         <p>Recording contracts, publishing deals, management agreements, touring, and artist rights — comprehensive counsel for music industry professionals.</p>
-        <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>#entertainment" class="practice-link">Learn More</a>
+        <a href="<?php echo esc_url( home_url( '/practice-areas/entertainment-law/' ) ); ?>" class="practice-link">Learn More</a>
       </div>
       <div class="practice-card">
         <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 10h18M3 14h18M3 18h18" stroke-linecap="round"/></svg></div>
         <h3>Litigation</h3>
         <p>When disputes escalate, our experienced litigators provide aggressive, strategic representation in state and federal court.</p>
-        <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>#litigation" class="practice-link">Learn More</a>
+        <a href="<?php echo esc_url( home_url( '/litigation/' ) ); ?>" class="practice-link">Learn More</a>
       </div>
       <div class="practice-card">
         <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
         <h3>Corporate Law</h3>
         <p>Entity formation, governance, contract drafting, and business transactions. Build the legal foundation that scales with your success.</p>
-        <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>#corporate" class="practice-link">Learn More</a>
+        <a href="<?php echo esc_url( home_url( '/corporate-law/' ) ); ?>" class="practice-link">Learn More</a>
       </div>
       <div class="practice-card">
         <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div>
         <h3>Real Estate Law</h3>
         <p>Commercial and residential transactions, lease negotiations, and development agreements for your real property investments.</p>
-        <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>#real-estate" class="practice-link">Learn More</a>
+        <a href="<?php echo esc_url( home_url( '/practice-areas/real-estate/' ) ); ?>" class="practice-link">Learn More</a>
       </div>
     </div>
   </div>

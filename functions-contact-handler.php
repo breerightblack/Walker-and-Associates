@@ -2,7 +2,14 @@
 /**
  * Contact form handler — processes the intake form submission.
  * Included from functions.php via require_once.
+ *
+ * WA_INQUIRY_EMAIL is where new client inquiries are delivered. Change it here
+ * (not in WordPress Settings) so it stays independent of the site admin address.
  */
+if ( ! defined( 'WA_INQUIRY_EMAIL' ) ) {
+    // Confirmed with client 2026-08-07.
+    define( 'WA_INQUIRY_EMAIL', 'rgreen@walkerandassoc.com' );
+}
 
 add_action( 'admin_post_wa_contact_form',        'wa_handle_contact_form' );
 add_action( 'admin_post_nopriv_wa_contact_form', 'wa_handle_contact_form' );
@@ -26,6 +33,7 @@ function wa_handle_contact_form() {
     $phone    = sanitize_text_field( wp_unslash( $_POST['phone']            ?? '' ) );
     $area     = sanitize_text_field( wp_unslash( $_POST['practice_area']    ?? '' ) );
     $contact  = sanitize_text_field( wp_unslash( $_POST['preferred_contact'] ?? '' ) );
+    $opposing = sanitize_text_field( wp_unslash( $_POST['opposing_party']  ?? '' ) );
     $message  = sanitize_textarea_field( wp_unslash( $_POST['message']      ?? '' ) );
 
     // Validate required
@@ -35,14 +43,15 @@ function wa_handle_contact_form() {
     }
 
     // Build email
-    $to      = get_option('admin_email');
+    $to      = WA_INQUIRY_EMAIL;
     $subject = "New Client Inquiry — {$first} {$last} ({$area})";
     $body    = "New client inquiry from walkerandassoc.com\n\n"
              . "Name:             {$first} {$last}\n"
              . "Email:            {$email}\n"
              . "Phone:            {$phone}\n"
              . "Practice Area:    {$area}\n"
-             . "Preferred Time:   {$contact}\n\n"
+             . "Preferred Time:   {$contact}\n"
+             . "Opposing Party:   {$opposing}\n\n"
              . "Message:\n{$message}\n";
     $headers = [
         "Content-Type: text/plain; charset=UTF-8",
