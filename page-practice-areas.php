@@ -106,7 +106,6 @@ get_header();
       <div class="section-header center" style="margin-bottom:0;">
         <span class="eyebrow">All Practice Areas</span>
         <h2>Find Your Practice Area</h2>
-        <p style="max-width:560px;margin:0 auto;">Hover a category to open it, then click any practice area to read its full description.</p>
       </div>
       <p class="pa-all-cta"><a href="<?php echo esc_url( home_url( '/all-practice-areas/' ) ); ?>">Click here for all 30 areas of practice we handle</a></p>
 

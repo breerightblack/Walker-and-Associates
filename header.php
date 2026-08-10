@@ -12,7 +12,7 @@
   <?php endif; ?>
 
   <!-- OG defaults (Yoast overrides per-page) -->
-  <meta property="og:site_name" content="J. Walker and Associates, LLP" />
+  <meta property="og:site_name" content="J. Walker &amp; Associates, LLC" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="<?php echo esc_url( home_url( $_SERVER['REQUEST_URI'] ) ); ?>" />
 

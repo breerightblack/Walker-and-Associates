@@ -120,7 +120,7 @@ add_action( 'wp_head', function() {
     $schema = [
         '@context'        => 'https://schema.org',
         '@type'           => 'LegalService',
-        'name'            => 'J. Walker and Associates, LLP',
+        'name'            => 'J. Walker & Associates, LLC',
         'alternateName'   => 'Walker & Associates',
         'url'             => home_url(),
         'telephone'       => '+17708477363',
