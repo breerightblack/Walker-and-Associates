@@ -112,7 +112,6 @@
           <a href="<?php echo home_url('/contact/'); ?>">Contact</a>
           <ul class="nav-dropdown">
             <li><a href="<?php echo home_url('/contact/'); ?>">Contact Us</a></li>
-            <li><a href="<?php echo home_url('/consultation/'); ?>">Book a Consultation</a></li>
           </ul>
         </li>
           </ul>

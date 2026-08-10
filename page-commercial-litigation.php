@@ -35,7 +35,7 @@ get_header();
           <div class="consult-card">
             <h3 style="font-family:var(--font-serif);font-size:1.25rem;margin-bottom:var(--space-sm);color:var(--text-dark);">Discuss your matter</h3>
             <p style="font-size:.9375rem;color:var(--text-mid);line-height:1.7;margin-bottom:var(--space-md);">Speak with an attorney about commercial Litigation. A flat $250 fee applies to initial consultations.</p>
-            <a href="<?php echo esc_url( home_url( '/consultation/' ) ); ?>" class="btn btn-primary" style="width:100%;justify-content:center;">Book a Consultation</a>
+            <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary" style="width:100%;justify-content:center;">Book a Consultation</a>
             <a href="tel:7708477363" style="display:block;text-align:center;margin-top:var(--space-sm);font-size:13px;font-weight:600;color:var(--taupe);">(770) 847-7363</a>
           </div>
           <div class="pa-page-related">

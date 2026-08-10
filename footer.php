@@ -53,7 +53,6 @@
         <li><a href="<?php echo home_url('/photos/'); ?>">Photos</a></li>
         <li><a href="<?php echo home_url('/testimonials/'); ?>">Testimonials</a></li>
         <li><a href="<?php echo home_url('/contact/'); ?>">Contact Us</a></li>
-        <li><a href="<?php echo home_url('/consultation/'); ?>">Book a Consultation</a></li>
       </ul>
     </div>
 

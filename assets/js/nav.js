@@ -73,7 +73,6 @@
           <a href="${root}contact.html">Contact</a>
           <ul class="nav-dropdown">
             <li><a href="${root}contact.html">Contact Us</a></li>
-            <li><a href="${root}consultation.html">Book a Consultation</a></li>
           </ul>
         </li>
       </ul>
@@ -122,7 +121,6 @@
         <li><a href="${root}photos.html">Photos</a></li>
         <li><a href="${root}testimonials.html">Testimonials</a></li>
         <li><a href="${root}contact.html">Contact Us</a></li>
-        <li><a href="${root}consultation.html">Book a Consultation</a></li>
       </ul>
     </div>
     <div class="footer-col footer-contact">
