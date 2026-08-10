@@ -56,7 +56,7 @@ get_header();
           <a href="<?php echo esc_url( home_url( '/practice-areas/employment-and-labor/' ) ); ?>" class="practice-link">Learn More</a>
         </div>
         <div class="practice-card">
-          <h3>Taxes</h3>
+          <h3>Taxes, 501(c)(3)s &amp; Churches</h3>
           <p>Entertainment income is unlike ordinary income: it arrives irregularly, flows from multiple sources and states, and often spans international borders.</p>
           <a href="<?php echo esc_url( home_url( '/practice-areas/taxes/' ) ); ?>" class="practice-link">Learn More</a>
         </div>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: PA — Taxes
+ * Template Name: PA — Taxes, 501(c)(3)s &amp; Churches
  *
  * GENERATED from practice-areas/taxes.html by _build/html-to-php.py — do not hand-edit.
  */
@@ -15,10 +15,10 @@ get_header();
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>">&larr; Practice Areas</a>
       <span class="breadcrumb-sep" aria-hidden="true">/</span>
-      <span class="breadcrumb-current" aria-current="page">Taxes</span>
+      <span class="breadcrumb-current" aria-current="page">Taxes, 501(c)(3)s &amp; Churches</span>
     </nav>
     <span class="eyebrow">Multi-market Legal Firm</span>
-    <h1>Taxes</h1>
+    <h1>Taxes, 501(c)(3)s &amp; Churches</h1>
   </div>
 </div>
 
@@ -34,7 +34,7 @@ get_header();
         <aside class="pa-page-aside">
           <div class="consult-card">
             <h3 style="font-family:var(--font-serif);font-size:1.25rem;margin-bottom:var(--space-sm);color:var(--text-dark);">Discuss your matter</h3>
-            <p style="font-size:.9375rem;color:var(--text-mid);line-height:1.7;margin-bottom:var(--space-md);">Speak with an attorney about taxes. A flat $250 fee applies to initial consultations.</p>
+            <p style="font-size:.9375rem;color:var(--text-mid);line-height:1.7;margin-bottom:var(--space-md);">Speak with an attorney about taxes, 501(c)(3)s &amp; churches. A flat $250 fee applies to initial consultations.</p>
             <a href="<?php echo esc_url( home_url( '/consultation/' ) ); ?>" class="btn btn-primary" style="width:100%;justify-content:center;">Book a Consultation</a>
             <a href="tel:7708477363" style="display:block;text-align:center;margin-top:var(--space-sm);font-size:13px;font-weight:600;color:var(--taupe);">(770) 847-7363</a>
           </div>
@@ -57,7 +57,7 @@ get_header();
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/family-law/' ) ); ?>">Family Law (Divorces, Pre-Nups &amp; More)</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/film-deals/' ) ); ?>">Film Deals</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/immigration/' ) ); ?>">Immigration</a></li>
-              <li><a href="<?php echo esc_url( home_url( '/practice-areas/intellectual-property-and-entertainment-law/' ) ); ?>">Intellectual Property and Entertainment Law</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/practice-areas/intellectual-property/' ) ); ?>">Intellectual Property</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/internet-protection/' ) ); ?>">Internet Protection</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/llc-s-corp-and-c-corp-set-up/' ) ); ?>">LLC, S-Corp &amp; C-Corp Set Up</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/personal-injury/' ) ); ?>">Personal Injury</a></li>

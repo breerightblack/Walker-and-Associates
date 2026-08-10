@@ -2004,3 +2004,46 @@ body.lightbox-open { overflow: hidden; }
 
 /* payment marks supplied as raster assets sit alongside the inline SVGs */
 .pay-icon img { width: 20px; height: 20px; object-fit: contain; display: block; }
+
+/* ── All-30 practice areas list ────────────────────────────────────────── */
+.all-pa-section { background: #F5EDD8; }   /* matches the carousel section */
+.all-pa-list-wrap { background: var(--white); border-radius: var(--radius-lg); padding: var(--space-xl); }
+.all-pa-list {
+  list-style: none;
+  counter-reset: pa;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px var(--space-xl);
+}
+@media (min-width: 768px)  { .all-pa-list { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .all-pa-list { grid-template-columns: repeat(3, 1fr); } }
+.all-pa-list li { counter-increment: pa; }
+.all-pa-list a {
+  display: block;
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: .9375rem;
+  color: var(--text-dark);
+  transition: color var(--ease), padding-left var(--ease);
+}
+.all-pa-list a::before {
+  content: counter(pa, decimal-leading-zero);
+  color: var(--gold-dark);
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.all-pa-list a:hover { color: var(--navy); padding-left: 14px; }
+
+/* ── "all 30" call-to-action above the slide-outs ──────────────────────── */
+.pa-all-cta { text-align: center; margin-bottom: var(--space-lg); }
+.pa-all-cta a {
+  display: inline-block;
+  font-weight: 700;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  color: var(--navy);
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 4px;
+  transition: color var(--ease), border-color var(--ease);
+}
+.pa-all-cta a:hover { color: var(--gold-dark); border-color: var(--navy); }

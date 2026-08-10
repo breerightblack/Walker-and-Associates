@@ -37,6 +37,8 @@
         <li><a href="<?php echo home_url('/litigation/'); ?>">Litigation</a></li>
         <li><a href="<?php echo home_url('/corporate-law/'); ?>">Corporate Law</a></li>
         <li><a href="<?php echo home_url('/practice-areas/real-estate/'); ?>">Real Estate Law</a></li>
+      
+        <li><a href="<?php echo home_url('/all-practice-areas/'); ?>"><strong>All 30 Practice Areas</strong></a></li>
       </ul>
     </div>
 
@@ -88,7 +90,7 @@
       </p>
       <div class="footer-bottom-row">
         <p class="footer-legal">
-          &copy; <?php echo date('Y'); ?> J. Walker and Associates, LLP. All rights reserved.
+          &copy; <?php echo date('Y'); ?> J. Walker & Associates, LLC. All rights reserved.
           Prior results do not guarantee similar outcomes.
         </p>
         <nav class="footer-legal-nav" aria-label="Legal">

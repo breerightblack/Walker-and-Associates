@@ -58,7 +58,7 @@ get_header();
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/family-law/' ) ); ?>">Family Law (Divorces, Pre-Nups &amp; More)</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/film-deals/' ) ); ?>">Film Deals</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/immigration/' ) ); ?>">Immigration</a></li>
-              <li><a href="<?php echo esc_url( home_url( '/practice-areas/intellectual-property-and-entertainment-law/' ) ); ?>">Intellectual Property and Entertainment Law</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/practice-areas/intellectual-property/' ) ); ?>">Intellectual Property</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/internet-protection/' ) ); ?>">Internet Protection</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/llc-s-corp-and-c-corp-set-up/' ) ); ?>">LLC, S-Corp &amp; C-Corp Set Up</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/personal-injury/' ) ); ?>">Personal Injury</a></li>
@@ -69,7 +69,7 @@ get_header();
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/recording-contracts/' ) ); ?>">Recording Contracts</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/small-business-governance-and-operations/' ) ); ?>">Small Business Governance &amp; Operations</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/synchronization-and-mechanical-licensing/' ) ); ?>">Synchronization &amp; Mechanical Licensing</a></li>
-              <li><a href="<?php echo esc_url( home_url( '/practice-areas/taxes/' ) ); ?>">Taxes</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/practice-areas/taxes/' ) ); ?>">Taxes, 501(c)(3)s &amp; Churches</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/trademarks/' ) ); ?>">Trademarks</a></li>
             </ul>
             <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>" class="btn btn-outline" style="width:100%;justify-content:center;margin-top:var(--space-md);">View All 30</a>

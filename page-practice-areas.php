@@ -28,7 +28,7 @@ get_header();
             <li>Co-production &amp; financing deals</li>
             <li>Distribution &amp; streaming agreements</li>
             <li>Location &amp; crew agreements</li>
-          </ul>
+            </ul>
           <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="pa-box-cta">Discuss Your Production →</a>
         </div>
       </div>
@@ -108,6 +108,8 @@ get_header();
         <h2>Find Your Practice Area</h2>
         <p style="max-width:560px;margin:0 auto;">Hover a category to open it, then click any practice area to read its full description.</p>
       </div>
+      <p class="pa-all-cta"><a href="<?php echo esc_url( home_url( '/all-practice-areas/' ) ); ?>">Click here for all 30 areas of practice we handle</a></p>
+
 
       <div class="pa-boxes-wrap" id="paBoxes">
         <!-- Box 1: Entertainment -->
@@ -115,20 +117,19 @@ get_header();
           <span class="pa-box-label">Entertainment</span>
           <div class="pa-box-content">
             <div class="pa-box-content-title">Entertainment Law</div>
-            <div class="pa-box-content-sub">12 Practice Areas</div>
             <ul class="pa-box-items">
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/entertainment-law/' ) ); ?>">Entertainment Law</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/recording-contracts/' ) ); ?>">Recording Contracts</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/publishing-deals/' ) ); ?>">Publishing Deals</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/book-deals/' ) ); ?>">Book Deals</a></li>
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/advertising-contracts/' ) ); ?>">Advertising Contracts</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/synchronization-and-mechanical-licensing/' ) ); ?>">Synchronization &amp; Mechanical Licensing</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/intellectual-property-and-entertainment-law/' ) ); ?>">Intellectual Property and Entertainment Law</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/book-deals/' ) ); ?>">Book Deals</a></li>
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/copyright-law/' ) ); ?>">Copyright Law</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/trademarks/' ) ); ?>">Trademarks</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/internet-protection/' ) ); ?>">Internet Protection</a></li>
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/crisis-management/' ) ); ?>">Crisis Management</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/entertainment-law/' ) ); ?>">Entertainment Law</a></li>
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/immigration/' ) ); ?>">Immigration</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/intellectual-property/' ) ); ?>">Intellectual Property</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/internet-protection/' ) ); ?>">Internet Protection</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/publishing-deals/' ) ); ?>">Publishing Deals</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/recording-contracts/' ) ); ?>">Recording Contracts</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/synchronization-and-mechanical-licensing/' ) ); ?>">Synchronization &amp; Mechanical Licensing</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/trademarks/' ) ); ?>">Trademarks</a></li>
             </ul>
           </div>
         </div>
@@ -137,11 +138,10 @@ get_header();
           <span class="pa-box-label">Film &amp; Television</span>
           <div class="pa-box-content">
             <div class="pa-box-content-title">Film and Television Law</div>
-            <div class="pa-box-content-sub">3 Practice Areas</div>
             <ul class="pa-box-items">
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/digital-and-streaming/' ) ); ?>">Digital &amp; Streaming</a></li>
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/film-deals/' ) ); ?>">Film Deals</a></li>
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/production-and-financing-agreements/' ) ); ?>">Production &amp; Financing Agreements</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/digital-and-streaming/' ) ); ?>">Digital &amp; Streaming</a></li>
             </ul>
           </div>
         </div>
@@ -150,16 +150,15 @@ get_header();
           <span class="pa-box-label">Litigation</span>
           <div class="pa-box-content">
             <div class="pa-box-content-title">Litigation</div>
-            <div class="pa-box-content-sub">8 Practice Areas</div>
             <ul class="pa-box-items">
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/business-disputes/' ) ); ?>">Business Disputes</a></li>
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/business-litigation/' ) ); ?>">Business Litigation</a></li>
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/commercial-litigation/' ) ); ?>">Commercial Litigation</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/business-disputes/' ) ); ?>">Business Disputes</a></li>
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/dispute-resolution/' ) ); ?>">Dispute Resolution</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/personal-injury/' ) ); ?>">Personal Injury</a></li>
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/family-law/' ) ); ?>">Family Law (Divorces, Pre-Nups &amp; More)</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/wills-and-trusts/' ) ); ?>">Wills &amp; Trusts</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/personal-injury/' ) ); ?>">Personal Injury</a></li>
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/power-of-attorney/' ) ); ?>">Power of Attorney</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/wills-and-trusts/' ) ); ?>">Wills &amp; Trusts</a></li>
             </ul>
           </div>
         </div>
@@ -168,14 +167,13 @@ get_header();
           <span class="pa-box-label">Corporate</span>
           <div class="pa-box-content">
             <div class="pa-box-content-title">Corporate Law</div>
-            <div class="pa-box-content-sub">6 Practice Areas</div>
             <ul class="pa-box-items">
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/corporate/' ) ); ?>">Corporate</a></li>
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/commercial-contracts/' ) ); ?>">Commercial Contracts</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/corporate/' ) ); ?>">Corporate</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/employment-and-labor/' ) ); ?>">Employment &amp; Labor</a></li>
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/llc-s-corp-and-c-corp-set-up/' ) ); ?>">LLC, S-Corp &amp; C-Corp Set Up</a></li>
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/small-business-governance-and-operations/' ) ); ?>">Small Business Governance &amp; Operations</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/employment-and-labor/' ) ); ?>">Employment &amp; Labor</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/practice-areas/taxes/' ) ); ?>">Taxes</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/practice-areas/taxes/' ) ); ?>">Taxes, 501(c)(3)s &amp; Churches</a></li>
             </ul>
           </div>
         </div>
@@ -184,7 +182,6 @@ get_header();
           <span class="pa-box-label">Real Estate</span>
           <div class="pa-box-content">
             <div class="pa-box-content-title">Real Estate Law</div>
-            <div class="pa-box-content-sub">1 Practice Area</div>
             <ul class="pa-box-items">
             <li><a href="<?php echo esc_url( home_url( '/practice-areas/real-estate/' ) ); ?>">Real Estate</a></li>
             </ul>

@@ -43,7 +43,7 @@
               <li><a href="${root}practice-areas/family-law.html">Family Law (Divorces, Pre-Nups &amp; More)</a></li>
               <li><a href="${root}practice-areas/film-deals.html">Film Deals</a></li>
               <li><a href="${root}practice-areas/immigration.html">Immigration</a></li>
-              <li><a href="${root}practice-areas/intellectual-property-and-entertainment-law.html">Intellectual Property and Entertainment Law</a></li>
+              <li><a href="${root}practice-areas/intellectual-property.html">Intellectual Property</a></li>
               <li><a href="${root}practice-areas/internet-protection.html">Internet Protection</a></li>
               <li><a href="${root}practice-areas/llc-s-corp-and-c-corp-set-up.html">LLC, S-Corp &amp; C-Corp Set Up</a></li>
               <li><a href="${root}practice-areas/personal-injury.html">Personal Injury</a></li>
@@ -54,7 +54,7 @@
               <li><a href="${root}practice-areas/recording-contracts.html">Recording Contracts</a></li>
               <li><a href="${root}practice-areas/small-business-governance-and-operations.html">Small Business Governance &amp; Operations</a></li>
               <li><a href="${root}practice-areas/synchronization-and-mechanical-licensing.html">Synchronization &amp; Mechanical Licensing</a></li>
-              <li><a href="${root}practice-areas/taxes.html">Taxes</a></li>
+              <li><a href="${root}practice-areas/taxes.html">Taxes, 501(c)(3)s &amp; Churches</a></li>
               <li><a href="${root}practice-areas/trademarks.html">Trademarks</a></li>
               <li><a href="${root}practice-areas/wills-and-trusts.html">Wills &amp; Trusts</a></li>
               </ul>
@@ -108,6 +108,8 @@
         <li><a href="${root}litigation.html">Litigation</a></li>
         <li><a href="${root}corporate-law.html">Corporate Law</a></li>
         <li><a href="${root}practice-areas/real-estate.html">Real Estate Law</a></li>
+      
+        <li><a href="${root}all-practice-areas.html"><strong>All 30 Practice Areas</strong></a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -136,7 +138,7 @@
     <div class="footer-bottom-inner">
       <p class="footer-disclaimer">This website is for general information only and is an attorney advertisement. The content on this site is not legal advice and should not be relied on as such. Viewing this site, using its forms or chat, or communicating with the firm through this site does not create an attorney-client relationship. <a href="${root}disclaimer.html">Read our full Disclaimer &amp; Terms</a>.</p>
       <div class="footer-bottom-row">
-        <p class="footer-legal">&copy; 2026 J. Walker and Associates, LLP. All rights reserved. Prior results do not guarantee similar outcomes.</p>
+        <p class="footer-legal">&copy; 2026 J. Walker & Associates, LLC. All rights reserved. Prior results do not guarantee similar outcomes.</p>
         <nav class="footer-legal-nav"><a href="${root}privacy-policy.html">Privacy Policy</a><a href="${root}disclaimer.html">Disclaimer</a><a href="${root}accessibility.html">Accessibility</a></nav>
       </div>
     </div>

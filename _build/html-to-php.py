@@ -13,6 +13,7 @@ import re, sys, os, glob
 # html file -> (php template, WP "Template Name")
 PAGES = {
     'about.html':          ('page-about.php',          'About the Firm'),
+    'all-practice-areas.html': ('page-all-practice-areas.php', 'All Practice Areas'),
     'entertainment-law.html':        ('page-entertainment-law.php',        'Entertainment Law'),
     'film-and-television-law.html':  ('page-film-and-television-law.php',  'Film & Television Law'),
     'litigation.html':               ('page-litigation.php',               'Litigation'),
@@ -32,7 +33,8 @@ PAGES = {
 # .html filename -> WordPress slug
 SLUGS = {
     'index.html': '/', 'about.html': '/about/', 'team.html': '/team/',
-    'practice-areas.html': '/practice-areas/', 'media.html': '/media/',
+    'practice-areas.html': '/practice-areas/',
+    'all-practice-areas.html': '/all-practice-areas/', 'media.html': '/media/',
     'photos.html': '/photos/', 'testimonials.html': '/testimonials/',
     'contact.html': '/contact/',
     'entertainment-law.html': '/entertainment-law/',

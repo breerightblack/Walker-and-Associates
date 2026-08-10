@@ -1,24 +1,24 @@
 <?php
 /**
- * Template Name: PA — Intellectual Property and Entertainment Law
+ * Template Name: PA — Intellectual Property
  *
- * GENERATED from practice-areas/intellectual-property-and-entertainment-law.html by _build/html-to-php.py — do not hand-edit.
+ * GENERATED from practice-areas/intellectual-property.html by _build/html-to-php.py — do not hand-edit.
  */
 get_header();
 ?>
 
 <div class="pa-page-hero">
-  <!-- Hero photo slot: drop intellectual-property-and-entertainment-law.jpg into assets/images/practice-areas/ -->
-  <div class="pa-page-hero-img" style="background-image:url('<?php echo esc_url( wa_img( 'practice-areas/intellectual-property-and-entertainment-law.jpg' ) ); ?>')" role="presentation"></div>
+  <!-- Hero photo slot: drop intellectual-property.jpg into assets/images/practice-areas/ -->
+  <div class="pa-page-hero-img" style="background-image:url('<?php echo esc_url( wa_img( 'practice-areas/intellectual-property.jpg' ) ); ?>')" role="presentation"></div>
   <div class="pa-page-hero-overlay"></div>
   <div class="container pa-page-hero-content">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>">&larr; Practice Areas</a>
       <span class="breadcrumb-sep" aria-hidden="true">/</span>
-      <span class="breadcrumb-current" aria-current="page">Intellectual Property and Entertainment Law</span>
+      <span class="breadcrumb-current" aria-current="page">Intellectual Property</span>
     </nav>
     <span class="eyebrow">Multi-market Legal Firm</span>
-    <h1>Intellectual Property and Entertainment Law</h1>
+    <h1>Intellectual Property</h1>
   </div>
 </div>
 
@@ -67,7 +67,7 @@ get_header();
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/recording-contracts/' ) ); ?>">Recording Contracts</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/small-business-governance-and-operations/' ) ); ?>">Small Business Governance &amp; Operations</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/synchronization-and-mechanical-licensing/' ) ); ?>">Synchronization &amp; Mechanical Licensing</a></li>
-              <li><a href="<?php echo esc_url( home_url( '/practice-areas/taxes/' ) ); ?>">Taxes</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/practice-areas/taxes/' ) ); ?>">Taxes, 501(c)(3)s &amp; Churches</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/trademarks/' ) ); ?>">Trademarks</a></li>
               <li><a href="<?php echo esc_url( home_url( '/practice-areas/wills-and-trusts/' ) ); ?>">Wills &amp; Trusts</a></li>
             </ul>
