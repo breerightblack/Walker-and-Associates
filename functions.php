@@ -149,3 +149,171 @@ add_action( 'wp_head', function() {
     ];
     echo '<script type="application/ld+json">' . wp_json_encode( $schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT ) . '</script>' . "\n";
 });
+
+/* ─────────────────────────────────────────────────────────────────────────────
+ * PAGE TEMPLATE SYNC
+ *
+ * Installing or activating a theme never touches existing content. Each page
+ * stores its own template in the _wp_page_template post meta, so pages created
+ * before this theme existed stay on "Default template" and render stale post
+ * content instead of our template files.
+ *
+ * WordPress auto-matches page-{slug}.php by slug, but these pages have legacy
+ * slugs that don't match our filenames, so the mapping has to be explicit.
+ *
+ * Runs on activation, and on demand from Tools > Re-sync Page Templates.
+ * Idempotent: safe to run any number of times. Never creates or edits pages —
+ * it only changes which template an existing page uses.
+ * ──────────────────────────────────────────────────────────────────────────── */
+
+/**
+ * Legacy page slug => template file in this theme.
+ *
+ * Deliberately NOT mapped yet (no equivalent template in this build; needs a
+ * content decision first):
+ *   tv-cable-networks  "Our Clients' TV Partners"
+ *   clients            "Past and Present Clients"
+ * These are currently pointed at page-photos.php / page-testimonials.php by
+ * hand as a stopgap. Leave them alone here so the sync doesn't overwrite that
+ * choice or cement placeholder content.
+ */
+function wa_page_template_map() {
+    return apply_filters( 'wa_page_template_map', [
+        'about-walker-associates' => 'page-about.php',
+        'contact-us'              => 'page-contact.php',
+        'blog'                    => 'page-media.php', // "Media and Press", despite the slug.
+    ] );
+}
+
+/**
+ * Apply the mapping to existing pages.
+ *
+ * @param bool $log Write results to the PHP error log.
+ * @return array{updated:array,unchanged:array,missing:array,skipped:array}
+ */
+function wa_sync_page_templates( $log = true ) {
+    $report = [ 'updated' => [], 'unchanged' => [], 'missing' => [], 'skipped' => [] ];
+    $posts_page = (int) get_option( 'page_for_posts' );
+
+    foreach ( wa_page_template_map() as $slug => $template ) {
+
+        // Never assume the template shipped — a typo here would blank the page.
+        if ( ! locate_template( $template ) ) {
+            $report['skipped'][] = "{$slug} => {$template} (template file not found in theme)";
+            continue;
+        }
+
+        $page = get_page_by_path( $slug );
+        if ( ! $page instanceof WP_Post ) {
+            $report['missing'][] = $slug;
+            continue;
+        }
+
+        // The posts page ignores _wp_page_template entirely — WordPress uses
+        // home.php/index.php for it. Setting the meta would look like it worked.
+        if ( $posts_page && $page->ID === $posts_page ) {
+            $report['skipped'][] = "{$slug} (set as Settings > Reading > Posts page; "
+                                 . "page templates do not apply — change that setting first)";
+            continue;
+        }
+
+        if ( get_post_meta( $page->ID, '_wp_page_template', true ) === $template ) {
+            $report['unchanged'][] = "{$slug} => {$template}";
+            continue;
+        }
+
+        update_post_meta( $page->ID, '_wp_page_template', $template );
+        $report['updated'][] = "{$slug} (ID {$page->ID}) => {$template}";
+    }
+
+    set_transient( 'wa_template_sync_report', $report, DAY_IN_SECONDS );
+
+    if ( $log ) {
+        foreach ( [ 'updated', 'missing', 'skipped' ] as $key ) {
+            foreach ( $report[ $key ] as $line ) {
+                error_log( sprintf( '[Walker & Associates] template sync %s: %s', $key, $line ) );
+            }
+        }
+    }
+
+    return $report;
+}
+
+// Run once when the theme is activated.
+add_action( 'after_switch_theme', function () {
+    wa_sync_page_templates();
+} );
+
+// Tools > Re-sync Page Templates — manual re-run.
+add_action( 'admin_menu', function () {
+    add_management_page(
+        'Re-sync Page Templates',
+        'Re-sync Page Templates',
+        'edit_theme_options',
+        'wa-template-sync',
+        'wa_template_sync_screen'
+    );
+} );
+
+function wa_template_sync_screen() {
+    if ( ! current_user_can( 'edit_theme_options' ) ) {
+        wp_die( 'You do not have permission to do that.' );
+    }
+
+    $report = null;
+    if ( isset( $_POST['wa_sync'] ) && check_admin_referer( 'wa_template_sync' ) ) {
+        $report = wa_sync_page_templates();
+    }
+
+    echo '<div class="wrap"><h1>Re-sync Page Templates</h1>';
+    echo '<p>Re-applies the Walker &amp; Associates page templates to existing pages. '
+       . 'Safe to run repeatedly. Does not create, delete, or edit any page content.</p>';
+
+    echo '<form method="post">';
+    wp_nonce_field( 'wa_template_sync' );
+    submit_button( 'Re-sync now', 'primary', 'wa_sync' );
+    echo '</form>';
+
+    if ( $report ) {
+        foreach ( [
+            'updated'   => [ 'Updated', 'notice-success' ],
+            'unchanged' => [ 'Already correct', 'notice-info' ],
+            'missing'   => [ 'Not found — no page with this slug', 'notice-error' ],
+            'skipped'   => [ 'Skipped', 'notice-warning' ],
+        ] as $key => $meta ) {
+            if ( empty( $report[ $key ] ) ) {
+                continue;
+            }
+            printf( '<div class="notice %s"><p><strong>%s</strong></p><ul style="list-style:disc;margin-left:20px;">',
+                esc_attr( $meta[1] ), esc_html( $meta[0] ) );
+            foreach ( $report[ $key ] as $line ) {
+                echo '<li>' . esc_html( $line ) . '</li>';
+            }
+            echo '</ul></div>';
+        }
+    }
+
+    echo '</div>';
+}
+
+// Surface problems from the activation run as an admin notice.
+add_action( 'admin_notices', function () {
+    if ( ! current_user_can( 'edit_theme_options' ) ) {
+        return;
+    }
+    $report = get_transient( 'wa_template_sync_report' );
+    if ( ! $report || ( empty( $report['missing'] ) && empty( $report['skipped'] ) ) ) {
+        return;
+    }
+    delete_transient( 'wa_template_sync_report' );
+
+    echo '<div class="notice notice-warning is-dismissible"><p><strong>Walker &amp; Associates:</strong> '
+       . 'some page templates were not applied.</p><ul style="list-style:disc;margin-left:20px;">';
+    foreach ( $report['missing'] as $slug ) {
+        echo '<li>No page found with slug <code>' . esc_html( $slug ) . '</code></li>';
+    }
+    foreach ( $report['skipped'] as $line ) {
+        echo '<li>' . esc_html( $line ) . '</li>';
+    }
+    echo '</ul><p>Run <em>Tools &rarr; Re-sync Page Templates</em> after fixing.</p></div>';
+} );
