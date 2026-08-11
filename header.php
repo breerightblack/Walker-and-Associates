@@ -6,6 +6,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+  <?php // Fallback icons — a Site Icon set in Customizer > Site Identity takes precedence. ?>
+  <?php if ( ! has_site_icon() ) : ?>
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( wa_img( 'favicon-32.png' ) ); ?>" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( wa_img( 'apple-touch-icon.png' ) ); ?>" />
+  <?php endif; ?>
+
   <!-- SEO: Primary meta description fallback (Yoast overrides this) -->
   <?php if ( is_front_page() ) : ?>
   <meta name="description" content="A Multi-market Legal Firm for Entertainment, Business, Film, and Television. 30+ years advising founders, rights holders, executives, and talent. Call (770) 847-7363." />
@@ -15,6 +21,9 @@
   <meta property="og:site_name" content="J. Walker &amp; Associates, LLC" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="<?php echo esc_url( home_url( $_SERVER['REQUEST_URI'] ) ); ?>" />
+  <meta property="og:image" content="<?php echo esc_url( wa_img( 'og-image.jpg' ) ); ?>" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="<?php echo esc_url( wa_img( 'og-image.jpg' ) ); ?>" />
 
   <?php wp_head(); ?>
 </head>

@@ -11,7 +11,7 @@ get_header();
 <div class="page-hero">
   <div class="container">
     <span class="eyebrow">Our People</span>
-    <h1>Meet the Team</h1>
+    <h1>Meet Some of The Team</h1>
     <p>We are united by a commitment to excellence, creativity, and client success.</p>
   </div>
 </div>

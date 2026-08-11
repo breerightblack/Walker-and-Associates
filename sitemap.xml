@@ -1,21 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://walkerandassoc.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://walkerandassoc.com/about.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://walkerandassoc.com/practice-areas.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://walkerandassoc.com/team.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/accessibility.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/all-practice-areas.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/contact.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/corporate-law.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/disclaimer.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/entertainment-law.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/film-and-television-law.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/litigation.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://walkerandassoc.com/media.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://walkerandassoc.com/contact.html</loc><priority>0.9</priority><changefreq>yearly</changefreq></url>
-  <url><loc>https://walkerandassoc.com/team/james-walker.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/photos.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/privacy-policy.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/team.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/testimonials.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/advertising-contracts.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/book-deals.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/business-disputes.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/business-litigation.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/commercial-contracts.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/commercial-litigation.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/copyright-law.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/corporate.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/crisis-management.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/digital-and-streaming.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/dispute-resolution.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/employment-and-labor.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/entertainment-law.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/family-law.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/film-deals.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/immigration.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/intellectual-property.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/internet-protection.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/llc-s-corp-and-c-corp-set-up.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/personal-injury.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/power-of-attorney.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/production-and-financing-agreements.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/publishing-deals.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/real-estate.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/recording-contracts.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/small-business-governance-and-operations.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/synchronization-and-mechanical-licensing.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/taxes.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/trademarks.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/practice-areas/wills-and-trusts.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/team/blythe-silvetz.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/team/enrique-ramos.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/team/gina-e-ryan.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/team/j-richard-byrd.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/team/james-walker.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/team/joel-snellings.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://walkerandassoc.com/team/paul-wilson-ii.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/team/russ-green.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://walkerandassoc.com/team/sarah-manowitz.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://walkerandassoc.com/team/stephanie-hay.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://walkerandassoc.com/team/taja-nave.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://walkerandassoc.com/team/russ-green.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://walkerandassoc.com/team/j-richard-byrd.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://walkerandassoc.com/team/khadijah-saifullah.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://walkerandassoc.com/team/gina-e-ryan.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://walkerandassoc.com/team/yillian-sarmiento.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://walkerandassoc.com/team/sarah-manowitz.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://walkerandassoc.com/team/joel-snellings.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://walkerandassoc.com/team/blythe-silvetz.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
 </urlset>
