@@ -29,7 +29,7 @@ get_header();
           <p style="font-size:1.05rem;color:var(--text-mid);line-height:1.8;margin-bottom:var(--space-md);">What began as a respected Sports and Entertainment practice has grown into a broader platform serving companies, entrepreneurs, talent, production stakeholders, and decision-makers who need counsel that can protect their interests and help them move forward with confidence. Today, the firm advises clients at the intersection of business, entertainment, media, culture, contracts, disputes, and reputation-sensitive matters.</p>
           <p style="font-size:1.05rem;color:var(--text-mid);line-height:1.8;margin-bottom:var(--space-md);">As Atlanta continues to shape the future of entertainment, business, and production, Walker &amp; Associates remains positioned to serve both the creative economy and the broader commercial landscape around it.</p>
           <p style="font-size:1.05rem;color:var(--text-mid);line-height:1.8;margin-bottom:var(--space-xl);">That means supporting not only artists and filmmakers, but also founders, executives, investors, property owners, and organizations navigating complex legal challenges.</p>
-          <a href="<?php echo esc_url( home_url( '/team/james-walker/' ) ); ?>" class="btn btn-primary">Meet Attorney Walker</a>
+          <a href="<?php echo esc_url( home_url( '/team-members/james-walker/' ) ); ?>" class="btn btn-primary">Meet Attorney Walker</a>
         </div>
         <div style="display:flex;flex-direction:column;gap:var(--space-lg);">
           <div style="background:var(--bg-light);border-radius:var(--radius-lg);padding:var(--space-xl);">

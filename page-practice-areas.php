@@ -10,6 +10,21 @@ get_header();
 
 <main id="main" role="main">
 
+  <!-- ── HERO ──────────────────────────────────────────────────── -->
+  <div class="pa-hero">
+    <div class="container">
+      <span class="eyebrow">What We Do</span>
+      <h1>Practice Areas</h1>
+      <p>30 practice areas. 30+ years of experience. Serving artists, filmmakers, and businesses across four states.</p>
+      <div class="pa-stats-row">
+        <div class="pa-stat"><strong>30</strong><span>Practice Areas</span></div>
+        <div class="pa-stat"><strong>30+</strong><span>Years Experience</span></div>
+        <div class="pa-stat"><strong>4,000+</strong><span>Clients Served</span></div>
+        <div class="pa-stat"><strong>CT · DC · NY · GA</strong><span>Licensed States</span></div>
+      </div>
+    </div>
+  </div>
+
   <!-- ── FEATURED 4-BOX HOVER ─────────────────────────────────── -->
   <section style="background:#0D1B3E;" id="film-tv">
     <div style="display:flex;height:560px;gap:3px;" id="featuredBoxes">
@@ -108,7 +123,6 @@ get_header();
         <h2>Find Your Practice Area</h2>
       </div>
       <p class="pa-all-cta"><a href="<?php echo esc_url( home_url( '/all-practice-areas/' ) ); ?>">Click here for all 30 areas of practice we handle</a></p>
-
 
       <div class="pa-boxes-wrap" id="paBoxes">
         <!-- Box 1: Entertainment -->
@@ -211,7 +225,6 @@ get_header();
       </div>
     </div>
   </section>
-
 
 </main>
 

@@ -182,35 +182,35 @@ get_header();
     </div>
     <div class="team-grid-preview">
       <div class="team-card">
-        <a href="<?php echo esc_url( home_url( '/team/james-walker/' ) ); ?>" class="team-card-photo">
+        <a href="<?php echo esc_url( home_url( '/team-members/james-walker/' ) ); ?>" class="team-card-photo">
           <img src="<?php echo esc_url( wa_img( 'team/James.jpg' ) ); ?>" alt="James L Walker Jr. Esq." loading="lazy">
           <div class="team-card-photo-overlay"><span>View Bio</span></div>
         </a>
-        <h3><a href="<?php echo esc_url( home_url( '/team/james-walker/' ) ); ?>">James L Walker Jr. Esq.</a></h3>
+        <h3><a href="<?php echo esc_url( home_url( '/team-members/james-walker/' ) ); ?>">James L Walker Jr. Esq.</a></h3>
         <p class="team-card-title">Founding Attorney</p>
       </div>
       <div class="team-card">
-        <a href="<?php echo esc_url( home_url( '/team/paul-wilson-ii/' ) ); ?>" class="team-card-photo">
+        <a href="<?php echo esc_url( home_url( '/team-members/paul-wilson-ii/' ) ); ?>" class="team-card-photo">
           <img src="<?php echo esc_url( wa_img( 'team/paul-wilson-ii.jpg' ) ); ?>" alt="Paul Wilson II" loading="lazy">
           <div class="team-card-photo-overlay"><span>View Bio</span></div>
         </a>
-        <h3><a href="<?php echo esc_url( home_url( '/team/paul-wilson-ii/' ) ); ?>">Paul Wilson II</a></h3>
+        <h3><a href="<?php echo esc_url( home_url( '/team-members/paul-wilson-ii/' ) ); ?>">Paul Wilson II</a></h3>
         <p class="team-card-title">Associate Attorney</p>
       </div>
       <div class="team-card">
-        <a href="<?php echo esc_url( home_url( '/team/stephanie-hay/' ) ); ?>" class="team-card-photo">
+        <a href="<?php echo esc_url( home_url( '/team-members/stephanie-hay/' ) ); ?>" class="team-card-photo">
           <img src="<?php echo esc_url( wa_img( 'team/stephanie-hay.jpg' ) ); ?>" alt="Stephanie K. Hay" loading="lazy">
           <div class="team-card-photo-overlay"><span>View Bio</span></div>
         </a>
-        <h3><a href="<?php echo esc_url( home_url( '/team/stephanie-hay/' ) ); ?>">Stephanie K. Hay</a></h3>
+        <h3><a href="<?php echo esc_url( home_url( '/team-members/stephanie-hay/' ) ); ?>">Stephanie K. Hay</a></h3>
         <p class="team-card-title">Of Counsel — Film &amp; Television</p>
       </div>
       <div class="team-card">
-        <a href="<?php echo esc_url( home_url( '/team/gina-e-ryan/' ) ); ?>" class="team-card-photo">
+        <a href="<?php echo esc_url( home_url( '/team-members/gina-e-ryan/' ) ); ?>" class="team-card-photo">
           <img src="<?php echo esc_url( wa_img( 'team/gina-e-ryan.jpg' ) ); ?>" alt="Gina E. Ryan" loading="lazy">
           <div class="team-card-photo-overlay"><span>View Bio</span></div>
         </a>
-        <h3><a href="<?php echo esc_url( home_url( '/team/gina-e-ryan/' ) ); ?>">Gina E. Ryan</a></h3>
+        <h3><a href="<?php echo esc_url( home_url( '/team-members/gina-e-ryan/' ) ); ?>">Gina E. Ryan</a></h3>
         <p class="team-card-title">Chief PR &amp; Strategic Communications</p>
       </div>
     </div>

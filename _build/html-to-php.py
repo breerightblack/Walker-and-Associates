@@ -10,6 +10,10 @@ Run from the theme root:  python3 _build/html-to-php.py
 """
 import re, sys, os, glob
 
+# Rewrite slug of the team_member CPT in functions.php. Keep the two in sync:
+# /team/ belongs to the WordPress Page, so individual bios live under this.
+TEAM_CPT_SLUG = 'team-members'
+
 # html file -> (php template, WP "Template Name")
 PAGES = {
     'about.html':          ('page-about.php',          'About the Firm'),
@@ -46,20 +50,96 @@ SLUGS = {
 
 PA_SLUGS = {os.path.basename(f)[:-5] for f in glob.glob('practice-areas/*.html')}
 
+VOID_TAGS = {'area','base','br','col','embed','hr','img','input','link',
+             'meta','param','source','track','wbr'}
+
+def strip_top_level(chunk, tags):
+    """Remove <tag>…</tag> only where it is a DIRECT child of `chunk`.
+
+    A same-named element nested inside other markup (a <header> inside a card,
+    say) is content and must survive, so this tracks real nesting depth with
+    a parser rather than pattern-matching tag pairs.
+    """
+    from html.parser import HTMLParser
+
+    class Scanner(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=False)
+            self.depth = 0
+            self.spans = []       # (start, end) of top-level elements to drop
+            self._open = None     # offset where the current drop started
+
+        def _off(self):
+            line, col = self.getpos()
+            return self.line_starts[line - 1] + col
+
+        def handle_starttag(self, tag, attrs):
+            if tag in VOID_TAGS:
+                return
+            if self.depth == 0 and tag in tags and self._open is None:
+                self._open = self._off()
+            self.depth += 1
+
+        def handle_startendtag(self, tag, attrs):
+            pass                  # self-closing: no depth change
+
+        def handle_endtag(self, tag):
+            if tag in VOID_TAGS:
+                return
+            self.depth -= 1
+            if self.depth == 0 and self._open is not None and tag in tags:
+                self.spans.append((self._open, self._off() + len(f'</{tag}>')))
+                self._open = None
+
+    s = Scanner()
+    starts, n = [0], 0
+    for line in chunk.splitlines(keepends=True):
+        n += len(line); starts.append(n)
+    s.line_starts = starts
+    try:
+        s.feed(chunk)
+    except Exception:
+        return chunk              # never let the safety net corrupt output
+
+    for start, end in reversed(s.spans):
+        chunk = chunk[:start] + chunk[end:]
+    return chunk
+
 def convert_body(html):
-    """Extract page-hero (if present) + <main>…</main>."""
-    parts = []
-    hero = re.search(r'<div class="page-hero">.*?</div>\s*</div>', html, re.S)
-    if hero:
-        parts.append(hero.group(0))
-    main = re.search(r'<main[^>]*>.*?</main>', html, re.S)
-    if not main:
-        raise SystemExit("  !! no <main> found")
-    m = main.group(0)
-    # give WP the id/role its templates use
-    m = re.sub(r'^<main[^>]*>', '<main id="main" role="main">', m, count=1)
-    parts.append(m)
-    return '\n\n'.join(parts)
+    """Take everything inside <body>, minus the bits WordPress supplies itself.
+
+    Previously this grabbed a hardcoded `<div class="page-hero">` plus
+    `<main>…</main>`, which silently dropped anything else living outside
+    <main> — practice-areas.html's `.pa-hero` and photos.html's lightbox
+    dialog both vanished that way. Capturing the whole body means new markup
+    can't go missing just because of where it sits in the document.
+
+    header.php / footer.php own the nav and footer, so the wa-nav / wa-footer
+    mount points and any <header>/<footer>/<nav>/<script> at body level are
+    dropped here on purpose.
+    """
+    body = re.search(r'<body[^>]*>(.*)</body>', html, re.S)
+    if not body:
+        raise SystemExit("  !! no <body> found")
+    b = body.group(1)
+
+    # Elements WordPress renders for us, or that belong in wp_head/wp_footer.
+    # The site chrome in these sources is the wa-nav / wa-footer mount point
+    # that nav.js fills in, so those are what we drop.
+    b = re.sub(r'<div id="wa-(?:nav|footer)"\s*>\s*</div>', '', b)
+    b = re.sub(r'<script\b[^>]*>.*?</script>', '', b, flags=re.S)
+    b = re.sub(r'<script\b[^>]*/>', '', b)
+
+    # Safety net for hand-written site chrome. Only <header>/<footer> at body
+    # level are chrome; <nav> is NOT stripped, because every <nav> in these
+    # sources is a breadcrumb inside the page content.
+    b = strip_top_level(b, ('header', 'footer'))
+
+    # Give <main> the id/role the theme's templates and skip-links expect.
+    if '<main' in b:
+        b = re.sub(r'<main[^>]*>', '<main id="main" role="main">', b, count=1)
+
+    return re.sub(r'\n{3,}', '\n\n', b).strip()
 
 def wp_ify(body):
     # practice-area links: practice-areas/slug.html -> /practice-areas/slug/
@@ -73,9 +153,11 @@ def wp_ify(body):
             return '''href="<?php echo esc_url( home_url( '/practice-areas/%s/' ) ); ?>"''' % sl
         return m.group(0)
     body = re.sub(r'href="([a-z0-9-]+)\.html"', pa_sibling, body)
-    # team member links: team/slug.html -> /team/slug/
+    # team member links: team/slug.html -> /team-members/slug/
+    # Must track the team_member CPT rewrite slug in functions.php. The Page at
+    # /team/ owns that path now, so bios live under /team-members/.
     body = re.sub(r'href="(?:\.\./)?team/([a-z0-9-]+)\.html"',
-                  lambda m: '''href="<?php echo esc_url( home_url( '/team/%s/' ) ); ?>"''' % m.group(1),
+                  lambda m: '''href="<?php echo esc_url( home_url( '/%s/%s/' ) ); ?>"''' % (TEAM_CPT_SLUG, m.group(1)),
                   body)
     # internal page links
     def link(m):

@@ -42,14 +42,7 @@
 
     <!-- Logo -->
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo-wrap" aria-label="<?php bloginfo( 'name' ); ?> — Home">
-      <?php if ( has_custom_logo() ) : the_custom_logo(); else : ?>
-      <svg class="logo-svg" viewBox="0 0 100 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <polygon points="5,8 30,8 50,62 38,62"  fill="currentColor" class="logo-v"/>
-        <polygon points="95,8 70,8 50,62 62,62" fill="currentColor" class="logo-v"/>
-        <polygon points="50,18 57,34 50,50 43,34" fill="white"/>
-        <polygon points="38,68 62,68 50,88"       fill="white"/>
-      </svg>
-      <?php endif; ?>
+      <?php if ( has_custom_logo() ) : the_custom_logo(); endif; ?>
       <div class="logo-text">
         <span class="logo-name">Walker</span>
         <span class="logo-sub">&amp; Associates</span>

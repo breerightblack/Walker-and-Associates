@@ -66,7 +66,9 @@ add_action( 'init', function() {
         'menu_icon'         => 'dashicons-businessman',
         'supports'          => [ 'title', 'editor', 'thumbnail', 'excerpt', 'page-attributes' ],
         'has_archive'       => true,
-        'rewrite'           => [ 'slug' => 'team' ],
+        // 'team' is reserved for the WordPress Page at /team/ (mirrors Netlify's
+        // /team). Using it here would let the CPT rewrite rule shadow that Page.
+        'rewrite'           => [ 'slug' => 'team-members' ],
         'show_in_rest'      => true,
     ]);
 });

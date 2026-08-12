@@ -55,7 +55,6 @@ get_header();
     </div>
   </section>
 
-
   <!-- Press Coverage -->
   <section class="section media-band-4" id="press">
     <div class="container">
